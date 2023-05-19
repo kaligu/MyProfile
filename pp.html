@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mousemove Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        section {
+            width: 98vw;
+            height: 98vh;
+            border: 1px solid black;
+            overflow: hidden;
+
+        }
+
+        #first_page {
+            width: 120vw;
+            height: 120vh;
+            background-image: url('assets/pictures/backimage.jpeg');
+            background-repeat: no-repeat;
+            background-position: -20px 0;
+            background-size: cover;
+            filter: contrast(1.2) brightness(1.2)
+        }
+        #first_page_avatar_section{
+            position: absolute;
+            top: -20vh;
+            left: 5vw;
+        }
+        #first_page_avatar_img{
+            width: calc((100vh + 100vw)/ 2 );
+            height: calc((100vh + 100vw)/ 2 );
+            filter: contrast(1.2) brightness(1.2)
+        }
+    </style>
+</head>
+<body>
+<section style="position: relative">
+<div>
+    <div id="first_page"></div>
+</div>
+<div id="first_page_avatar_section">
+    <img id="first_page_avatar_img" src="assets/pictures/imagemy.png">
+</div>
+</section>
+
+<script>
+    $(document).ready(function() {
+        $('section').mousemove(function(a) {
+            var mousex = (a.pageX * -1 / 10);
+            var mousey = (a.pageY * -1 / 10);
+
+            $('#first_page').css('background-position', mousex + 'px ' + mousey + 'px');
+            console.log(mousex + ' ' + mousey);
+        });
+    });
+</script>
+</body>
+</html>
