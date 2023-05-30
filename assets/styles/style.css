@@ -1,10 +1,21 @@
-.navbar-container > .navigation > a {
-
+.navbar-container{
+    display: flex;
+    align-items: flex-end;
+    justify-content: left;
+}
+.navbar-container > .menu > ul > li{
+    display: flex;
 }
 
-
 @media all and (max-width: 576px) {
-
+    .navbar-container{
+        display: flex;
+        align-items: flex-end;
+        justify-items: center;
+    }
+    .navbar-container > .menu > ul > li{
+        display: flex;
+    }
 }
 @media all and (min-width: 576px) {
 
