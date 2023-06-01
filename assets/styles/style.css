@@ -79,11 +79,44 @@
         background-repeat: no-repeat;
     }
     .avatar{
-        position: absolute;
         display: flex;
-        margin-top: 100px;
-        margin-left: 15px;
-        border: 2px solid #8d8d8d;
+        padding-top: 220px;
+        padding-left: 15px;
+    }
+    .avatar > img {
+        border-radius: 3px;
+    }
+    .first-page > .sentence-1{
+        display: flex;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 5vh;
+        color: rgb(142, 142, 142);
+        font-weight: 600;
+        margin-left:225px;
+        margin-top: -236px;
+    }
+    .first-page > .sentence-2{
+        font-family: 'Francois One', sans-serif;
+        font-size: 12vh;
+        color: rgb(255, 255, 255);
+        font-weight: 300;
+        margin-left:239px;
+        margin-top:-104px;
+    }
+    .first-page > .sentence-3{
+        font-family: 'Francois One', sans-serif;
+        text-transform: none;
+        font-size: 12vh;
+        color: #FFE3B3;
+        font-weight: 300;
+        margin-left:220px;
+        margin-top: -58px;
+    }
+    .first-page > .sentence-4{
+
+    }
+    .first-page > .sentence-5{
+
     }
 
     /* second page */
