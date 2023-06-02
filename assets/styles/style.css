@@ -14,6 +14,7 @@
 
 /* first page */
 .first-page {
+    display: flex;
     width: 100vw;
     height: 100vh;
     background-image: url('assets/pictures/backimggif.gif');
@@ -235,42 +236,46 @@
     .mobile-navbar > .menu > .links > li{
         color: white;
     }
-
     .avatar{
         width: 100px;
         height: 250px;
-        padding-top: 20vh;
-        padding-left: 4px;
+        margin-left: 2px;
+        margin-top: 110px;
     }
     .first-page > .sentence-1{
-        margin-left: 18px;
-        margin-top: 1vh;
-        font-size: 5vw;
+        margin-left: -100px;
+        margin-top: 50px;
+        font-size: 25px;
     }
     .first-page > .sentence-2{
-        margin-left: 14px;
-        margin-top: -9vh;
-        font-size: 20vw;
+        margin-left: -40px;
+        margin-top: 3px;
+        font-size: 91px;
     }
     .first-page > .sentence-3{
-        margin-left: 14px;
-        margin-top: -10vh;
-        font-size: 20vw;
+        margin-left: -249px;
+        margin-top: 90px;
+        font-size: 91px;
     }
     .first-page > .sentence-4{
-        margin-left: 14px;
-        margin-top: -6vh;
-        font-size: 4vw;
+        margin-left: -308px;
+        margin-top: 593px;
+        font-size: 8px;
     }
     .first-page > .sentence-5{
-        margin-left: 14px;
-        margin-top: -1vh;
-        font-size: 4vw;
+        margin-left: -232px;
+        margin-top: 613px;
+        font-size: 20px;
     }
 
 }
 
 @media all and (min-width: 992px) {
+    .first-page > .sentence-1{
+        margin-left: -107px;
+        margin-top: 50px;
+        font-size: 20px;
+    }
 
 }
 @media all and (min-width: 1400px) {
