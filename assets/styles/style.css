@@ -90,7 +90,7 @@
 
 .cards {
     display: flex;
-    padding: 25px 0px;
+    padding: 25px 0;
     list-style: none;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
@@ -802,7 +802,7 @@
         /*    position: absolute;*/
         /*    bottom: 1vh;*/
         /*    left: 0.5vw;*/
-f        /*}*/
+        /*}*/
         /*.first-page > .avatar > img{*/
         /*    position: absolute;*/
         /*    width: calc( (96vh + 96vw + 180px)/ 2);*/
