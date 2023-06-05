@@ -5,6 +5,13 @@
     --navbarcolor: #474747;
     --navbarmenumobile:rgba(76,76,76,0.6);
     --navbarbordercolor: #c4c4c4;
+
+    --red: #c7a37d;
+    --darkred: #c46803;
+    --platinum: #ffffff;
+    --black: #ffffff;
+    --white: #3d5161;
+    --thumb: #c9c9c9;
 }
 *{
     /* website background colour dark */
@@ -59,6 +66,118 @@
 .first-page >div > .sentence-4 > p:nth-child(2){
     font-family: 'Monomaniac One', sans-serif;
     color: rgb(164, 164, 164);
+}
+
+.fifths-page{
+    display: flex;
+    background-image: url('assets/pictures/back.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.fifths-page > div{
+    color: white;
+}
+#fifths-page-Assignment-Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#fifths-page-project-Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    padding: 25px 0px;
+    list-style: none;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+    scroll-snap-align: start;
+    transition: all 0.2s;
+}
+
+.card:not(:last-child) {
+    margin-right: 10px;
+}
+
+.card:hover {
+    color: var(--white);
+    background: var(--red);
+}
+
+.card .card-title {
+    font-size: 20px;
+}
+
+.card .card-content {
+    margin: 20px 0;
+    max-width: 85%;
+}
+
+.card .card-link-wrapper {
+    margin-top: auto;
+}
+
+.card .card-link {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: var(--red);
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: background 0.2s;
+}
+
+.card:hover .card-link {
+    background: var(--darkred);
+}
+
+.cards::-webkit-scrollbar {
+    height: 12px;
+}
+
+.cards::-webkit-scrollbar-thumb,
+.cards::-webkit-scrollbar-track {
+    border-radius: 92px;
+}
+
+.cards::-webkit-scrollbar-thumb {
+    background: var(--darkred);
+}
+
+.cards::-webkit-scrollbar-track {
+    background: var(--thumb);
+}
+
+.card {
+    flex-basis: calc(50% - 60px);
+}
+
+.card:not(:last-child) {
+    margin-right: 20px;
+}
+.fifths-page-assignment-header > p{
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: rgb(130, 130, 130);
+    font-size: 55px;
+    font-weight: 600;
+}
+.fifths-page-project-header > p{
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: rgb(130, 130, 130);
+    font-size: 55px;
+    font-weight: 600;
 }
 
 /* mobile view */
@@ -139,16 +258,16 @@
     }
     .first-page >div > .sentence-2{
         margin-left: -40px;
-        margin-top: 18px;
-        font-size: 73px;
+        margin-top: 42px;
+        font-size: 65px;
     }
     .first-page >div > .sentence-3{
-        margin-left: -203px;
-        margin-top: 97px;
-        font-size: 73px;
+        margin-left: -183px;
+        margin-top: 115px;
+        font-size: 65px;
     }
     .first-page >div > .sentence-4{
-        width: 93vw;
+        width: 92vw;
         height: 130px;
         margin-left: -277px;
         margin-top: 689px;
@@ -163,23 +282,9 @@
         margin-top: -30px;
     }
 
-    /* second page */
-    .second-page{
-        display: flex;
-        width: 100vw;
-        height: 100vh;
-        background-color: red;
-    }
-    .third-page{
-        display: flex;
-        width: 100vw;
-        height: 100vh;
-        background-color: #2e8c00;
-    }
-    .second-page .ccc p {
-        color: white;
-        margin-left: 45px;
-        margin-top: 50px;
+    /*  fifth page  */
+    .fifths-page{
+        width: 98vw;
     }
 
 }
@@ -345,14 +450,14 @@
         align-items: center;
         justify-content: space-between;
         background-color: var(--navbarcolor);
-        width: 100%;
+        width: 99vw;
         height: 80px;
         opacity: 0.85;
     }
     .tab-navbar > .container > .logo{
         width: 135px;
         height: 60px;
-        margin-left: 6px;
+        margin-left: 14px;
         border: 1px solid var(--navbarbordercolor);
         box-shadow: 4px 4px;
     }
@@ -393,7 +498,7 @@
         font-size: 22px;
     }
     .tab-navbar > .container > button {
-        margin-right: 8px;
+        margin-right: 14px;
         font-size: 22px;
     }
     .tab-navbar > .container > button {
@@ -413,7 +518,7 @@
     .avatar{
         width: 19vw;
         height: 345px;
-        margin-left: 3vw;
+        margin-left: -9vw;
         margin-top:-40px;
     }
     .avatar > img{
@@ -423,31 +528,31 @@
     .first-page{
         display: flex;
         justify-content: center;
-        width: 100vw;
+        width: 99vw;
         height: 821px;
     }
     .first-page >div > .sentence-1{
-        margin-left: 208px;
+        margin-left: 155px;
         margin-top: 191px;
         font-size: 35px;
     }
     .first-page >div > .sentence-2{
         margin-left: -34px;
         margin-top: 116px;
-        font-size: 142px;
+        font-size: 132px;
         font-weight:600;
     }
     .first-page >div > .sentence-3{
-        margin-left: -397px;
+        margin-left: -369px;
         margin-top: 256px;
-        font-size: 142px;
+        font-size: 132px;
         font-weight:600;
     }
     .first-page >div > .sentence-4{
         width: 54vw;
         max-width: 700px;
         height: 130px;
-        margin-left: -555px;
+        margin-left: -582px;
         margin-top: 660px;
         font-size: 20px;
         background-color: rgba(174, 92, 0, 0.65);
@@ -461,24 +566,29 @@
         font-size: 27px;
     }
 
-    /* second page */
-    .second-page{
-        display: flex;
-        width: 100vw;
-        height: 100vh;
-        background-color: red;
+
+    /* fifths page */
+    .fifths-page{
+        width:99vw;
+        height: 1900px;
     }
-    .third-page{
-        display: flex;
-        width: 100vw;
-        height: 100vh;
-        background-color: #2e8c00;
+    .fifths-page-assignment-header{
+        margin-left: 45%;
+        margin-top: 87px;
     }
-    .second-page .ccc p {
-        color: white;
-        margin-left: 45px;
-        margin-top: 50px;
+    .fifths-page-project-header{
+        margin-left: 0;
+        margin-top: 0;
     }
+    #fifths-page-Assignment-Container{
+        width: 80vw;
+        margin-left: -35vw;
+    }
+    #fifths-page-project-Container{
+        width: 80vw;
+        margin-left: -34vw;
+    }
+
 }
 /*@media all and (max-width: 992px) {*/
 
@@ -692,7 +802,7 @@
         /*    position: absolute;*/
         /*    bottom: 1vh;*/
         /*    left: 0.5vw;*/
-        /*}*/
+f        /*}*/
         /*.first-page > .avatar > img{*/
         /*    position: absolute;*/
         /*    width: calc( (96vh + 96vw + 180px)/ 2);*/
