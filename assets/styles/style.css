@@ -68,6 +68,7 @@
     color: rgb(164, 164, 164);
 }
 
+/* fifths page */
 .fifths-page{
     display: flex;
     background-image: url('assets/pictures/back.gif');
@@ -83,7 +84,7 @@
 #fifths-page-project-Container{
     display: flex;
 }
-.container {
+.fifths-page-container {
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -93,7 +94,7 @@ h2 {
     margin-bottom: 1em;
 }
 
-.cards {
+.fifths-page-cards {
     display: flex;
     padding: 25px 0px;
     list-style: none;
@@ -101,7 +102,7 @@ h2 {
     scroll-snap-type: x mandatory;
 }
 
-.card {
+.fifths-page-card {
     display: flex;
     flex-direction: column;
     flex: 0 0 100%;
@@ -113,29 +114,29 @@ h2 {
     transition: all 0.2s;
 }
 
-.card:not(:last-child) {
+.fifths-page-card:not(:last-child) {
     margin-right: 10px;
 }
 
-.card:hover {
+.fifths-page-card:hover {
     color: var(--white);
     background: var(--red);
 }
 
-.card .card-title {
+.fifths-page-card .fifths-page-card-title {
     font-size: 20px;
 }
 
-.card .card-content {
+.fifths-page-card .fifths-page-card-content {
     margin: 20px 0;
     max-width: 85%;
 }
 
-.card .card-link-wrapper {
+.fifths-page-card .fifths-page-card-link-wrapper {
     margin-top: -9px;
 }
 
-.card .card-link {
+.fifths-page-card .fifths-page-card-link {
     display: inline-block;
     text-decoration: none;
     color: white;
@@ -146,24 +147,24 @@ h2 {
     margin-top: 5px;
 }
 
-.card:hover .card-link {
+.fifths-page-card:hover .fifths-page-card-link {
     background: var(--darkred);
 }
 
-.cards::-webkit-scrollbar {
+.fifths-page-cards::-webkit-scrollbar {
     height: 12px;
 }
 
-.cards::-webkit-scrollbar-thumb,
-.cards::-webkit-scrollbar-track {
+.fifths-page-cards::-webkit-scrollbar-thumb,
+.fifths-page-cards::-webkit-scrollbar-track {
     border-radius: 92px;
 }
 
-.cards::-webkit-scrollbar-thumb {
+.fifths-page-cards::-webkit-scrollbar-thumb {
     background: var(--darkred);
 }
 
-.cards::-webkit-scrollbar-track {
+.fifths-page-cards::-webkit-scrollbar-track {
     background: var(--thumb);
 }
 
@@ -174,6 +175,121 @@ h2 {
     font-weight: 600;
 }
 .fifths-page > .nav-container > p:nth-child(2){
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: rgb(130, 130, 130);
+    font-size: 40px;
+    font-weight: 400;
+}
+
+
+
+/* sixths page */
+.sixths-page{
+    display: flex;
+    background-image: url('assets/pictures/back.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sixths-page > div{
+    color: white;
+}
+#sixths-page-Assignment-Container{
+    display: flex;
+}
+#sixths-page-project-Container{
+    display: flex;
+}
+.sixths-page-container {
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 1em;
+}
+
+.sixths-page-cards {
+    display: flex;
+    padding: 25px 0px;
+    list-style: none;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.sixths-page-card {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 100%;
+    padding: 20px;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+    scroll-snap-align: start;
+    transition: all 0.2s;
+}
+
+.sixths-page-card:not(:last-child) {
+    margin-right: 10px;
+}
+
+.sixths-page-card:hover {
+    color: var(--white);
+    background: var(--red);
+}
+
+.sixths-page-card .fifths-page-card-title {
+    font-size: 20px;
+}
+
+.sixths-page-card .fifths-page-card-content {
+    margin: 20px 0;
+    max-width: 85%;
+}
+
+.sixths-page-card .fifths-page-card-link-wrapper {
+    margin-top: -9px;
+}
+
+.sixths-page-card .fifths-page-card-link {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: var(--red);
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: background 0.2s;
+    margin-top: 5px;
+}
+
+.sixths-page-card:hover .fifths-page-card-link {
+    background: var(--darkred);
+}
+
+.sixths-page-cards::-webkit-scrollbar {
+    height: 12px;
+}
+
+.sixths-page-cards::-webkit-scrollbar-thumb,
+.sixths-page-cards::-webkit-scrollbar-track {
+    border-radius: 92px;
+}
+
+.sixths-page-cards::-webkit-scrollbar-thumb {
+    background: var(--darkred);
+}
+
+.sixths-page-cards::-webkit-scrollbar-track {
+    background: var(--thumb);
+}
+
+.sixths-page > .nav-container > p:nth-child(1){
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: rgb(130, 130, 130);
+    font-size: 55px;
+    font-weight: 600;
+}
+.sixths-page > .nav-container > p:nth-child(2){
     font-family: 'IBM Plex Sans', sans-serif;
     color: rgb(130, 130, 130);
     font-size: 40px;
@@ -286,25 +402,45 @@ h2 {
         width: 270px;
     }
 
-    /*  fifth page  */
     /* fifths page */
     .fifths-page{
         display: flex;
         height: 100%;
     }
     iframe{
-        width: 68vw;
+        width: 72vw;
     }
 
-    .container{
+    .fifths-page-container{
         width: 85vw;
     }
-    .card {
-        flex-basis: 70vw;
+    .fifths-page-card {
+        flex-basis: 72vw;
         height: 100%;
     }
 
-    .card:not(:last-child) {
+    .fifths-page-card:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    /* sixths page */
+    .sixths-page{
+        display: flex;
+        height: 100%;
+    }
+    iframe{
+        width: 72vw;
+    }
+
+    .sixths-page-container{
+        width: 85vw;
+    }
+    .sixths-page-card {
+        flex-basis: 72vw;
+        height: 100%;
+    }
+
+    .sixths-page-card:not(:last-child) {
         margin-right: 20px;
     }
 
@@ -437,7 +573,7 @@ h2 {
     }
 
     /* fifths page */
-    .cards::-webkit-scrollbar {
+    .fifths-page-cards::-webkit-scrollbar {
         height: 10px;
     }
     .fifths-page{
@@ -460,11 +596,11 @@ h2 {
         margin-left: -252px;
         margin-top: 172px;
     }
-    .card {
+    .fifths-page-card {
         flex-basis: calc(80% - 60px);
     }
 
-    .card:not(:last-child) {
+    .fifths-page-card:not(:last-child) {
         margin-right: 20px;
     }
     .fifths-page-project-header >  p:nth-child(1){
@@ -631,7 +767,7 @@ h2 {
         margin-left: -802px;
         margin-top: 244px;
     }
-    .cards{
+    .fifths-page-cards{
         width: 80vw;
     }
     .fifths-page-project-header >  p:nth-child(1){
