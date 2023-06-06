@@ -86,6 +86,7 @@
 
 .cards {
     display: flex;
+    max-width: 500px;
     padding: 25px 0;
     list-style: none;
     overflow-x: scroll;
@@ -113,7 +114,8 @@
 }
 
 .card .card-title {
-    font-size: 20px;
+    margin-top: -5px;
+    font-size: 17px;
 }
 
 .card .card-content {
@@ -123,11 +125,14 @@
 .card .card-link-wrapper {
     margin-top: auto;
 }
+.card > div > div > p{
+    font-size: 13px;
+}
 
 .card .card-link {
     display: inline-block;
     text-decoration: none;
-    color: white;
+    color: black;
     background: var(--red);
     padding: 6px 6px;
     border-radius: 8px;
@@ -139,7 +144,7 @@
 }
 
 .cards::-webkit-scrollbar {
-    height: 12px;
+    height: 14px;
 }
 
 .cards::-webkit-scrollbar-thumb,
@@ -287,6 +292,9 @@
 
     /*  fifth page  */
     /* fifths page */
+    .cards::-webkit-scrollbar {
+        height: 8px;
+    }
     .fifths-page{
         display: flex;
         width:100vw;
@@ -450,23 +458,43 @@
         font-size: 25px;
     }
 
-    /* second page */
-    .second-page{
-        display: flex;
-        width: 100vw;
-        height: 100vh;
-        background-color: red;
+    /* fifths page */
+    .cards::-webkit-scrollbar {
+        height: 8px;
     }
-    .third-page{
+    .fifths-page{
         display: flex;
-        width: 100vw;
-        height: 100vh;
-        background-color: #2e8c00;
+        width:100vw;
+        height: 1900px;
     }
-    .second-page .ccc p {
-        color: white;
-        margin-left: 45px;
-        margin-top: 50px;
+    .fifths-page-assignment-header >  p:nth-child(1){
+        font-size: 40px;
+        margin-left: 21px;
+        margin-top: 42px;
+    }
+    .fifths-page-assignment-header >  p:nth-child(2){
+        font-size: 20px;
+        margin-left: 39px;
+        margin-top: -19px;
+        width: 250px;
+    }
+    .cardholder-assignment{
+        margin-left: -252px;
+        margin-top: 172px;
+    }
+    .cards{
+        width: 85vw;
+    }
+    .fifths-page-project-header >  p:nth-child(1){
+        display: flex;
+        font-size: 40px;
+        margin-left: -365px;
+        margin-top: 936px;
+    }
+    .cardholder-project{
+        display: flex;
+        margin-left: -551px;
+        margin-top: 962px;
     }
 }
 
