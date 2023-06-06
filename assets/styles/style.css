@@ -83,11 +83,19 @@
 #fifths-page-project-Container{
     display: flex;
 }
+.nav-container {
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 1em;
+}
 
 .cards {
     display: flex;
-    max-width: 500px;
-    padding: 25px 0;
+    padding: 25px 0px;
     list-style: none;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
@@ -96,12 +104,13 @@
 .card {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    flex: 0 0 100%;
+    padding: 20px;
     background: var(--white);
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
     scroll-snap-align: start;
-    transition: all 0.8s;
+    transition: all 0.2s;
 }
 
 .card:not(:last-child) {
@@ -114,28 +123,24 @@
 }
 
 .card .card-title {
-    margin-top: -5px;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 .card .card-content {
-    max-width: 95%;
+    margin: 20px 0;
+    max-width: 85%;
 }
 
 .card .card-link-wrapper {
     margin-top: auto;
 }
-.card > div > div > p{
-    font-size: 13px;
-}
 
 .card .card-link {
-    margin-top: 4px;
     display: inline-block;
     text-decoration: none;
-    color: black;
+    color: white;
     background: var(--red);
-    padding: 6px 6px;
+    padding: 6px 12px;
     border-radius: 8px;
     transition: background 0.2s;
 }
@@ -145,7 +150,7 @@
 }
 
 .cards::-webkit-scrollbar {
-    height: 14px;
+    height: 12px;
 }
 
 .cards::-webkit-scrollbar-thumb,
@@ -161,32 +166,19 @@
     background: var(--thumb);
 }
 
-.card {
-    flex-basis: calc(50% - 60px);
-}
-
-.card:not(:last-child) {
-    margin-right: 20px;
-}
-
-.fifths-page-assignment-header >  p:nth-child(1){
+.fifths-page > .nav-container > p:nth-child(1){
     font-family: 'IBM Plex Sans', sans-serif;
     color: rgb(130, 130, 130);
     font-size: 55px;
     font-weight: 600;
 }
-.fifths-page-assignment-header > p:nth-child(2){
+.fifths-page > .nav-container > p:nth-child(2){
     font-family: 'IBM Plex Sans', sans-serif;
     color: rgb(130, 130, 130);
     font-size: 40px;
     font-weight: 400;
 }
-.fifths-page-project-header > p:nth-child(1){
-    font-family: 'IBM Plex Sans', sans-serif;
-    color: rgb(130, 130, 130);
-    font-size: 55px;
-    font-weight: 600;
-}
+
 
 
 /* mobile view */
@@ -198,7 +190,7 @@
     .tab-navbar {
         display: none;
     }
-    .mobile-navbar > .container{
+    .mobile-navbar > .nav-container{
         position:fixed;
         display: flex;
         align-items: center;
@@ -208,25 +200,25 @@
         height: 58px;
         opacity: 0.85;
     }
-    .mobile-navbar > .container > .logo{
+    .mobile-navbar > .nav-container > .logo{
         display: flex;
         width: 120px;
         height: 45px;
-        margin-left: 6px;
+        margin-left: -3px;
         border: 1px solid var(--navbarbordercolor);
     }
-    .mobile-navbar > .container > .logo > img{
+    .mobile-navbar > .nav-container > .logo > img{
         width: 100%;
         height: 100%;
-    }  .mobile-navbar > .container > .toggle-button{
+    }  .mobile-navbar > .nav-container > .toggle-button{
            display: flex;
            width: 40px;
            height: 40px;
            border: 1px solid var(--navbarbordercolor);
            background-color: var(--navbarcolor);
-           margin-right: 8px;
+           margin-right: 25px;
        }
-    .mobile-navbar > .container > .toggle-button > img{
+    .mobile-navbar > .nav-container > .toggle-button > img{
         background-color: var(--navbarcolor);
         width: 100%;
         height: 100%;
@@ -283,52 +275,32 @@
         font-size: 20px;
         background-color: rgba(174, 92, 0, 0.65);
     }
-    .first-page >div > .sentence-4 > p:nth-child(1){
+    .fifths-page > .nav-container > p:nth-child(1){
         margin-top: 5px;
-        font-size: 30px;
+        font-size: 40px;
     }
-    .first-page >div > .sentence-4 > p:nth-child(2){
+    .fifths-page > .nav-container > p:nth-child(2){
+        font-size: 20px;
         margin-top: -30px;
+        width: 270px;
     }
 
     /*  fifth page  */
     /* fifths page */
-    .cards::-webkit-scrollbar {
-        height: 8px;
-    }
     .fifths-page{
         display: flex;
-        width:100vw;
-        height: 1900px;
+        height: 700px;
     }
-    .fifths-page-assignment-header >  p:nth-child(1){
-        font-size: 40px;
-        margin-left: 21px;
-        margin-top: 42px;
-    }
-    .fifths-page-assignment-header >  p:nth-child(2){
-        font-size: 20px;
-        margin-left: 39px;
-        margin-top: -19px;
-        width: 250px;
-    }
-    .cardholder-assignment{
-        margin-left: -252px;
-        margin-top: 172px;
-    }
-    .cards{
+
+    .nav-container{
         width: 85vw;
     }
-    .fifths-page-project-header >  p:nth-child(1){
-        display: flex;
-        font-size: 40px;
-        margin-left: -365px;
-        margin-top: 936px;
+    .card {
+        flex-basis: calc(50% - -170px);
     }
-    .cardholder-project{
-        display: flex;
-        margin-left: -551px;
-        margin-top: 962px;
+
+    .card:not(:last-child) {
+        margin-right: 20px;
     }
 
 }
@@ -342,7 +314,7 @@
     .tab-navbar{
         display: block;
     }
-    .tab-navbar > .container{
+    .tab-navbar > .nav-container{
         position:fixed;
         display: flex;
         align-items: center;
@@ -352,52 +324,52 @@
         height: 80px;
         opacity: 0.85;
     }
-    .tab-navbar > .container > .logo{
+    .tab-navbar > .nav-container > .logo{
         width: 135px;
         height: 60px;
         margin-left: 6px;
         border: 1px solid var(--navbarbordercolor);
         box-shadow: 4px 4px;
     }
-    .tab-navbar > .container > .logo > img{
+    .tab-navbar > .nav-container > .logo > img{
         width: 100%;
         height: 100%;
     }
-    .tab-navbar > .container > .toggle-button{
+    .tab-navbar > .nav-container > .toggle-button{
            width: 40px;
            height: 40px;
            border: 1px solid var(--navbarbordercolor);
            background-color: var(--navbarcolor);
            margin-right: 8px;
     }
-    .tab-navbar > .container > .links{
+    .tab-navbar > .nav-container > .links{
         background-color: var(--navbarcolor);
     }
-    .tab-navbar > .container > .links > li{
+    .tab-navbar > .nav-container > .links > li{
         display: inline-flex;
         background-color: var(--navbarcolor);
     }
-    .tab-navbar > .container > .links > li:nth-child(2){
+    .tab-navbar > .nav-container > .links > li:nth-child(2){
         margin-left: 2vw;
     }
-    .tab-navbar > .container > .links > li:nth-child(3){
+    .tab-navbar > .nav-container > .links > li:nth-child(3){
         margin-left: 2vw;
     }
-    .tab-navbar > .container > .links > li:nth-child(4){
+    .tab-navbar > .nav-container > .links > li:nth-child(4){
         margin-left: 2vw;
     }
-    .tab-navbar > .container > .links > li:nth-child(5){
+    .tab-navbar > .nav-container > .links > li:nth-child(5){
         margin-left: 2vw;
         width: 20vw;
     }
 
-    .tab-navbar > .container > .links > li > a {
+    .tab-navbar > .nav-container > .links > li > a {
         color: white;
     }
-    .tab-navbar > .container > button {
+    .tab-navbar > .nav-container > button {
         margin-right: 7px;
     }
-    .tab-navbar > .container > button {
+    .tab-navbar > .nav-container > button {
         width: 80px;
         height: 60px;
         background-color: #6b6666;
@@ -406,7 +378,7 @@
         box-shadow: 2px 2px #808080;
     }
 
-    .tab-navbar > .container > button:hover {
+    .tab-navbar > .nav-container > button:hover {
         background-color: #001d82;
         color: white;
         border: 2.2px solid var(--navbarbordercolor);
@@ -426,7 +398,7 @@
         height: 730px;
     }
     .first-page >div > .sentence-1{
-        margin-left: 102px;
+        margin-left: 55px;
         margin-top: 189px;
         font-size: 30px;
     }
@@ -461,7 +433,7 @@
 
     /* fifths page */
     .cards::-webkit-scrollbar {
-        height: 8px;
+        height: 10px;
     }
     .fifths-page{
         display: flex;
@@ -483,8 +455,12 @@
         margin-left: -252px;
         margin-top: 172px;
     }
-    .cards{
-        width: 85vw;
+    .card {
+        flex-basis: calc(80% - 60px);
+    }
+
+    .card:not(:last-child) {
+        margin-right: 20px;
     }
     .fifths-page-project-header >  p:nth-child(1){
         display: flex;
@@ -508,7 +484,7 @@
     .tab-navbar{
         display: block;
     }
-    .tab-navbar > .container{
+    .tab-navbar > .nav-container{
         position:fixed;
         display: flex;
         align-items: center;
@@ -518,54 +494,54 @@
         height: 80px;
         opacity: 0.85;
     }
-    .tab-navbar > .container > .logo{
+    .tab-navbar > .nav-container > .logo{
         width: 135px;
         height: 60px;
         margin-left: 14px;
         border: 1px solid var(--navbarbordercolor);
         box-shadow: 4px 4px;
     }
-    .tab-navbar > .container > .logo > img{
+    .tab-navbar > .nav-container > .logo > img{
         width: 100%;
         height: 100%;
     }
-    .tab-navbar > .container > .toggle-button{
+    .tab-navbar > .nav-container > .toggle-button{
         width: 40px;
         height: 40px;
         border: 1px solid var(--navbarbordercolor);
         background-color: var(--navbarcolor);
         margin-right: 8px;
     }
-    .tab-navbar > .container > .links{
+    .tab-navbar > .nav-container > .links{
         background-color: var(--navbarcolor);
     }
-    .tab-navbar > .container > .links > li{
+    .tab-navbar > .nav-container > .links > li{
         display: inline-flex;
         background-color: var(--navbarcolor);
     }
-    .tab-navbar > .container > .links > li:nth-child(2){
+    .tab-navbar > .nav-container > .links > li:nth-child(2){
         margin-left: 2vw;
     }
-    .tab-navbar > .container > .links > li:nth-child(3){
+    .tab-navbar > .nav-container > .links > li:nth-child(3){
         margin-left: 2vw;
     }
-    .tab-navbar > .container > .links > li:nth-child(4){
+    .tab-navbar > .nav-container > .links > li:nth-child(4){
         margin-left: 2vw;
     }
-    .tab-navbar > .container > .links > li:nth-child(5){
+    .tab-navbar > .nav-container > .links > li:nth-child(5){
         margin-left: 2vw;
         width: 20vw;
     }
 
-    .tab-navbar > .container > .links > li > a {
+    .tab-navbar > .nav-container > .links > li > a {
         color: white;
         font-size: 22px;
     }
-    .tab-navbar > .container > button {
+    .tab-navbar > .nav-container > button {
         margin-right: 14px;
         font-size: 22px;
     }
-    .tab-navbar > .container > button {
+    .tab-navbar > .nav-container > button {
         width: 80px;
         height: 60px;
         background-color: #6b6666;
@@ -574,7 +550,7 @@
         box-shadow: 2px 2px #808080;
     }
 
-    .tab-navbar > .container > button:hover {
+    .tab-navbar > .nav-container > button:hover {
         background-color: #001d82;
         color: white;
         border: 2.2px solid var(--navbarbordercolor);

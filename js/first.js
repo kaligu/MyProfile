@@ -13,18 +13,18 @@
 
 var isMenuVisible = false;
 
-$('.mobile-navbar > .container > .toggle-button').click(function() {
+$('.mobile-navbar > .nav-container > .toggle-button').click(function() {
     if (!isMenuVisible) {
         // Display the .navbar-menu element, rotate the image, and adjust the border size
         document.querySelector(".mobile-navbar> .menu").style.display = "block";
-        document.querySelector(".mobile-navbar > .container > .toggle-button > img").style.transform = "rotate(180deg)";
-        document.querySelector(".mobile-navbar > .container > .toggle-button").style.border = "2.2px solid var(--navbarbordercolor)";
+        document.querySelector(".mobile-navbar > .nav-container > .toggle-button > img").style.transform = "rotate(180deg)";
+        document.querySelector(".mobile-navbar > .nav-container > .toggle-button").style.border = "2.2px solid var(--navbarbordercolor)";
         isMenuVisible = true;
     } else {
         // Hide the .navbar-menu element, rotate the image, and adjust the border size
         document.querySelector(".mobile-navbar > .menu").style.display = "none";
-        document.querySelector(".mobile-navbar > .container > .toggle-button > img").style.transform = "rotate(0deg)";
-        document.querySelector(".mobile-navbar > .container > .toggle-button").style.border = "1px solid var(--navbarbordercolor)";
+        document.querySelector(".mobile-navbar > .nav-container > .toggle-button > img").style.transform = "rotate(0deg)";
+        document.querySelector(".mobile-navbar > .nav-container > .toggle-button").style.border = "1px solid var(--navbarbordercolor)";
         isMenuVisible = false;
     }
 });
