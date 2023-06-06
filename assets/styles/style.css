@@ -83,7 +83,7 @@
 #fifths-page-project-Container{
     display: flex;
 }
-.nav-container {
+.container {
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -132,7 +132,7 @@ h2 {
 }
 
 .card .card-link-wrapper {
-    margin-top: auto;
+    margin-top: -9px;
 }
 
 .card .card-link {
@@ -143,6 +143,7 @@ h2 {
     padding: 6px 12px;
     border-radius: 8px;
     transition: background 0.2s;
+    margin-top: 5px;
 }
 
 .card:hover .card-link {
@@ -289,17 +290,18 @@ h2 {
     /* fifths page */
     .fifths-page{
         display: flex;
-        height: 700px;
+        height: 100%;
     }
     iframe{
-        width: 75vw;
+        width: 68vw;
     }
 
-    .nav-container{
+    .container{
         width: 85vw;
     }
     .card {
-        flex-basis: 72vw;
+        flex-basis: 70vw;
+        height: 100%;
     }
 
     .card:not(:last-child) {
