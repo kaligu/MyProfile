@@ -79,13 +79,9 @@
 }
 #fifths-page-Assignment-Container{
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 #fifths-page-project-Container{
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .cards {
@@ -99,12 +95,12 @@
 .card {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 10px;
     background: var(--white);
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
     scroll-snap-align: start;
-    transition: all 0.2s;
+    transition: all 0.8s;
 }
 
 .card:not(:last-child) {
@@ -121,8 +117,7 @@
 }
 
 .card .card-content {
-    margin: 20px 0;
-    max-width: 85%;
+    max-width: 95%;
 }
 
 .card .card-link-wrapper {
@@ -134,7 +129,7 @@
     text-decoration: none;
     color: white;
     background: var(--red);
-    padding: 6px 12px;
+    padding: 6px 6px;
     border-radius: 8px;
     transition: background 0.2s;
 }
@@ -167,18 +162,26 @@
 .card:not(:last-child) {
     margin-right: 20px;
 }
-.fifths-page-assignment-header > p{
+
+.fifths-page-assignment-header >  p:nth-child(1){
     font-family: 'IBM Plex Sans', sans-serif;
     color: rgb(130, 130, 130);
     font-size: 55px;
     font-weight: 600;
 }
-.fifths-page-project-header > p{
+.fifths-page-assignment-header > p:nth-child(2){
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: rgb(130, 130, 130);
+    font-size: 40px;
+    font-weight: 400;
+}
+.fifths-page-project-header > p:nth-child(1){
     font-family: 'IBM Plex Sans', sans-serif;
     color: rgb(130, 130, 130);
     font-size: 55px;
     font-weight: 600;
 }
+
 
 /* mobile view */
 @media (min-width:300px) and (max-width:664px)  {
@@ -283,8 +286,40 @@
     }
 
     /*  fifth page  */
+    /* fifths page */
     .fifths-page{
-        width: 98vw;
+        display: flex;
+        width:100vw;
+        height: 1900px;
+    }
+    .fifths-page-assignment-header >  p:nth-child(1){
+        font-size: 40px;
+        margin-left: 21px;
+        margin-top: 42px;
+    }
+    .fifths-page-assignment-header >  p:nth-child(2){
+        font-size: 20px;
+        margin-left: 39px;
+        margin-top: -19px;
+        width: 250px;
+    }
+    .cardholder-assignment{
+        margin-left: -252px;
+        margin-top: 172px;
+    }
+    .cards{
+        width: 85vw;
+    }
+    .fifths-page-project-header >  p:nth-child(1){
+        display: flex;
+        font-size: 40px;
+        margin-left: -365px;
+        margin-top: 936px;
+    }
+    .cardholder-project{
+        display: flex;
+        margin-left: -551px;
+        margin-top: 962px;
     }
 
 }
@@ -450,7 +485,7 @@
         align-items: center;
         justify-content: space-between;
         background-color: var(--navbarcolor);
-        width: 99vw;
+        width: 100vw;
         height: 80px;
         opacity: 0.85;
     }
@@ -528,7 +563,7 @@
     .first-page{
         display: flex;
         justify-content: center;
-        width: 99vw;
+        width: 100vw;
         height: 821px;
     }
     .first-page >div > .sentence-1{
@@ -569,24 +604,33 @@
 
     /* fifths page */
     .fifths-page{
-        width:99vw;
+        display: flex;
+        width:100vw;
         height: 1900px;
     }
-    .fifths-page-assignment-header{
-        margin-left: 45%;
-        margin-top: 87px;
+    .fifths-page-assignment-header >  p:nth-child(1){
+        margin-left: 43%;
+        margin-top: 51px;
     }
-    .fifths-page-project-header{
-        margin-left: 0;
-        margin-top: 0;
+    .fifths-page-assignment-header >  p:nth-child(2){
+        margin-left: 73px;
+        margin-top: 0px;
+        width: 800px;
     }
-    #fifths-page-Assignment-Container{
+    .cardholder-assignment{
+        margin-left: -802px;
+        margin-top: 244px;
+    }
+    .cards{
         width: 80vw;
-        margin-left: -35vw;
     }
-    #fifths-page-project-Container{
-        width: 80vw;
-        margin-left: -34vw;
+    .fifths-page-project-header >  p:nth-child(1){
+        margin-left: -305%;
+        margin-top: 1053px;
+    }
+    .cardholder-project{
+        margin-left: -1122px;
+        margin-top: 1103px;
     }
 
 }
