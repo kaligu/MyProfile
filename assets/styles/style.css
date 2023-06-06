@@ -186,7 +186,7 @@ h2 {
 /* sixths page */
 .sixths-page{
     display: flex;
-    background-image: url('assets/pictures/back.gif');
+    background-image: url('assets/pictures/dotsbackr.gif');
     background-size: cover;
     background-repeat: no-repeat;
 }
