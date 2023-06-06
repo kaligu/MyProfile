@@ -291,12 +291,15 @@ h2 {
         display: flex;
         height: 700px;
     }
+    iframe{
+        width: 75vw;
+    }
 
     .nav-container{
         width: 85vw;
     }
     .card {
-        flex-basis: calc(50% - -170px);
+        flex-basis: 72vw;
     }
 
     .card:not(:last-child) {
