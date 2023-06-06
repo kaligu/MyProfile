@@ -130,6 +130,7 @@
 }
 
 .card .card-link {
+    margin-top: 4px;
     display: inline-block;
     text-decoration: none;
     color: black;
