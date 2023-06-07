@@ -68,6 +68,30 @@
     color: rgb(164, 164, 164);
 }
 
+/* Second page */
+.seconds-page{
+    width: 100vw;
+    height: 900px;
+    background-color: green;
+    padding-top: 1px;
+}
+
+/* Third page */
+.third-page{
+    width: 100vw;
+    height: 900px;
+    background-color: #a9dba9;
+    padding-top: 1px;
+}
+
+/* Fourth page */
+.fourth-page{
+    width: 100vw;
+    height: 900px;
+    background-color: #d3a100;
+    padding-top: 1px;
+}
+
 /* fifths page */
 .fifths-page{
     display: flex;
@@ -251,7 +275,7 @@ h2 {
     margin-top: -9px;
 }
 
-.sixths-page-card .fifths-page-card-link {
+.sixths-page-card .sixths-page-card-link {
     display: inline-block;
     text-decoration: none;
     color: white;
@@ -262,7 +286,7 @@ h2 {
     margin-top: 5px;
 }
 
-.sixths-page-card:hover .fifths-page-card-link {
+.sixths-page-card:hover .sixths-page-card-link {
     background: var(--darkred);
 }
 
@@ -296,6 +320,21 @@ h2 {
     font-weight: 400;
 }
 
+/* Seventh page */
+.seventh-page{
+    width: 100vw;
+    height: 900px;
+    background-color: #5e3823;
+    padding-top: 1px;
+}
+
+/* Eighth page */
+.eighth-page{
+    width: 100vw;
+    height: 900px;
+    background-color: #5e5c5a;
+    padding-top: 1px;
+}
 
 
 /* mobile view */
@@ -321,7 +360,7 @@ h2 {
         display: flex;
         width: 120px;
         height: 45px;
-        margin-left: -3px;
+        margin-left: 6px;
         border: 1px solid var(--navbarbordercolor);
     }
     .mobile-navbar > .nav-container > .logo > img{
@@ -333,7 +372,7 @@ h2 {
            height: 40px;
            border: 1px solid var(--navbarbordercolor);
            background-color: var(--navbarcolor);
-           margin-right: 25px;
+           margin-right: 5px;
        }
     .mobile-navbar > .nav-container > .toggle-button > img{
         background-color: var(--navbarcolor);
@@ -359,11 +398,13 @@ h2 {
         width: 198px;
         height: 345px;
         margin-left: 2px;
-        margin-top: 110px;
+        margin-top: 144px;
     }
     .avatar > img{
-        width: 198px;
-        height: 345px;
+        width: 346px;
+        height: 428px;
+        margin-left: -63px;
+        margin-top: -34px;
     }
     .first-page{
         width: 100vw;
@@ -388,7 +429,7 @@ h2 {
         width: 92vw;
         height: 130px;
         margin-left: -277px;
-        margin-top: 689px;
+        margin-top: 747px;
         font-size: 20px;
         background-color: rgba(174, 92, 0, 0.65);
     }
@@ -573,46 +614,45 @@ h2 {
     }
 
     /* fifths page */
-    .fifths-page-cards::-webkit-scrollbar {
-        height: 10px;
-    }
     .fifths-page{
         display: flex;
-        width:100vw;
-        height: 1900px;
+        height: 100%;
     }
-    .fifths-page-assignment-header >  p:nth-child(1){
-        font-size: 40px;
-        margin-left: 21px;
-        margin-top: 42px;
+    iframe{
+        width: 72vw;
     }
-    .fifths-page-assignment-header >  p:nth-child(2){
-        font-size: 20px;
-        margin-left: 39px;
-        margin-top: -19px;
-        width: 250px;
-    }
-    .cardholder-assignment{
-        margin-left: -252px;
-        margin-top: 172px;
+
+    .fifths-page-container{
+        width: 85vw;
     }
     .fifths-page-card {
-        flex-basis: calc(80% - 60px);
+        flex-basis: 72vw;
+        height: 100%;
     }
 
     .fifths-page-card:not(:last-child) {
         margin-right: 20px;
     }
-    .fifths-page-project-header >  p:nth-child(1){
+
+    /* sixths page */
+    .sixths-page{
         display: flex;
-        font-size: 40px;
-        margin-left: -365px;
-        margin-top: 936px;
+        height: 100%;
     }
-    .cardholder-project{
-        display: flex;
-        margin-left: -551px;
-        margin-top: 962px;
+    iframe{
+        width: 72vw;
+    }
+
+    .sixths-page-container{
+        width: 85vw;
+    }
+    .sixths-page-card {
+        flex-basis: 72vw;
+        height: 100%;
+    }
+
+    .sixths-page-card:not(:last-child) {
+        margin-right: 20px;
     }
 }
 
@@ -751,32 +791,43 @@ h2 {
     /* fifths page */
     .fifths-page{
         display: flex;
-        width:100vw;
-        height: 1900px;
+        height: 100%;
     }
-    .fifths-page-assignment-header >  p:nth-child(1){
-        margin-left: 43%;
-        margin-top: 51px;
+    iframe{
+        width: 72vw;
     }
-    .fifths-page-assignment-header >  p:nth-child(2){
-        margin-left: 73px;
-        margin-top: 0px;
-        width: 800px;
+
+    .fifths-page-container{
+        width: 85vw;
     }
-    .cardholder-assignment{
-        margin-left: -802px;
-        margin-top: 244px;
+    .fifths-page-card {
+        flex-basis: 72vw;
+        height: 100%;
     }
-    .fifths-page-cards{
-        width: 80vw;
+
+    .fifths-page-card:not(:last-child) {
+        margin-right: 20px;
     }
-    .fifths-page-project-header >  p:nth-child(1){
-        margin-left: -305%;
-        margin-top: 1053px;
+
+    /* sixths page */
+    .sixths-page{
+        display: flex;
+        height: 100%;
     }
-    .cardholder-project{
-        margin-left: -1122px;
-        margin-top: 1103px;
+    iframe{
+        width: 72vw;
+    }
+
+    .sixths-page-container{
+        width: 85vw;
+    }
+    .sixths-page-card {
+        flex-basis: 72vw;
+        height: 100%;
+    }
+
+    .sixths-page-card:not(:last-child) {
+        margin-right: 20px;
     }
 
 }
