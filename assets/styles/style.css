@@ -39,6 +39,10 @@
     font-weight: 600;
 }
 .first-page >div > .sentence-2{
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
     font-family: 'IBM Plex Sans', sans-serif;
     color: #FFE3B3;
     font-weight: 400;
@@ -401,9 +405,9 @@ h2 {
         margin-top: 144px;
     }
     .avatar > img{
-        width: 346px;
-        height: 428px;
-        margin-left: -63px;
+        width: 508px;
+        height: 521px;
+        margin-left: -92px;
         margin-top: -34px;
     }
     .first-page{
@@ -411,7 +415,7 @@ h2 {
         height: 837px;
     }
     .first-page >div > .sentence-1{
-        margin-left: -196px;
+        margin-left: 10%;
         margin-top: 50px;
         font-size: 25px;
     }
@@ -429,7 +433,7 @@ h2 {
         width: 92vw;
         height: 130px;
         margin-left: -277px;
-        margin-top: 747px;
+        margin-top: 812px;
         font-size: 20px;
         background-color: rgba(174, 92, 0, 0.65);
     }
@@ -658,6 +662,11 @@ h2 {
 
 /* Dekstop or laptop view */
 @media (min-width:992px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
     /* nav bar */
     .mobile-navbar{
         display: none;
@@ -736,55 +745,144 @@ h2 {
         color: white;
         border: 2.2px solid var(--navbarbordercolor);
     }
-    .avatar{
-        width: 19vw;
-        height: 345px;
-        margin-left: -9vw;
-        margin-top:-40px;
+    /*.avatar{*/
+    /*    width: 19vw;*/
+    /*    height: 345px;*/
+    /*    margin-left: -9vw;*/
+    /*    margin-top:-40px;*/
+    /*}*/
+    /*.avatar > img{*/
+    /*    width: 329px;*/
+    /*    height: 611px;*/
+    /*}*/
+    /*.first-page{*/
+    /*    display: flex;*/
+    /*    justify-content: center;*/
+    /*    width: 100vw;*/
+    /*    height: 821px;*/
+    /*}*/
+    /*.first-page >div > .sentence-1{*/
+    /*    margin-left: 155px;*/
+    /*    margin-top: 191px;*/
+    /*    font-size: 35px;*/
+    /*}*/
+    /*.first-page >div > .sentence-2{*/
+    /*    margin-left: -34px;*/
+    /*    margin-top: 116px;*/
+    /*    font-size: 132px;*/
+    /*    font-weight:600;*/
+    /*}*/
+    /*.first-page >div > .sentence-3{*/
+    /*    margin-left: -369px;*/
+    /*    margin-top: 256px;*/
+    /*    font-size: 132px;*/
+    /*    font-weight:600;*/
+    /*}*/
+    /*.first-page >div > .sentence-4{*/
+    /*    width: 54vw;*/
+    /*    max-width: 700px;*/
+    /*    height: 130px;*/
+    /*    margin-left: -582px;*/
+    /*    margin-top: 660px;*/
+    /*    font-size: 20px;*/
+    /*    background-color: rgba(174, 92, 0, 0.65);*/
+    /*}*/
+    /*.first-page >div > .sentence-4 > p:nth-child(1){*/
+    /*    margin-top: 5px;*/
+    /*    font-size: 40px;*/
+    /*}*/
+    /*.first-page >div > .sentence-4 > p:nth-child(2){*/
+    /*    margin-top: -20px;*/
+    /*    font-size: 27px;*/
+    /*}*/
+
+    .fp-avatar{
+        height: 25em;
+        min-width: 10em;
+        min-height: 10em;
     }
-    .avatar > img{
-        width: 329px;
-        height: 611px;
-    }
-    .first-page{
-        display: flex;
-        justify-content: center;
+    .fp {
+        min-width: 890px;/* minimum size of first page */
+        height: 100vh; /* Set the height of the container to the full viewport height */
         width: 100vw;
-        height: 821px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        background-image: url('assets/pictures/ezgif.com-gif-maker (2).gif');
+        background-size: cover;
+        background-repeat: no-repeat;
+        backdrop-filter: blur(80%);
     }
-    .first-page >div > .sentence-1{
-        margin-left: 155px;
-        margin-top: 191px;
-        font-size: 35px;
+    .fp-container{
+        height: 600px;
+        width: 970px;
+        border-radius: 2em;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+          "avatar sentens";
+        justify-items: center; /* Horizontally center the grid items */
+        align-items: center; /* Vertically center the grid items */
+
+        background-image: url('assets/pictures/fotor_2023-6-8_14_18_51.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: -3px;
+        background-position-y: -8px;
+
     }
-    .first-page >div > .sentence-2{
-        margin-left: -34px;
-        margin-top: 116px;
-        font-size: 132px;
-        font-weight:600;
+
+    .fp-avatar > img{
+        width: 100%;
+        height: 100%;
     }
-    .first-page >div > .sentence-3{
-        margin-left: -369px;
-        margin-top: 256px;
-        font-size: 132px;
-        font-weight:600;
+    .fp-avatar {
+        grid-area: avatar;
+        align-self: center;
+        justify-self: start;
+        margin-left: 6rem;
+        transition: transform 1s ease-in-out; /* Add a transition effect to the transform property */
     }
-    .first-page >div > .sentence-4{
-        width: 54vw;
-        max-width: 700px;
-        height: 130px;
-        margin-left: -582px;
-        margin-top: 660px;
-        font-size: 20px;
-        background-color: rgba(174, 92, 0, 0.65);
+
+    .fp-avatar:hover {
+        transform: scale(1.2); /* Apply a scale transformation on hover */
     }
-    .first-page >div > .sentence-4 > p:nth-child(1){
-        margin-top: 5px;
-        font-size: 40px;
+
+    .fp-sentens{
+        grid-area: sentens;
+        align-self: center; /* Align the .fp-avatar item to the end of its grid area */
+        justify-self: start; /* Align the .fp-avatar item to the end horizontally */
     }
-    .first-page >div > .sentence-4 > p:nth-child(2){
-        margin-top: -20px;
-        font-size: 27px;
+    .fp-sen_1_2{
+        grid-area: sen-1_2;
+        margin-top: 2rem;
+    }
+    .fp-sen_1{
+        color: white;
+    }
+    .fp-sen_2{
+        font-family: 'IBM Plex Sans', sans-serif;
+        color: #FFE3B3;
+        font-weight: 400;
+        font-size: 5em;
+    }
+    /*contact linked icons*/
+    .fp-con_links{
+        grid-area: con_links;
+        display: flex;
+        flex-direction: row;
+    }
+    .fp-sen_3{
+        margin-top: 2rem;
+        grid-area: sen-3;
+        color: white;
+        background-color: red;
+        height: 5em;
     }
 
 
