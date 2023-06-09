@@ -5,19 +5,22 @@
     --navbarcolor: #304250;
     --navbarmenumobile: rgba(82, 45, 45, 0.6);
     --navbarbordercolor: #c4c4c4;
-    --red: #c7a37d;
+    --red: #997559;
     --darkred: #c46803;
     --platinum: #ffffff;
     --black: #ffffff;
     --white: #3d5161;
     --thumb: #c9c9c9;
 
-    margin: 0;
-    padding: 0;
+
 }
 
 /* Mobile devices */
 @media (min-width:320px) and (max-width:600px)  {
+    *{
+        margin: 0;
+        padding: 0;
+    }
     /* nav bar */
     .mobile-navbar > .menu{
         display: none;;
@@ -776,6 +779,10 @@
 
 /* iPads, Tablets */
 @media (min-width:600px) and (max-width:992px)  {
+    *{
+        margin: 0;
+        padding: 0;
+    }
     /* nav bar */
     .mobile-navbar{
         display: none;
@@ -1563,6 +1570,10 @@
 
 /* Dekstop or laptop view */
 @media (min-width:992px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
     /* nav bar */
     .mobile-navbar{
         display: none;
@@ -2099,7 +2110,7 @@
         background: var(--thumb);
     }
 
-    .fip-cardset-1-card-iframe{
+    .fip-cardset-1-card-content > iframe{
         width: 30em;
         height: 25em;
     }
@@ -2264,14 +2275,28 @@
         background: var(--darkred);
     }
 
-
     .sip-cardset-1-cards::-webkit-scrollbar-track {
         background: var(--thumb);
     }
 
-    .sip-cardset-1-card-content > iframe{
+    .sip-cardset-1-card-content-iframe{
         width: 30em;
         height: 25em;
+    }
+    .sip-iframefigma{
+        width: 30em;
+        height: 12em;
+    }
+
+    .sip-cardset-1-card-content > img{
+        width: 30em;
+        height: 20em;
+    }
+
+    .sip-cardset-1-card-content > p{
+        color: white;
+        font-size: 1.5em;
+        font-weight: 1;
     }
 
     .sip-cardset-1-card:not(:last-child) {
