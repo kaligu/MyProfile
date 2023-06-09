@@ -4,7 +4,7 @@
     /* navbar background color */
     --navbarcolor: #304250;
     --navbarmenumobile: rgba(82, 45, 45, 0.6);
-    --navbarbordercolor: #c4c4c4;
+    --navbarbordercolor: #484747;
     --red: #997559;
     --darkred: #c46803;
     --platinum: #ffffff;
@@ -885,7 +885,7 @@
     }
     .fp-container{
         height: 800px;
-        width: 95%;
+        width: 70%;
         border-radius: 2em;
 
         margin-top: 0;
@@ -905,7 +905,7 @@
     }
     .fp-container-box{
         height: 700px;
-        width: 94%;
+        width: 80%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
@@ -951,12 +951,12 @@
     .fp-sen_1{
         color: white;
         font-family: 'Work Sans', sans-serif;
-        font-size: 3em;
+        font-size: 2em;
     }
     .fp-sen_2{
         font-family: 'Space Grotesk', sans-serif;
         font-weight: 400;
-        font-size: 8em;
+        font-size: 6em;
     }
     .fp-sen_2 > p:nth-child(1){
         color: #FFE3B3;
@@ -984,14 +984,14 @@
 
     .fp-sen_3 > p:nth-child(1){
         font-family: 'Orbitron', sans-serif;
-        font-size: 3em;
+        font-size: 2em;
         color: #d8ffff;
     }
 
     .fp-sen_3 > p:nth-child(2){
         margin-top: 1rem;
         font-family: 'Changa', sans-serif;
-        font-size: 2em;
+        font-size: 1.5em;
         color: white;
     }
 
@@ -1588,13 +1588,14 @@
         justify-content: space-between;
         background-color: var(--navbarcolor);
         width: 100vw;
-        height: 82px;
+        height: 4em;
         opacity: 0.85;
     }
     .tab-navbar > .nav-container > .logo{
         width: 135px;
-        height: 60px;
+        height:3em;
         margin-left: 14px;
+        margin-top: -0.5rem;
         border: 1px solid var(--navbarbordercolor);
         box-shadow: 4px 4px;
     }
@@ -1637,19 +1638,20 @@
 
     .tab-navbar > .nav-container > .links > li > a {
         color: white;
-        font-size: 23px;
+        font-size: 1.2em;
     }
     .tab-navbar > .nav-container > button {
         margin-right: 32px;
-        font-size: 23px;
+        font-size: 1.2em;
     }
     .tab-navbar > .nav-container > button {
         width: 135px;
-        height: 60px;
-        background-color: #6b6666;
-        color: #ffffff;
+        height: 2.6em;
+        background-color: #00dafe;
+        color: #3b0f0f;
         border: 1px solid var(--navbarbordercolor);
         box-shadow: 2px 2px #808080;
+        font-weight: 700;
     }
 
     .tab-navbar > .nav-container > button:hover {
@@ -1660,7 +1662,7 @@
 
     /* first page */
     .fp {
-        min-height:954px;/* minimum size of first page */
+        min-height:700px;/* minimum size of first page */
         height: 100vh; /* Set the height of the container to the full viewport height */
         width: 100%;
 
@@ -1675,11 +1677,11 @@
         backdrop-filter: blur(80%);
     }
     .fp-container{
-        height: 800px;
-        width: 95%;
+        height: 600px;
+        width: 80%;
         border-radius: 2em;
 
-        margin-top: 0;
+        margin-top:2rem;
 
 
         /* From https://css.glass */
@@ -1695,8 +1697,8 @@
 
     }
     .fp-container-box{
-        height: 700px;
-        width: 94%;
+        height: 500px;
+        width: 93%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
@@ -1720,7 +1722,7 @@
         align-self: center;
         justify-self: center;
 
-        height: 40em;
+        height: 28em;
         min-width: 10em;
 
         transition: transform 1s ease-in-out; /* Add a transition effect to the transform property */
@@ -1737,17 +1739,17 @@
     }
     .fp-sen_1_2{
         grid-area: sen-1_2;
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
     .fp-sen_1{
         color: white;
         font-family: 'Work Sans', sans-serif;
-        font-size: 3em;
+        font-size: 2em;
     }
     .fp-sen_2{
         font-family: 'Space Grotesk', sans-serif;
         font-weight: 400;
-        font-size: 8em;
+        font-size: 5em;
     }
     .fp-sen_2 > p:nth-child(1){
         color: #FFE3B3;
@@ -1767,7 +1769,7 @@
     }
 
     .fp-sen_3{
-        margin-top: 5rem;
+        margin-top: 2.5rem;
         grid-area: sen-3;
         /*background-color: red;*/
         /*height: 5em;*/
@@ -1775,7 +1777,7 @@
 
     .fp-sen_3 > p:nth-child(1){
         font-family: 'Orbitron', sans-serif;
-        font-size: 3em;
+        font-size: 2.5em;
         color: #d8ffff;
     }
 
@@ -1804,7 +1806,7 @@
     }
     .secp-container{
         height: 61em;
-        width: 80%;
+        width: 70%;
         border-radius: 2em;
 
         margin-top: 0;
@@ -1859,7 +1861,7 @@
     }
     .thp-container{
         height: 61em;
-        width: 80%;
+        width: 70%;
         border-radius: 2em;
 
         margin-top: 0;
@@ -1915,7 +1917,7 @@
     }
     .fop-container{
         height: 61em;
-        width: 80%;
+        width: 70%;
         border-radius: 2em;
 
         margin-top: 0;
@@ -1970,7 +1972,7 @@
     }
     .fip-container{
         height: 61em;
-        width: 80%;
+        width: 70%;
         border-radius: 2em;
 
         margin-top: 0;
@@ -2030,7 +2032,7 @@
     }
     .fip-cardset-1{
         grid-area: fip-cardset-1;
-        width: 70vw;
+        width: 60vw;
         margin-top: 3rem;
     }
 
@@ -2064,7 +2066,7 @@
     }
 
     .fip-cardset-1-card .fip-cardset-1-card-title {
-        font-size: 2em;
+        font-size: 1.3em;
         color: white;
     }
 
@@ -2081,7 +2083,7 @@
         display: inline-block;
         text-decoration: none;
         color: #0e0e0e;
-        font-size: 1.8em;
+        font-size: 1.2em;
         background: var(--red);
         padding: 6px 12px;
         border-radius: 8px;
@@ -2111,8 +2113,8 @@
     }
 
     .fip-cardset-1-card-content > iframe{
-        width: 30em;
-        height: 25em;
+        width: 25em;
+        height: 20em;
     }
 
     .fip-cardset-1-card:not(:last-child) {
@@ -2138,7 +2140,7 @@
     }
     .sip-container{
         height: 61em;
-        width: 80%;
+        width: 70%;
         border-radius: 2em;
 
         margin-top: 0;
@@ -2193,12 +2195,12 @@
         margin-top: 5rem;
     }
     .sip-header-1 > p{
-        font-size: 2.5em;
+        font-size: 2em;
         font-weight: 500;
     }
     .sip-cardset-1{
         grid-area: sip-cardset-1;
-        width: 70vw;
+        width: 60vw;
         margin-top: 1rem;
     }
 
@@ -2233,7 +2235,7 @@
     }
 
     .sip-cardset-1-card .sip-cardset-1-card-title {
-        font-size: 2em;
+        font-size: 1.3em;
         color: white;
     }
 
@@ -2250,7 +2252,7 @@
         display: inline-block;
         text-decoration: none;
         color: #0e0e0e;
-        font-size: 1.8em;
+        font-size: 1.2em;
         background: var(--red);
         padding: 6px 12px;
         border-radius: 8px;
@@ -2280,23 +2282,22 @@
     }
 
     .sip-cardset-1-card-content-iframe{
-        width: 30em;
-        height: 25em;
+        width: 25em;
+        height: 20em;
     }
     .sip-iframefigma{
-        width: 30em;
-        height: 12em;
+        width: 25em;
+        height: 10em;
     }
 
     .sip-cardset-1-card-content > img{
-        width: 30em;
-        height: 25em;
+        width: 25em;
+        height: 20em;
     }
 
     .sip-cardset-1-card-content > p{
         color: white;
-        font-size: 1.5em;
-        font-weight: 1;
+        font-size: 1em;
     }
 
     .sip-cardset-1-card:not(:last-child) {
@@ -2321,7 +2322,7 @@
     }
     .sep-container{
         height: 61em;
-        width: 80%;
+        width: 70%;
         border-radius: 2em;
 
         margin-top: 0;
