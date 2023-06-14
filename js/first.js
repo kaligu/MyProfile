@@ -11,6 +11,8 @@
 //     });
 // });
 
+
+
 var isMenuVisible = false;
 
 $('.mobile-navbar > .nav-container > .toggle-button').click(function() {
@@ -28,4 +30,22 @@ $('.mobile-navbar > .nav-container > .toggle-button').click(function() {
         isMenuVisible = false;
     }
 });
+
+$(document).ready(function() {
+    var texts = ["Software Developer", "Software Designer", "Content Writter"];
+    var index = 0;
+
+    setInterval(function() {
+        $('.fp-sen_3 > p:nth-child(1)').text(texts[index]);
+        index = (index + 1) % texts.length;
+    }, 2000);
+});
+
+$(document).ready(function() {
+    setInterval(function() {
+        $('.fp-avatar').toggleClass('flipped');
+    }, 8000);
+});
+
+
 

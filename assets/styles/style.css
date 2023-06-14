@@ -15,6 +15,33 @@
 
 }
 
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #000000;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar
+{
+    width: 10px;
+    background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background-color: #039cbf;
+    border-radius: 10px;
+    background-image: -webkit-linear-gradient(0deg,
+    rgba(255, 255, 255, 0.5) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0.5) 75%,
+    transparent 75%,
+    transparent)
+}
+
 /* Mobile devices */
 @media (min-width:320px) and (max-width:600px)  {
     *{
@@ -783,6 +810,7 @@
         margin: 0;
         padding: 0;
     }
+
     /* nav bar */
     .mobile-navbar{
         display: none;
@@ -1570,10 +1598,13 @@
 
 /* Dekstop or laptop view */
 @media (min-width:992px){
+
     *{
         margin: 0;
         padding: 0;
+
     }
+
     /* nav bar */
     .mobile-navbar{
         display: none;
@@ -1686,7 +1717,7 @@
 
         /* From https://css.glass */
 
-        background: rgba(43, 62, 77, 0.63);
+        background: rgba(43, 62, 77, 0.75);
         box-shadow: 0 4px 30px rgba(59, 109, 200, 0.2);
         -webkit-backdrop-filter: blur(10.1px);
         border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1714,18 +1745,25 @@
     }
 
     .fp-avatar > img{
-        width: 90%;
-        height: 100%;
+        margin-left: 2rem;
+        width: 80%;
+        height: 99%;
     }
     .fp-avatar {
         grid-area: avatar;
         align-self: center;
         justify-self: center;
-
+        background-color: rgba(106, 32, 144, 0.64);
         height: 28em;
-        min-width: 10em;
+        width: 20em;
+        min-width: 12em;
+        border-radius: 1em;
 
-        transition: transform 1s ease-in-out; /* Add a transition effect to the transform property */
+    }
+
+    .fp-avatar.flipped {
+        transition: transform 2.5s; /* Add a transition effect to the transform property */
+        transform:rotateY(360deg); /* Rotate the element 180 degrees on the Y-axis */
     }
 
     .fp-avatar:hover {
@@ -1739,12 +1777,12 @@
     }
     .fp-sen_1_2{
         grid-area: sen-1_2;
-        margin-top: 1rem;
+        margin-top: 0rem;
     }
     .fp-sen_1{
-        color: white;
+        color: #c0c0c0;
         font-family: 'Work Sans', sans-serif;
-        font-size: 2em;
+        font-size: 1.6em;
     }
     .fp-sen_2{
         font-family: 'Space Grotesk', sans-serif;
@@ -1752,15 +1790,15 @@
         font-size: 5em;
     }
     .fp-sen_2 > p:nth-child(1){
-        color: #FFE3B3;
+        color: #fdae72;
     }
     .fp-sen_2 > p:nth-child(2){
-        color: #ffffff;
+        color:#ffffff ;
     }
     /*contact linked icons*/
     .fp-con_links {
-        width: 22em;
-        margin-top: 1rem;
+        width: 13.4em;
+        margin-top: 0.5rem;
         grid-area: con_links;
         display: flex;
         flex-direction: row;
@@ -1769,10 +1807,8 @@
     }
 
     .fp-sen_3{
-        margin-top: 2.5rem;
+        margin-top: 3.5rem;
         grid-area: sen-3;
-        /*background-color: red;*/
-        /*height: 5em;*/
     }
 
     .fp-sen_3 > p:nth-child(1){
@@ -1782,10 +1818,10 @@
     }
 
     .fp-sen_3 > p:nth-child(2){
-        margin-top: 1rem;
+        margin-top: 0.6rem;
         font-family: 'Changa', sans-serif;
-        font-size: 2em;
-        color: white;
+        font-size: 1.7em;
+        color: #efe3ff;
     }
 
     /* second page */
@@ -1972,7 +2008,7 @@
     }
     .fip-container{
         height: 61em;
-        width: 70%;
+        width: 80%;
         border-radius: 2em;
 
         margin-top: 0;
@@ -2000,7 +2036,7 @@
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas:
           "fip-main-header"
-          "fip-header-1"
+          "fip-rotate-cardset-1"
           "fip-cardset-1";
         justify-items: center; /* Horizontally center the grid items */
         align-items: center; /* Vertically center the grid items */
@@ -2032,7 +2068,7 @@
     }
     .fip-cardset-1{
         grid-area: fip-cardset-1;
-        width: 60vw;
+        width: 70vw;
         margin-top: 3rem;
     }
 
@@ -2066,7 +2102,7 @@
     }
 
     .fip-cardset-1-card .fip-cardset-1-card-title {
-        font-size: 1.3em;
+        font-size: 2em;
         color: white;
     }
 
@@ -2083,7 +2119,7 @@
         display: inline-block;
         text-decoration: none;
         color: #0e0e0e;
-        font-size: 1.2em;
+        font-size: 1.8em;
         background: var(--red);
         padding: 6px 12px;
         border-radius: 8px;
@@ -2112,14 +2148,77 @@
         background: var(--thumb);
     }
 
-    .fip-cardset-1-card-content > iframe{
-        width: 25em;
-        height: 20em;
+    .fip-cardset-1-card-iframe{
+        width: 30em;
+        height: 25em;
     }
 
     .fip-cardset-1-card:not(:last-child) {
         margin-right: 20px;
         margin-bottom: 20px;
+    }
+
+    /*===========ROTATE ANIMATION=======*/
+    .fip-rotate-cardset-1 {
+        grid-area: fip-rotate-cardset-1;
+    }
+
+    #animationContainer {
+        /*background: linear-gradient(to right, red, blue);*/
+        /*height: 70vh;*/
+        /*height: 532px;*/
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+        /*top: 150px;*/
+    }
+
+    .slider {
+        position: relative;
+        width: 150px;
+        height: 100px;
+        transform-style: preserve-3d;
+        animation: rotate 30s linear infinite;
+    }
+
+
+    @keyframes rotate {
+        0% {
+            transform: perspective(1000px) rotateY(0deg);
+        }
+        100% {
+            transform: perspective(1000px) rotateY(360deg)
+        }
+    }
+
+    .slider span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform-origin: center;
+        transform-style: preserve-3d;
+        transform: rotateY(calc(var(--i) * 45deg)) translateZ(350px);
+    }
+
+    .slider span img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+        transition: 2s;
+        -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, #0004);
+    }
+
+    .slider span:hover img {
+        transform: translateY(-50px) scale(1.2);
     }
 
     /* six page */
@@ -2371,4 +2470,5 @@
         height: 100%;
         filter: brightness(110%);
     }
+
 }
