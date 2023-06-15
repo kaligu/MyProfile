@@ -31,13 +31,31 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Changa&display=swap" rel="stylesheet">
 
-      <link rel="stylesheet" href="assets/styles/style.css">
-      <link href="assets/styles/fullLoading.css" rel="stylesheet">
-      <!-- snow falling css -->
-      <script src="js/snowstorm.js"></script>
+
+      <link href="fullLoading.css" rel="stylesheet">
+
 
   </head>
   <body>
+
+
+  <div class="SplashScreen-container" id="loadingContainer">
+      <div class="SplashScreen">
+          <div class="SplashScreen-img-container">
+              <img class="SplashScreen-img" src="bar-loader.gif" alt="">
+          </div>
+          <div class="SplashScreen-header-container">
+              <p class="SplashScreen-header" id="loadingText">Loading</p>
+          </div>
+      </div>
+  </div>
+  <script>
+      var loader = document.getElementById("loadingContainer");
+
+      window.addEventListener("load",function (){
+          loader.style.display="none";
+      })
+  </script>
 
   <!-- mouse icon set -->
   <style>
@@ -49,17 +67,8 @@
       }
   </style>
 
-  <!-- loading first screen -->
-<!--  <div class="SplashScreen-container" id="loadingContainer">-->
-<!--      <div class="SplashScreen">-->
-<!--          <div class="SplashScreen-img-container">-->
-<!--              <img class="SplashScreen-img" src="" alt="">-->
-<!--          </div>-->
-<!--          <div class="SplashScreen-header-container">-->
-<!--              <p class="SplashScreen-header" id="loadingText">Loading</p>-->
-<!--          </div>-->
-<!--      </div>-->
-<!--  </div>-->
+
+
 <!--  <script>-->
 <!--      const loadingText = document.getElementById('loadingText');-->
 <!--      const texts = ["Loading", "Loading.", "Loading..", "Loading..."];-->
@@ -71,7 +80,9 @@
 <!--      }-->
 <!--      setInterval(changeText, 1000);-->
 <!--  </script>-->
-
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <!-- snow falling css -->
+  <script src="js/snowstorm.js"></script>
 
   <main>
 
