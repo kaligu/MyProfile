@@ -1932,7 +1932,7 @@
 
     .secp-btn-links:hover,
     .secp-btn-links:focus {
-        background-color: rgba(0, 200, 255, 0.45);
+        background-color: rgba(0, 200, 255, 0.71);
         transition: all 500ms;
     }
 
