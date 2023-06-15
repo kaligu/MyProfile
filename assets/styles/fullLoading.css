@@ -1,0 +1,42 @@
+.SplashScreen-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 500;
+}
+
+.SplashScreen {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+
+    background: linear-gradient(to left, #004e68, #002a31);
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "SplashScreen-img-container"
+    "SplashScreen-header-container";
+    justify-items: center; /* Horizontally center the grid items */
+    align-items: center; /* Vertically center the grid items */
+}
+
+.SplashScreen-img-container{
+    grid-area: SplashScreen-img-container;
+    width: 400px;
+    height: 400px;
+}
+
+.SplashScreen-header-container{
+    grid-area: SplashScreen-header-container;
+    color: white;
+    font-size: 30px;
+}
+.SplashScreen-img{
+    width: 100%;
+    height: 100%;
+}
