@@ -1033,7 +1033,7 @@
     .fp-container {
         height: 810px;
         width: 98%;
-        border-radius: 2em;
+        border-radius: 1.5em;
 
         margin-top: -2rem;
 
@@ -1069,7 +1069,7 @@
         z-index: 1;
         left: 50%;
         margin-left: -7.5em;
-        margin-top: 14em;
+        margin-top: 13em;
 
         height: 23em;
         width: 15em;
@@ -1084,7 +1084,7 @@
     }
 
     .fp-avatar:hover {
-        transform: scale(1.2); /* Apply a scale transformation on hover */
+        transform: scale(1.1); /* Apply a scale transformation on hover */
     }
 
     .fp-sentens{
@@ -1095,18 +1095,18 @@
         position: absolute;
         z-index: 1;
         left: 50%;
-        margin-left: -7.3em;
+        margin-left: -8.5em;
         margin-top: 1rem;
     }
     .fp-sen_1{
         color: #c0c0c0;
         font-family: 'Work Sans', sans-serif;
-        font-size: 1em;
+        font-size: 1.5em;
     }
     .fp-sen_2{
         font-family: 'Space Grotesk', sans-serif;
         font-weight: 400;
-        font-size: 3em;
+        font-size: 3.5em;
     }
     .fp-sen_2 > p:nth-child(1){
         color: #ffc193;
@@ -1119,10 +1119,10 @@
         position: absolute;
         z-index: 1;
         left: 50%;
-        margin-left: -7.5em;
+        margin-left: -8.5em;
         margin-top: 38rem;
 
-        width: 13.4em;
+        width: 17em;
 
         display: flex;
         flex-direction: row;
@@ -1132,7 +1132,7 @@
     .fp-sen_3 > p:nth-child(1){
         font-family: 'Orbitron', sans-serif;
         color: #d8ffff;
-        font-size: 1.4em;
+        font-size: 1.5em;
     }
     .fp-sen_3 > p:nth-child(2){
         color: #efe3ff;
@@ -1144,7 +1144,7 @@
         position: absolute;
         z-index: 1;
         left: 50%;
-        margin-left: -8em;
+        margin-left: -8.5em;
         margin-top: 42rem;
         height: 10em;
     }
@@ -1153,7 +1153,7 @@
     .secp{
         display: none;
     }
-    .
+
 
 }
 
@@ -1218,7 +1218,7 @@
         justify-items: center; /* Horizontally center the grid items */
         align-items: center; /* Vertically center the grid items */
 
-        border-width: 0.7em ;
+        border-width: 0.5em ;
         border-style: solid;
         border-image: linear-gradient(to right, #00f3f3, darkorchid) 1;
         box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
@@ -1275,7 +1275,7 @@
     }
     /*contact linked icons*/
     .fp-con_links {
-        width: 13.4em;
+        width:18em;
         margin-top: 0.5rem;
         display: flex;
         flex-direction: row;
@@ -1299,15 +1299,9 @@
     }
 
     /* reorganise second page for tab view */
-    .secp-content > p{
+    .secp {
         display: none;
-    }
-    #secp-mini-details-circles-holder{
-        display: none;
-    }
-    .secp-btn{
-        display: none;
-    }
+}
 }
 
 /* Dekstop or laptop view */
@@ -1429,7 +1423,7 @@
     }
     /*contact linked icons*/
     .fp-con_links {
-        width: 13.4em;
+        width: 16.4em;
         margin-top: 0.5rem;
         display: flex;
         flex-direction: row;
@@ -1453,6 +1447,248 @@
         font-family: 'Changa', sans-serif;
         font-size: 1.7em;
     }
+
+    /* second page */
+    .secp {
+        min-height: 43em;/* minimum size of first page */
+        height: 100vh; /* Set the height of the container to the full viewport height */
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        background-image: url('assets/pictures/ezgif.com-gif-maker (2).gif');
+        background-size: cover;
+        background-repeat: no-repeat;
+        backdrop-filter: blur(80%);
+    }
+    .secp-container{
+        height:38em;
+        width: 70%;
+        border-radius: 2em;
+
+        margin-top: 2rem;
+
+        /* From https://css.glass */
+
+        background: rgba(22, 37, 56, 0.81);
+        box-shadow: 0 4px 30px rgba(59, 109, 200, 0.2);
+        -webkit-backdrop-filter: blur(10.1px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .secp-container-box{
+        height: 35em;
+        width: 94%;
+
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "secp-main-header secp-main-header"
+        "secp-img-container secp-mini-details-circles-holder"
+        "secp-img-container secp-content"
+        "secp-img-container secp-btn";
+        justify-items: center; /* Horizontally center the grid items */
+        align-items: center; /* Vertically center the grid items */
+
+        border-width: 0.7em 0 0 0;
+        border-style: solid;
+        border-image: linear-gradient(to right, #00f3f3, darkorchid) 1;
+        /*box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);*/
+    }
+
+    .secp-main-header{
+        grid-area: secp-main-header;
+        color: #6d6b6b;
+        margin-top: -5rem;
+    }
+    .secp-main-header > p{
+        font-size: 3em;
+        font-weight: 800;
+    }
+    .secp-img-container{
+        grid-area: secp-img-container;
+        margin-top: -10rem;
+    }
+    .secp-content{
+        grid-area: secp-content;
+        color: white;
+        margin-top: -14rem;
+    }
+    .secp-btn{
+        grid-area: secp-btn;
+        margin-top: -12rem;
+        align-items: center;
+        justify-content: center; /* Optional: to horizontally center the content */
+    }
+
+    #secp-btn-download {
+        text-decoration: none;
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        background: transparent;
+        padding: 0.4rem 0.6rem;
+        font-size: 1.1rem;
+        border-radius: 10px;
+        border: #00c8ff solid 2px;
+        transition: all 500ms;
+    }
+    .secp-btn-links {
+        background: transparent;
+        padding: 0.4rem 0.6rem;
+        font-size: 1.1rem;
+        border-radius: 10px;
+        border: rgba(0, 200, 255, 0.91) solid 2px;
+        transition: all 500ms;
+    }
+
+    #secp-btn-download:hover,
+    #secp-btn-download:focus {
+        background-color: #00c8ff;
+        transition: all 500ms;
+    }
+
+    .secp-btn-links:hover,
+    .secp-btn-links:focus {
+        background-color: rgba(0, 200, 255, 0.71);
+        transition: all 500ms;
+    }
+
+    #secp-mini-details-circles-holder {
+        grid-area: secp-mini-details-circles-holder;
+        margin-top: -4rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .secp-mini-details-circles {
+        text-align: center;
+        border-radius: 50%;
+        box-shadow: 0px 0px 18px 2px rgba(15, 149, 180, 0.91);
+        border: rgba(0, 157, 193, 0.91) solid 1px;
+        background-color: #25252f;
+        height: 130px;
+        width: 130px;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #secp-mini-details-circle-One {
+        position: absolute;
+        z-index: 4;
+
+        margin-top: -9rem;
+        margin-left: 4%;
+        animation: moveOne 6s infinite alternate-reverse ease-out;
+        transition: all 900ms;
+    }
+
+    #secp-mini-details-circle-Two {
+        position: absolute;
+        z-index: 3;
+
+        margin-top: -9rem;
+        margin-left: -17%;
+        animation: moveTwo 5s infinite alternate-reverse ease-out;
+        transition: all 900ms;
+    }
+
+    #secp-mini-details-circle-One:hover,
+    #secp-mini-details-circle-One:focus,
+    #secp-mini-details-circle-Two:hover,
+    #secp-mini-details-circle-Two:focus{
+        transform: rotateZ(360deg);
+        transition: all 900ms;
+    }
+
+    @keyframes moveOne {
+        0% {
+            margin-top: -9rem;
+            margin-left: 4%;
+        }
+
+        100% {
+            margin-top: -9rem;
+            margin-left: -17%;
+        }
+    }
+
+    @keyframes moveTwo {
+        0% {
+            margin-top: -9rem;
+            margin-left: -17%;
+        }
+
+        100% {
+            margin-top: -9rem;
+            margin-left: 4%;
+        }
+    }
+
+    .secp-mini-details-circle-heading1 {
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-weight: 600;
+        font-size: 1.5rem;
+        display: block;
+    }
+
+    .secp-mini-details-circle-heading2 {
+        color: white;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-size: 1rem;
+    }
+
+    .secp-flip-card {
+        perspective: 1000px; /* Creates a 3D perspective for the flip */
+        width: 280px; /* Adjust the width as needed */
+        height: 410px; /* Adjust the height as needed */
+        background-color: #006196;
+    }
+
+    .secp-card-image{
+        width: 280px; /* Adjust the width as needed */
+        height: 410px; /* Adjust the height as needed */
+    }
+
+    .secp-flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d; /* Enables 3D transformations */
+        transition: transform 1.6s;
+    }
+
+    .secp-flip-card:hover .secp-flip-card-inner {
+        transform: rotateY(180deg); /* Flips the card on hover */
+    }
+
+    .secp-flip-card-front,
+    .secp-flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: blue;
+        backface-visibility: hidden; /* Hides the back face of the card */
+    }
+
+    .secp-flip-card-back {
+        transform: rotateY(180deg); /* Initially hides the back side of the card */
+        /* Add styles for the back side here */
+    }
+
 
 
 }
