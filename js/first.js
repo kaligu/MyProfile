@@ -11,10 +11,10 @@
 //     });
 // });
 
-// //for the Loading Window
-// $(window).on('load',function () {
-//     $('#loadingContainer').fadeOut(1000);
-// })
+//for the Loading Window
+$(window).on('load',function () {
+    $('#loadingContainer').fadeOut(1000);
+})
 
 
 

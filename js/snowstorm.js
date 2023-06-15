@@ -669,7 +669,3 @@ var snowStorm = (function(window, document) {
 
 }(window, document));
 
-
-setTimeout(function (){
-  $('#loadingContainer').fadeOut(1000);
-},3000)
