@@ -12,10 +12,18 @@
 // });
 
 //for the Loading Window
-$(window).on('load',function () {
-    $('#loadingContainer').fadeOut(1100);
-})
-
+// $(window).on('load',function () {
+//     $('#loadingContainer').fadeOut(1100);
+// })
+// const loadingText = document.getElementById('loadingText');
+// const texts = ["Loading", "Loading.", "Loading..", "Loading...", "Loading....", "Loading....."];
+// let index = 0;
+//
+// function changeText() {
+//     loadingText.textContent = texts[index];
+//     index = (index + 1) % texts.length;
+// }
+// setInterval(changeText, 1000);
 
 
 var isMenuVisible = false;

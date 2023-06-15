@@ -8,6 +8,8 @@
       <link rel="icon" type="image/x-icon" href="assets/icons/iconavatar.png">
       <title>Kaligu</title>
 
+      <link href="fullLoading.css" rel="stylesheet">
+      <link rel="stylesheet" href="assets/styles/style.css">
       <script src="js/snowstorm.js" rel="snow"></script>
       <!-- import icon web - fontawsome -->
       <script src="https://kit.fontawesome.com/8696ac4d6e.js" crossorigin="anonymous"></script>
@@ -33,14 +35,15 @@
       <link href="https://fonts.googleapis.com/css2?family=Changa&display=swap" rel="stylesheet">
 
 
-      <link href="fullLoading.css" rel="stylesheet">
-      <link rel="stylesheet" href="assets/styles/style.css">
+
+
       <!-- snow falling css -->
 
 
   </head>
   <body>
 
+  <!-- preloading screen -->
   <div class="SplashScreen-container" id="loadingContainer">
       <div class="SplashScreen">
           <div class="SplashScreen-img-container">
@@ -51,6 +54,28 @@
           </div>
       </div>
   </div>
+  <script>
+      //change loading text (without jquery)
+      const loadingText = document.getElementById('loadingText');
+      const texts = ["Loading", "Loading.", "Loading..", "Loading...", "Loading....", "Loading....."];
+      let index = 0;
+      function changeText() {
+          loadingText.textContent = texts[index];
+          index = (index + 1) % texts.length;
+      }
+      setInterval(changeText, 1000);
+
+      //for the Loading Window (without jquery)
+      window.addEventListener('load', function() {
+          var loadingContainer = document.getElementById('loadingContainer');
+          loadingContainer.style.transition = 'opacity 1.1s';
+          loadingContainer.style.opacity = '0';
+          setTimeout(function() {
+              loadingContainer.style.display = 'none';
+          }, 1100);
+      });
+  </script>
+
 
   <!-- mouse icon set -->
   <style>
@@ -213,339 +238,339 @@
           </div>
       </section>
 
-      <!-- five page-->
-      <section class="fip">
-          <div class="fip-container">
-              <div class="fip-container-box">
-                  <div class="fip-main-header">
-                      <p>Projects</p>
-                  </div>
-                  <section id="animationContainer" class="fip-rotate-cardset-1">
+<!--      &lt;!&ndash; five page&ndash;&gt;-->
+<!--      <section class="fip">-->
+<!--          <div class="fip-container">-->
+<!--              <div class="fip-container-box">-->
+<!--                  <div class="fip-main-header">-->
+<!--                      <p>Projects</p>-->
+<!--                  </div>-->
+<!--                  <section id="animationContainer" class="fip-rotate-cardset-1">-->
 
-                      <div class="slider">
-                          <span style="--i:1;"><iframe class="" width="150" height="100" src="https://www.youtube.com/embed/-jR0mhCpOMY" title="Car Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></span>
-                          <span style="--i:2;"><iframe class="" width="150" height="100" src="https://www.youtube.com/embed/-jR0mhCpOMY" title="Car Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></span>
-                          <span style="--i:3;"><iframe class="" width="150" height="100" src="https://www.youtube.com/embed/-jR0mhCpOMY" title="Car Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></span>
-                          <span style="--i:4;"><iframe class="" width="150" height="100" src="https://www.youtube.com/embed/-jR0mhCpOMY" title="Car Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></span>
-                          <span style="--i:5;"><iframe class="" width="150" height="100" src="https://www.youtube.com/embed/-jR0mhCpOMY" title="Car Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></span>
-                          <span style="--i:6 ;"><iframe class="" width="150" height="100" src="https://www.youtube.com/embed/-jR0mhCpOMY" title="Car Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></span>
-                          <span style="--i:7 ;"><iframe class="" width="150" height="100" src="https://www.youtube.com/embed/-jR0mhCpOMY" title="Car Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></span>
-                          <span style="--i:8 ;"><iframe class="" width="150" height="100" src="https://www.youtube.com/embed/-jR0mhCpOMY" title="Car Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></span>
-                      </div>
+<!--                      <div class="slider">-->
+<!--                          <span style="&#45;&#45;i:1;"><iframe class="" width="150" height="100" src="https://www.youtube.com/embed/-jR0mhCpOMY" title="Car Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></span>-->
+<!--                          <span style="&#45;&#45;i:2;"><iframe class="" width="150" height="100" src="https://www.youtube.com/embed/-jR0mhCpOMY" title="Car Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></span>-->
+<!--                          <span style="&#45;&#45;i:3;"><iframe class="" width="150" height="100" src="https://www.youtube.com/embed/-jR0mhCpOMY" title="Car Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></span>-->
+<!--                          <span style="&#45;&#45;i:4;"><iframe class="" width="150" height="100" src="https://www.youtube.com/embed/-jR0mhCpOMY" title="Car Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></span>-->
+<!--                          <span style="&#45;&#45;i:5;"><iframe class="" width="150" height="100" src="https://www.youtube.com/embed/-jR0mhCpOMY" title="Car Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></span>-->
+<!--                          <span style="&#45;&#45;i:6 ;"><iframe class="" width="150" height="100" src="https://www.youtube.com/embed/-jR0mhCpOMY" title="Car Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></span>-->
+<!--                          <span style="&#45;&#45;i:7 ;"><iframe class="" width="150" height="100" src="https://www.youtube.com/embed/-jR0mhCpOMY" title="Car Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></span>-->
+<!--                          <span style="&#45;&#45;i:8 ;"><iframe class="" width="150" height="100" src="https://www.youtube.com/embed/-jR0mhCpOMY" title="Car Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></span>-->
+<!--                      </div>-->
 
-                  </section>
-                  <div class="fip-cardset-1">
-                      <ul class="fip-cardset-1-cards">
+<!--                  </section>-->
+<!--                  <div class="fip-cardset-1">-->
+<!--                      <ul class="fip-cardset-1-cards">-->
 
-                          <li class="fip-cardset-1-card">
-                              <div>
-                                  <h3 class="fip-cardset-1-card-title">CSS - Assignment 02<br>   Case 06</h3>
-                                  <div class="fip-cardset-1-card-content">
-                                      <iframe class="fip-cardset-1-card-iframe" width="200" height="200" src="https://www.youtube.com/embed/-jR0mhCpOMY" title="Car Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                      <p></p>
-                                  </div>
-                              </div>
-                              <div class="fip-cardset-1-card-link-wrapper">
-                                  <a href="" class="fip-cardset-1-card-link">Source Code</a>
-                                  <a href="" class="fip-cardset-1-card-link" target="_blank">Output View</a>
-                              </div>
-                          </li>
+<!--                          <li class="fip-cardset-1-card">-->
+<!--                              <div>-->
+<!--                                  <h3 class="fip-cardset-1-card-title">CSS - Assignment 02<br>   Case 06</h3>-->
+<!--                                  <div class="fip-cardset-1-card-content">-->
+<!--                                      <iframe class="fip-cardset-1-card-iframe" width="200" height="200" src="https://www.youtube.com/embed/-jR0mhCpOMY" title="Car Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
+<!--                                      <p></p>-->
+<!--                                  </div>-->
+<!--                              </div>-->
+<!--                              <div class="fip-cardset-1-card-link-wrapper">-->
+<!--                                  <a href="" class="fip-cardset-1-card-link">Source Code</a>-->
+<!--                                  <a href="" class="fip-cardset-1-card-link" target="_blank">Output View</a>-->
+<!--                              </div>-->
+<!--                          </li>-->
 
-                          <li class="fip-cardset-1-card">
-                              <div>
-                                  <h3 class="fip-cardset-1-card-title">CSS - Assignment 02<br>   Case 06</h3>
-                                  <div class="fip-cardset-1-card-content">
-                                      <iframe class="fip-cardset-1-card-iframe" width="200" height="200" src="https://www.youtube.com/embed/-jR0mhCpOMY" title="Car Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                      <p></p>
-                                  </div>
-                              </div>
-                              <div class="fip-cardset-1-card-link-wrapper">
-                                  <a href="" class="fip-cardset-1-card-link">Source Code</a>
-                                  <a href="" class="fip-cardset-1-card-link" target="_blank">Output View</a>
-                              </div>
-                          </li>
+<!--                          <li class="fip-cardset-1-card">-->
+<!--                              <div>-->
+<!--                                  <h3 class="fip-cardset-1-card-title">CSS - Assignment 02<br>   Case 06</h3>-->
+<!--                                  <div class="fip-cardset-1-card-content">-->
+<!--                                      <iframe class="fip-cardset-1-card-iframe" width="200" height="200" src="https://www.youtube.com/embed/-jR0mhCpOMY" title="Car Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
+<!--                                      <p></p>-->
+<!--                                  </div>-->
+<!--                              </div>-->
+<!--                              <div class="fip-cardset-1-card-link-wrapper">-->
+<!--                                  <a href="" class="fip-cardset-1-card-link">Source Code</a>-->
+<!--                                  <a href="" class="fip-cardset-1-card-link" target="_blank">Output View</a>-->
+<!--                              </div>-->
+<!--                          </li>-->
 
-                          <li class="fip-cardset-1-card">
-                              <div>
-                                  <h3 class="fip-cardset-1-card-title">CSS - Assignment 02<br>   Case 06</h3>
-                                  <div class="fip-cardset-1-card-content">
-                                      <iframe class="fip-cardset-1-card-iframe" width="200" height="200" src="https://www.youtube.com/embed/-jR0mhCpOMY" title="Car Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                      <p></p>
-                                  </div>
-                              </div>
-                              <div class="fip-cardset-1-card-link-wrapper">
-                                  <a href="" class="fip-cardset-1-card-link">Source Code</a>
-                                  <a href="" class="fip-cardset-1-card-link" target="_blank">Output View</a>
-                              </div>
-                          </li>
+<!--                          <li class="fip-cardset-1-card">-->
+<!--                              <div>-->
+<!--                                  <h3 class="fip-cardset-1-card-title">CSS - Assignment 02<br>   Case 06</h3>-->
+<!--                                  <div class="fip-cardset-1-card-content">-->
+<!--                                      <iframe class="fip-cardset-1-card-iframe" width="200" height="200" src="https://www.youtube.com/embed/-jR0mhCpOMY" title="Car Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
+<!--                                      <p></p>-->
+<!--                                  </div>-->
+<!--                              </div>-->
+<!--                              <div class="fip-cardset-1-card-link-wrapper">-->
+<!--                                  <a href="" class="fip-cardset-1-card-link">Source Code</a>-->
+<!--                                  <a href="" class="fip-cardset-1-card-link" target="_blank">Output View</a>-->
+<!--                              </div>-->
+<!--                          </li>-->
 
-                      </ul>
-                  </div>
-              </div>
-          </div>
-      </section>
+<!--                      </ul>-->
+<!--                  </div>-->
+<!--              </div>-->
+<!--          </div>-->
+<!--      </section>-->
 
-      <!-- six page-->
-      <section class="sip">
-          <div class="sip-container">
-              <div class="sip-container-box">
-                  <div class="sip-main-header">
-                      <p>Assignments</p>
-                  </div>
-                  <div class="sip-header-1">
-                      <p >* IJSE - ITS1119 - Internet Technologies Module Assignments</p>
-                  </div>
-                  <div class="sip-cardset-1">
-                      <ul class="sip-cardset-1-cards">
-                          <li class="sip-cardset-1-card">
-                              <div>
-                                  <h3 class="sip-cardset-1-card-title">HTML CSS JS Assignment <br>Kitt's light bar</h3>
-                                  <div class="sip-cardset-1-card-content">
-                                      <iframe class="sip-cardset-1-card-content-iframe" src="https://www.youtube.com/embed/oF0Mmrc3-p0" title="KITT vs JS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                      <p></p>
-                                  </div>
-                              </div>
-                              <div class="sip-cardset-1-card-link-wrapper">
-                                  <a href="https://github.com/kaligu/IJSE-IT-Module-Assignment-Kiit-s-light.git" class="sip-cardset-1-card-link" target="_blank">Source Code</a>
-                                  <a href="ijse-it-module/ijse-assignments/css/IJSE-IT-Module-Assignment-Kiit-s-light/light.html" class="sip-cardset-1-card-link" target="_blank">Output View</a>
-                              </div>
-                          </li>
-                          <li class="sip-cardset-1-card">
-                              <div>
-                                  <h3 class="sip-cardset-1-card-title">HTML CSS JS Assignment <br>POS Web Application</h3>
-                                  <div class="sip-cardset-1-card-content">
-                                      <img src="ijse-it-module/ijse-assignments/assets/sspos.jpg" alt="logo" >
-                                      <p></p>
-                                  </div>
-                              </div>
-                              <div class="sip-cardset-1-card-link-wrapper">
-                                  <a href="https://github.com/kaligu/IJSE-IT-Module-Assignment-Pos-Web_Application.git" class="sip-cardset-1-card-link" target="_blank">Source Code</a>
-                                  <a href="https://kaligu.github.io/IJSE-IT-Module-Assignment-Pos-Web_Application/" class="sip-cardset-1-card-link" target="_blank">Output View</a>
-                              </div>
-                          </li>
-                          <li class="sip-cardset-1-card">
-                              <div>
-                                  <h3 class="sip-cardset-1-card-title">HTML CSS JS Assignment <br>Calculator</h3>
-                                  <div class="sip-cardset-1-card-content">
-                                      <img src="ijse-it-module/ijse-assignments/assets/calimg.jpg" alt="logo" >
-                                      <p></p>
-                                  </div>
-                              </div>
-                              <div class="sip-cardset-1-card-link-wrapper">
-                                  <a href="https://github.com/kaligu/IJSE-IT-Module-Assignment-Calculator.git" class="sip-cardset-1-card-link" target="_blank">Source Code</a>
-                                  <a href="ijse-it-module/ijse-assignments/css/IJSE-IT-Module-Assignment-Calculator/cal.html" class="sip-cardset-1-card-link" target="_blank">Output View</a>
-                              </div>
-                          </li>
-                          <li class="sip-cardset-1-card">
-                              <div>
-                                  <h3 class="sip-cardset-1-card-title">CSS - Assignment 02<br>   Case 06</h3>
-                                  <div class="sip-cardset-1-card-content">
-                                      <iframe class="sip-cardset-1-card-content-iframe" src="https://www.youtube.com/embed/-jR0mhCpOMY" title="Car Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                      <p></p>
-                                  </div>
-                              </div>
-                              <div class="sip-cardset-1-card-link-wrapper">
-                                  <a href="https://github.com/kaligu/IJSE-IT-Module-Assignment-CSS-02/tree/45927abb01c04625b3a822b79e9a0f8ed78b20b2/case06" class="sip-cardset-1-card-link" target="_blank">Source Code</a>
-                                  <a href="ijse-it-module/ijse-assignments/css/IJSE-IT-Module-Assignment-CSS-02/case06/index.html" class="sip-cardset-1-card-link" target="_blank">Output View</a>
-                              </div>
-                          </li>
+<!--      &lt;!&ndash; six page&ndash;&gt;-->
+<!--      <section class="sip">-->
+<!--          <div class="sip-container">-->
+<!--              <div class="sip-container-box">-->
+<!--                  <div class="sip-main-header">-->
+<!--                      <p>Assignments</p>-->
+<!--                  </div>-->
+<!--                  <div class="sip-header-1">-->
+<!--                      <p >* IJSE - ITS1119 - Internet Technologies Module Assignments</p>-->
+<!--                  </div>-->
+<!--                  <div class="sip-cardset-1">-->
+<!--                      <ul class="sip-cardset-1-cards">-->
+<!--                          <li class="sip-cardset-1-card">-->
+<!--                              <div>-->
+<!--                                  <h3 class="sip-cardset-1-card-title">HTML CSS JS Assignment <br>Kitt's light bar</h3>-->
+<!--                                  <div class="sip-cardset-1-card-content">-->
+<!--                                      <iframe class="sip-cardset-1-card-content-iframe" src="https://www.youtube.com/embed/oF0Mmrc3-p0" title="KITT vs JS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
+<!--                                      <p></p>-->
+<!--                                  </div>-->
+<!--                              </div>-->
+<!--                              <div class="sip-cardset-1-card-link-wrapper">-->
+<!--                                  <a href="https://github.com/kaligu/IJSE-IT-Module-Assignment-Kiit-s-light.git" class="sip-cardset-1-card-link" target="_blank">Source Code</a>-->
+<!--                                  <a href="ijse-it-module/ijse-assignments/css/IJSE-IT-Module-Assignment-Kiit-s-light/light.html" class="sip-cardset-1-card-link" target="_blank">Output View</a>-->
+<!--                              </div>-->
+<!--                          </li>-->
+<!--                          <li class="sip-cardset-1-card">-->
+<!--                              <div>-->
+<!--                                  <h3 class="sip-cardset-1-card-title">HTML CSS JS Assignment <br>POS Web Application</h3>-->
+<!--                                  <div class="sip-cardset-1-card-content">-->
+<!--                                      <img src="ijse-it-module/ijse-assignments/assets/sspos.jpg" alt="logo" >-->
+<!--                                      <p></p>-->
+<!--                                  </div>-->
+<!--                              </div>-->
+<!--                              <div class="sip-cardset-1-card-link-wrapper">-->
+<!--                                  <a href="https://github.com/kaligu/IJSE-IT-Module-Assignment-Pos-Web_Application.git" class="sip-cardset-1-card-link" target="_blank">Source Code</a>-->
+<!--                                  <a href="https://kaligu.github.io/IJSE-IT-Module-Assignment-Pos-Web_Application/" class="sip-cardset-1-card-link" target="_blank">Output View</a>-->
+<!--                              </div>-->
+<!--                          </li>-->
+<!--                          <li class="sip-cardset-1-card">-->
+<!--                              <div>-->
+<!--                                  <h3 class="sip-cardset-1-card-title">HTML CSS JS Assignment <br>Calculator</h3>-->
+<!--                                  <div class="sip-cardset-1-card-content">-->
+<!--                                      <img src="ijse-it-module/ijse-assignments/assets/calimg.jpg" alt="logo" >-->
+<!--                                      <p></p>-->
+<!--                                  </div>-->
+<!--                              </div>-->
+<!--                              <div class="sip-cardset-1-card-link-wrapper">-->
+<!--                                  <a href="https://github.com/kaligu/IJSE-IT-Module-Assignment-Calculator.git" class="sip-cardset-1-card-link" target="_blank">Source Code</a>-->
+<!--                                  <a href="ijse-it-module/ijse-assignments/css/IJSE-IT-Module-Assignment-Calculator/cal.html" class="sip-cardset-1-card-link" target="_blank">Output View</a>-->
+<!--                              </div>-->
+<!--                          </li>-->
+<!--                          <li class="sip-cardset-1-card">-->
+<!--                              <div>-->
+<!--                                  <h3 class="sip-cardset-1-card-title">CSS - Assignment 02<br>   Case 06</h3>-->
+<!--                                  <div class="sip-cardset-1-card-content">-->
+<!--                                      <iframe class="sip-cardset-1-card-content-iframe" src="https://www.youtube.com/embed/-jR0mhCpOMY" title="Car Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
+<!--                                      <p></p>-->
+<!--                                  </div>-->
+<!--                              </div>-->
+<!--                              <div class="sip-cardset-1-card-link-wrapper">-->
+<!--                                  <a href="https://github.com/kaligu/IJSE-IT-Module-Assignment-CSS-02/tree/45927abb01c04625b3a822b79e9a0f8ed78b20b2/case06" class="sip-cardset-1-card-link" target="_blank">Source Code</a>-->
+<!--                                  <a href="ijse-it-module/ijse-assignments/css/IJSE-IT-Module-Assignment-CSS-02/case06/index.html" class="sip-cardset-1-card-link" target="_blank">Output View</a>-->
+<!--                              </div>-->
+<!--                          </li>-->
 
-                          <li class="sip-cardset-1-card">
-                              <div>
-                                  <h3 class="sip-cardset-1-card-title">CSS - Assignment 02<br>   Case 05</h3>
-                                  <div class="sip-cardset-1-card-content">
-                                      <iframe class="sip-cardset-1-card-content-iframe" src="https://www.youtube.com/embed/CXxMkZuSC1U" title="CSS Slider Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                      <p></p>
-                                  </div>
-                              </div>
-                              <div class="sip-cardset-1-card-link-wrapper">
-                                  <a href="https://github.com/kaligu/IJSE-IT-Module-Assignment-CSS-02/tree/45927abb01c04625b3a822b79e9a0f8ed78b20b2/case05" class="sip-cardset-1-card-link" target="_blank">Source Code</a>
-                                  <a href="ijse-it-module/ijse-assignments/css/IJSE-IT-Module-Assignment-CSS-02/case05/index.html" class="sip-cardset-1-card-link" target="_blank">Output View</a>
-                              </div>
-                          </li>
-                            <li class="sip-cardset-1-card">
-                              <div>
-                                <h3 class="sip-cardset-1-card-title">CSS - Assignment 02<br>   Case 04</h3>
-                                <div class="sip-cardset-1-card-content">
-                                  <iframe class="sip-cardset-1-card-content-iframe" src="https://www.youtube.com/embed/HjdNIYts2Bk" title="Water Drop Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                  <p></p>
-                                </div>
-                              </div>
-                              <div class="sip-cardset-1-card-link-wrapper">
-                                <a href="https://github.com/kaligu/IJSE-IT-Module-Assignment-CSS-02/tree/45927abb01c04625b3a822b79e9a0f8ed78b20b2/case04" class="sip-cardset-1-card-link" target="_blank">Source Code</a>
-                                <a href="ijse-it-module/ijse-assignments/css/IJSE-IT-Module-Assignment-CSS-02/case04/index.html" class="sip-cardset-1-card-link"
-                                   target="_blank">Output View</a>
-                              </div>
-                            </li>
-                            <li class="sip-cardset-1-card">
-                              <div>
-                                <h3 class="sip-cardset-1-card-title">CSS - Assignment 02<br>   Case 03</h3>
-                                <div class="sip-cardset-1-card-content">
-                                  <iframe class="sip-cardset-1-card-content-iframe" src="https://www.youtube.com/embed/5oB5X7IARvQ" title="Keyframe Basic" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                  <p></p>
-                                </div>
-                              </div>
-                              <div class="sip-cardset-1-card-link-wrapper">
-                                <a href="https://github.com/kaligu/IJSE-IT-Module-Assignment-CSS-02/tree/45927abb01c04625b3a822b79e9a0f8ed78b20b2/case03" class="sip-cardset-1-card-link" target="_blank">Source Code</a>
-                                <a href="ijse-it-module/ijse-assignments/css/IJSE-IT-Module-Assignment-CSS-02/case03/index.html" class="sip-cardset-1-card-link" target="_blank">Output View</a>
-                              </div>
-                            </li>
-                            <li class="sip-cardset-1-card">
-                              <div>
-                                <h3 class="sip-cardset-1-card-title">CSS - Assignment 02<br>   Case 02</h3>
-                                <div class="sip-cardset-1-card-content">
-                                  <iframe class="sip-cardset-1-card-content-iframe" src="https://www.youtube.com/embed/tptNcgMxHGg" title="CSS Transition- Circle Transition" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                  <p></p>
-                                </div>
-                              </div>
-                              <div class="sip-cardset-1-card-link-wrapper">
-                                <a href="https://github.com/kaligu/IJSE-IT-Module-Assignment-CSS-02/tree/45927abb01c04625b3a822b79e9a0f8ed78b20b2/case02" class="sip-cardset-1-card-link" target="_blank">Source Code</a>
-                                <a href="ijse-it-module/ijse-assignments/css/IJSE-IT-Module-Assignment-CSS-02/case02/index.html" class="sip-cardset-1-card-link" target="_blank">Output View</a>
-                              </div>
-                            </li>
-                            <li class="sip-cardset-1-card">
-                              <div>
-                                <h3 class="sip-cardset-1-card-title">CSS - Assignment 02<br>   Case 01</h3>
-                                <div class="sip-cardset-1-card-content">
-                                  <iframe class="sip-cardset-1-card-content-iframe" src="https://www.youtube.com/embed/XxBGmU2Ewa8" title="CSS Transition - Navigation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                  <p></p>
-                                </div>
-                              </div>
-                              <div class="sip-cardset-1-card-link-wrapper">
-                                <a href="https://github.com/kaligu/IJSE-IT-Module-Assignment-CSS-02/tree/45927abb01c04625b3a822b79e9a0f8ed78b20b2/case01" class="sip-cardset-1-card-link" target="_blank">Source Code</a>
-                                <a href="ijse-it-module/ijse-assignments/css/IJSE-IT-Module-Assignment-CSS-02/case01/index.html" class="sip-cardset-1-card-link" target="_blank">Output View</a>
-                              </div>
-                            </li>
-                            <li class="sip-cardset-1-card">
-                              <div>
-                                <h3 class="sip-cardset-1-card-title">CSS - Assignment 01<br>   Case 06</h3>
-                                <div class="sip-cardset-1-card-content">
-                                  <img src="ijse-it-module/ijse-assignments/assets/6.jpg" alt="logo" >
-                                  <p></p>
-                                </div>
-                              </div>
-                              <div class="sip-cardset-1-card-link-wrapper">
-                                <a href="https://github.com/kaligu/IJSE-IT-Module-Assignment-CSS-01/tree/d73b45831f9be006ccd57f7a8433e7938b6ef4ed/case06" class="sip-cardset-1-card-link" target="_blank">Source Code</a>
-                                <a href="ijse-it-module/ijse-assignments/css/IJSE-IT-Module-Assignment-CSS-01/case06/case06.html" class="sip-cardset-1-card-link" target="_blank">Output View</a>
-                              </div>
-                            </li>
-                            <li class="sip-cardset-1-card">
-                              <div>
-                                <h3 class="sip-cardset-1-card-title">CSS - Assignment 01<br>   Case 05</h3>
-                                <div class="sip-cardset-1-card-content">
-                                  <img src="ijse-it-module/ijse-assignments/assets/5.jpg" alt="logo">
-                                  <p></p>
-                                </div>
-                              </div>
-                              <div class="sip-cardset-1-card-link-wrapper">
-                                <a href="https://github.com/kaligu/IJSE-IT-Module-Assignment-CSS-01/tree/d73b45831f9be006ccd57f7a8433e7938b6ef4ed/case05" class="sip-cardset-1-card-link" target="_blank">Source Code</a>
-                                <a href="ijse-it-module/ijse-assignments/css/IJSE-IT-Module-Assignment-CSS-01/case05/html.html" class="sip-cardset-1-card-link" target="_blank">Output View</a>
-                              </div>
-                            </li>
-                            <li class="sip-cardset-1-card">
-                              <div>
-                                <h3 class="sip-cardset-1-card-title">CSS - Assignment 01<br>   Case 04</h3>
-                                <div class="sip-cardset-1-card-content">
-                                  <iframe class="sip-cardset-1-card-content-iframe" src="https://www.youtube.com/embed/XnglcYJknxc" title="CSS Sticky Position" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                  <p></p>
-                                </div>
-                              </div>
-                              <div class="sip-cardset-1-card-link-wrapper">
-                                <a href="https://github.com/kaligu/IJSE-IT-Module-Assignment-CSS-01/tree/d73b45831f9be006ccd57f7a8433e7938b6ef4ed/case04" class="sip-cardset-1-card-link" target="_blank">Source Code</a>
-                                <a href="ijse-it-module/ijse-assignments/css/IJSE-IT-Module-Assignment-CSS-01/case04/html.html" class="sip-cardset-1-card-link" target="_blank">Output View</a>
-                              </div>
-                            </li>
-                            <li class="sip-cardset-1-card">
-                              <div>
-                                <h3 class="sip-cardset-1-card-title">CSS - Assignment 01<br>   Case 03</h3>
-                                <div class="sip-cardset-1-card-content">
-                                  <iframe class="sip-cardset-1-card-content-iframe" src="https://www.youtube.com/embed/qp322mFSI9c" title="CSS Fixed Layout" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                  <p></p>
-                                </div>
-                              </div>
-                              <div class="sip-cardset-1-card-link-wrapper">
-                                <a href="https://github.com/kaligu/IJSE-IT-Module-Assignment-CSS-01/tree/d73b45831f9be006ccd57f7a8433e7938b6ef4ed/case03" class="sip-cardset-1-card-link" target="_blank">Source Code</a>
-                                <a href="ijse-it-module/ijse-assignments/css/IJSE-IT-Module-Assignment-CSS-01/case03/html.html" class="sip-cardset-1-card-link" target="_blank">Output View</a>
-                              </div>
-                            </li>
-                            <li class="sip-cardset-1-card">
-                              <div>
-                                <h3 class="sip-cardset-1-card-title">CSS - Assignment 01<br>   Case 02</h3>
-                                <div class="sip-cardset-1-card-content">
-                                  <iframe class="sip-cardset-1-card-content-iframe" src="https://www.youtube.com/embed/drlPgs67aXI" title="Simple Web Layout" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                  <p></p>
-                                </div>
-                              </div>
-                              <div class="sip-cardset-1-card-link-wrapper">
-                                <a href="https://github.com/kaligu/IJSE-IT-Module-Assignment-CSS-01/tree/d73b45831f9be006ccd57f7a8433e7938b6ef4ed/case02" class="sip-cardset-1-card-link" target="_blank">Source Code</a>
-                                <a href="ijse-it-module/ijse-assignments/css/IJSE-IT-Module-Assignment-CSS-01/case02/html.html" class="sip-cardset-1-card-link" target="_blank">Output View</a>
-                              </div>
-                            </li>
-                            <li class="sip-cardset-1-card">
-                              <div>
-                                <h3 class="sip-cardset-1-card-title">CSS - Assignment 01<br>   Case 01</h3>
-                                <div class="sip-cardset-1-card-content">
-                                  <iframe class="sip-cardset-1-card-content-iframe" src="https://www.youtube.com/embed/bVa2NcYX9DE" title="CSS Layout Designing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                  <p></p>
-                                </div>
-                              </div>
-                              <div class="sip-cardset-1-card-link-wrapper">
-                                <a href="https://github.com/kaligu/IJSE-IT-Module-Assignment-CSS-01/tree/d73b45831f9be006ccd57f7a8433e7938b6ef4ed/case01" class="sip-cardset-1-card-link" target="_blank">Source Code</a>
-                                <a href="ijse-it-module/ijse-assignments/css/IJSE-IT-Module-Assignment-CSS-01/case01/html.html" class="sip-cardset-1-card-link" target="_blank">Output View</a>
-                              </div>
-                            </li>
-                            <li class="sip-cardset-1-card">
-                              <div>
-                                <h3 class="sip-cardset-1-card-title">HTML - Assignment 1</h3>
-                                <div class="sip-cardset-1-card-content">
-                                  <img src="assets/styles/assets/pictures/assignment/1.jpg" alt="logo" >
-                                  <p>Only used HTML tags and align to used HTML tables.</p>
-                                </div>
-                              </div>
-                              <div class="sip-cardset-1-card-link-wrapper">
-                                <a href="https://github.com/kaligu/IJSE-IT-Module-Assignment-HTML-01.git" class="sip-cardset-1-card-link" target="_blank">Source Code</a>
-                                <a href="ijse-it-module/ijse-assignments/html/IJSE-IT-Module-Assignment-HTML-01/assignment-1.html" class="sip-cardset-1-card-link" target="_blank">Output View</a>
-                              </div>
-                            </li>
-                          <li class="sip-cardset-1-card">
-                              <div>
-                                  <h3 class="sip-cardset-1-card-title">HTML - Implement the mockup structure</h3>
-                                  <div class="sip-cardset-1-card-content">
-                                      <img src="assets/styles/assets/pictures/assignment/profile.jpg" alt="logo">
-                                      <p>Finalize mock-up and start to Implement it and make the structure of your web site using
-                                          HTML elements.
-                                      </p>
-                                  </div>
-                              </div>
-                              <div class="sip-cardset-1-card-link-wrapper">
-                                  <a href="https://github.com/kaligu/MyProfile.git" class="sip-cardset-1-card-link" target="_blank">Source Code</a>
-                                  <a href="https://kaligu.github.io/MyProfile/" class="sip-cardset-1-card-link" target="_blank">Output View</a>
-                              </div>
-                          </li>
-                            <li class="sip-cardset-1-card">
-                              <div>
-                                <h3 class="sip-cardset-1-card-title">HTML - Portfolio Design Assignment</h3>
-                                <div class="sip-cardset-1-card-content">
-                                    <iframe class="sip-iframefigma" style="border: 1px solid rgba(0, 0, 0, 0.1);" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FBijpBCSLDyNJ1M9FaxQwxo%2FPortfolio%3Ftype%3Ddesign%26node-id%3D0%253A1%26t%3DLLu7L5cqyMaGrj14-1" allowfullscreen></iframe>
-                                  <p>Goals of Portfolio - <br>
-                                    Introduce myself and Education, Skills.
-                                    About working experience and what I currently do.
-                                    Show Contact details , Done Projects and How do contact me.
-                                    Share my achievements and projects
-                                  </p>
-                                </div>
-                              </div>
-                              <div class="sip-cardset-1-card-link-wrapper">
-                                <a href="https://drive.google.com/file/d/1zfSTwfKQwJLzGOCtMr8bZ05a2glJ9VnS/view?usp=sharing" class="sip-cardset-1-card-link" target="_blank">Wireframe View</a>
-                                <a href="https://www.gloomaps.com/HPZXNvkdd6" class="sip-cardset-1-card-link" target="_blank">Sitemap View</a>
-                                <a href="https://www.figma.com/file/BijpBCSLDyNJ1M9FaxQwxo/Portfolio?type=design&t=7pRxejOtRsDYGq7T-1" class="sip-cardset-1-card-link" target="_blank">Mockups View</a>
-                              </div>
-                            </li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-      </section>
+<!--                          <li class="sip-cardset-1-card">-->
+<!--                              <div>-->
+<!--                                  <h3 class="sip-cardset-1-card-title">CSS - Assignment 02<br>   Case 05</h3>-->
+<!--                                  <div class="sip-cardset-1-card-content">-->
+<!--                                      <iframe class="sip-cardset-1-card-content-iframe" src="https://www.youtube.com/embed/CXxMkZuSC1U" title="CSS Slider Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
+<!--                                      <p></p>-->
+<!--                                  </div>-->
+<!--                              </div>-->
+<!--                              <div class="sip-cardset-1-card-link-wrapper">-->
+<!--                                  <a href="https://github.com/kaligu/IJSE-IT-Module-Assignment-CSS-02/tree/45927abb01c04625b3a822b79e9a0f8ed78b20b2/case05" class="sip-cardset-1-card-link" target="_blank">Source Code</a>-->
+<!--                                  <a href="ijse-it-module/ijse-assignments/css/IJSE-IT-Module-Assignment-CSS-02/case05/index.html" class="sip-cardset-1-card-link" target="_blank">Output View</a>-->
+<!--                              </div>-->
+<!--                          </li>-->
+<!--                            <li class="sip-cardset-1-card">-->
+<!--                              <div>-->
+<!--                                <h3 class="sip-cardset-1-card-title">CSS - Assignment 02<br>   Case 04</h3>-->
+<!--                                <div class="sip-cardset-1-card-content">-->
+<!--                                  <iframe class="sip-cardset-1-card-content-iframe" src="https://www.youtube.com/embed/HjdNIYts2Bk" title="Water Drop Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
+<!--                                  <p></p>-->
+<!--                                </div>-->
+<!--                              </div>-->
+<!--                              <div class="sip-cardset-1-card-link-wrapper">-->
+<!--                                <a href="https://github.com/kaligu/IJSE-IT-Module-Assignment-CSS-02/tree/45927abb01c04625b3a822b79e9a0f8ed78b20b2/case04" class="sip-cardset-1-card-link" target="_blank">Source Code</a>-->
+<!--                                <a href="ijse-it-module/ijse-assignments/css/IJSE-IT-Module-Assignment-CSS-02/case04/index.html" class="sip-cardset-1-card-link"-->
+<!--                                   target="_blank">Output View</a>-->
+<!--                              </div>-->
+<!--                            </li>-->
+<!--                            <li class="sip-cardset-1-card">-->
+<!--                              <div>-->
+<!--                                <h3 class="sip-cardset-1-card-title">CSS - Assignment 02<br>   Case 03</h3>-->
+<!--                                <div class="sip-cardset-1-card-content">-->
+<!--                                  <iframe class="sip-cardset-1-card-content-iframe" src="https://www.youtube.com/embed/5oB5X7IARvQ" title="Keyframe Basic" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
+<!--                                  <p></p>-->
+<!--                                </div>-->
+<!--                              </div>-->
+<!--                              <div class="sip-cardset-1-card-link-wrapper">-->
+<!--                                <a href="https://github.com/kaligu/IJSE-IT-Module-Assignment-CSS-02/tree/45927abb01c04625b3a822b79e9a0f8ed78b20b2/case03" class="sip-cardset-1-card-link" target="_blank">Source Code</a>-->
+<!--                                <a href="ijse-it-module/ijse-assignments/css/IJSE-IT-Module-Assignment-CSS-02/case03/index.html" class="sip-cardset-1-card-link" target="_blank">Output View</a>-->
+<!--                              </div>-->
+<!--                            </li>-->
+<!--                            <li class="sip-cardset-1-card">-->
+<!--                              <div>-->
+<!--                                <h3 class="sip-cardset-1-card-title">CSS - Assignment 02<br>   Case 02</h3>-->
+<!--                                <div class="sip-cardset-1-card-content">-->
+<!--                                  <iframe class="sip-cardset-1-card-content-iframe" src="https://www.youtube.com/embed/tptNcgMxHGg" title="CSS Transition- Circle Transition" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
+<!--                                  <p></p>-->
+<!--                                </div>-->
+<!--                              </div>-->
+<!--                              <div class="sip-cardset-1-card-link-wrapper">-->
+<!--                                <a href="https://github.com/kaligu/IJSE-IT-Module-Assignment-CSS-02/tree/45927abb01c04625b3a822b79e9a0f8ed78b20b2/case02" class="sip-cardset-1-card-link" target="_blank">Source Code</a>-->
+<!--                                <a href="ijse-it-module/ijse-assignments/css/IJSE-IT-Module-Assignment-CSS-02/case02/index.html" class="sip-cardset-1-card-link" target="_blank">Output View</a>-->
+<!--                              </div>-->
+<!--                            </li>-->
+<!--                            <li class="sip-cardset-1-card">-->
+<!--                              <div>-->
+<!--                                <h3 class="sip-cardset-1-card-title">CSS - Assignment 02<br>   Case 01</h3>-->
+<!--                                <div class="sip-cardset-1-card-content">-->
+<!--                                  <iframe class="sip-cardset-1-card-content-iframe" src="https://www.youtube.com/embed/XxBGmU2Ewa8" title="CSS Transition - Navigation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
+<!--                                  <p></p>-->
+<!--                                </div>-->
+<!--                              </div>-->
+<!--                              <div class="sip-cardset-1-card-link-wrapper">-->
+<!--                                <a href="https://github.com/kaligu/IJSE-IT-Module-Assignment-CSS-02/tree/45927abb01c04625b3a822b79e9a0f8ed78b20b2/case01" class="sip-cardset-1-card-link" target="_blank">Source Code</a>-->
+<!--                                <a href="ijse-it-module/ijse-assignments/css/IJSE-IT-Module-Assignment-CSS-02/case01/index.html" class="sip-cardset-1-card-link" target="_blank">Output View</a>-->
+<!--                              </div>-->
+<!--                            </li>-->
+<!--                            <li class="sip-cardset-1-card">-->
+<!--                              <div>-->
+<!--                                <h3 class="sip-cardset-1-card-title">CSS - Assignment 01<br>   Case 06</h3>-->
+<!--                                <div class="sip-cardset-1-card-content">-->
+<!--                                  <img src="ijse-it-module/ijse-assignments/assets/6.jpg" alt="logo" >-->
+<!--                                  <p></p>-->
+<!--                                </div>-->
+<!--                              </div>-->
+<!--                              <div class="sip-cardset-1-card-link-wrapper">-->
+<!--                                <a href="https://github.com/kaligu/IJSE-IT-Module-Assignment-CSS-01/tree/d73b45831f9be006ccd57f7a8433e7938b6ef4ed/case06" class="sip-cardset-1-card-link" target="_blank">Source Code</a>-->
+<!--                                <a href="ijse-it-module/ijse-assignments/css/IJSE-IT-Module-Assignment-CSS-01/case06/case06.html" class="sip-cardset-1-card-link" target="_blank">Output View</a>-->
+<!--                              </div>-->
+<!--                            </li>-->
+<!--                            <li class="sip-cardset-1-card">-->
+<!--                              <div>-->
+<!--                                <h3 class="sip-cardset-1-card-title">CSS - Assignment 01<br>   Case 05</h3>-->
+<!--                                <div class="sip-cardset-1-card-content">-->
+<!--                                  <img src="ijse-it-module/ijse-assignments/assets/5.jpg" alt="logo">-->
+<!--                                  <p></p>-->
+<!--                                </div>-->
+<!--                              </div>-->
+<!--                              <div class="sip-cardset-1-card-link-wrapper">-->
+<!--                                <a href="https://github.com/kaligu/IJSE-IT-Module-Assignment-CSS-01/tree/d73b45831f9be006ccd57f7a8433e7938b6ef4ed/case05" class="sip-cardset-1-card-link" target="_blank">Source Code</a>-->
+<!--                                <a href="ijse-it-module/ijse-assignments/css/IJSE-IT-Module-Assignment-CSS-01/case05/html.html" class="sip-cardset-1-card-link" target="_blank">Output View</a>-->
+<!--                              </div>-->
+<!--                            </li>-->
+<!--                            <li class="sip-cardset-1-card">-->
+<!--                              <div>-->
+<!--                                <h3 class="sip-cardset-1-card-title">CSS - Assignment 01<br>   Case 04</h3>-->
+<!--                                <div class="sip-cardset-1-card-content">-->
+<!--                                  <iframe class="sip-cardset-1-card-content-iframe" src="https://www.youtube.com/embed/XnglcYJknxc" title="CSS Sticky Position" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
+<!--                                  <p></p>-->
+<!--                                </div>-->
+<!--                              </div>-->
+<!--                              <div class="sip-cardset-1-card-link-wrapper">-->
+<!--                                <a href="https://github.com/kaligu/IJSE-IT-Module-Assignment-CSS-01/tree/d73b45831f9be006ccd57f7a8433e7938b6ef4ed/case04" class="sip-cardset-1-card-link" target="_blank">Source Code</a>-->
+<!--                                <a href="ijse-it-module/ijse-assignments/css/IJSE-IT-Module-Assignment-CSS-01/case04/html.html" class="sip-cardset-1-card-link" target="_blank">Output View</a>-->
+<!--                              </div>-->
+<!--                            </li>-->
+<!--                            <li class="sip-cardset-1-card">-->
+<!--                              <div>-->
+<!--                                <h3 class="sip-cardset-1-card-title">CSS - Assignment 01<br>   Case 03</h3>-->
+<!--                                <div class="sip-cardset-1-card-content">-->
+<!--                                  <iframe class="sip-cardset-1-card-content-iframe" src="https://www.youtube.com/embed/qp322mFSI9c" title="CSS Fixed Layout" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
+<!--                                  <p></p>-->
+<!--                                </div>-->
+<!--                              </div>-->
+<!--                              <div class="sip-cardset-1-card-link-wrapper">-->
+<!--                                <a href="https://github.com/kaligu/IJSE-IT-Module-Assignment-CSS-01/tree/d73b45831f9be006ccd57f7a8433e7938b6ef4ed/case03" class="sip-cardset-1-card-link" target="_blank">Source Code</a>-->
+<!--                                <a href="ijse-it-module/ijse-assignments/css/IJSE-IT-Module-Assignment-CSS-01/case03/html.html" class="sip-cardset-1-card-link" target="_blank">Output View</a>-->
+<!--                              </div>-->
+<!--                            </li>-->
+<!--                            <li class="sip-cardset-1-card">-->
+<!--                              <div>-->
+<!--                                <h3 class="sip-cardset-1-card-title">CSS - Assignment 01<br>   Case 02</h3>-->
+<!--                                <div class="sip-cardset-1-card-content">-->
+<!--                                  <iframe class="sip-cardset-1-card-content-iframe" src="https://www.youtube.com/embed/drlPgs67aXI" title="Simple Web Layout" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
+<!--                                  <p></p>-->
+<!--                                </div>-->
+<!--                              </div>-->
+<!--                              <div class="sip-cardset-1-card-link-wrapper">-->
+<!--                                <a href="https://github.com/kaligu/IJSE-IT-Module-Assignment-CSS-01/tree/d73b45831f9be006ccd57f7a8433e7938b6ef4ed/case02" class="sip-cardset-1-card-link" target="_blank">Source Code</a>-->
+<!--                                <a href="ijse-it-module/ijse-assignments/css/IJSE-IT-Module-Assignment-CSS-01/case02/html.html" class="sip-cardset-1-card-link" target="_blank">Output View</a>-->
+<!--                              </div>-->
+<!--                            </li>-->
+<!--                            <li class="sip-cardset-1-card">-->
+<!--                              <div>-->
+<!--                                <h3 class="sip-cardset-1-card-title">CSS - Assignment 01<br>   Case 01</h3>-->
+<!--                                <div class="sip-cardset-1-card-content">-->
+<!--                                  <iframe class="sip-cardset-1-card-content-iframe" src="https://www.youtube.com/embed/bVa2NcYX9DE" title="CSS Layout Designing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
+<!--                                  <p></p>-->
+<!--                                </div>-->
+<!--                              </div>-->
+<!--                              <div class="sip-cardset-1-card-link-wrapper">-->
+<!--                                <a href="https://github.com/kaligu/IJSE-IT-Module-Assignment-CSS-01/tree/d73b45831f9be006ccd57f7a8433e7938b6ef4ed/case01" class="sip-cardset-1-card-link" target="_blank">Source Code</a>-->
+<!--                                <a href="ijse-it-module/ijse-assignments/css/IJSE-IT-Module-Assignment-CSS-01/case01/html.html" class="sip-cardset-1-card-link" target="_blank">Output View</a>-->
+<!--                              </div>-->
+<!--                            </li>-->
+<!--                            <li class="sip-cardset-1-card">-->
+<!--                              <div>-->
+<!--                                <h3 class="sip-cardset-1-card-title">HTML - Assignment 1</h3>-->
+<!--                                <div class="sip-cardset-1-card-content">-->
+<!--                                  <img src="assets/styles/assets/pictures/assignment/1.jpg" alt="logo" >-->
+<!--                                  <p>Only used HTML tags and align to used HTML tables.</p>-->
+<!--                                </div>-->
+<!--                              </div>-->
+<!--                              <div class="sip-cardset-1-card-link-wrapper">-->
+<!--                                <a href="https://github.com/kaligu/IJSE-IT-Module-Assignment-HTML-01.git" class="sip-cardset-1-card-link" target="_blank">Source Code</a>-->
+<!--                                <a href="ijse-it-module/ijse-assignments/html/IJSE-IT-Module-Assignment-HTML-01/assignment-1.html" class="sip-cardset-1-card-link" target="_blank">Output View</a>-->
+<!--                              </div>-->
+<!--                            </li>-->
+<!--                          <li class="sip-cardset-1-card">-->
+<!--                              <div>-->
+<!--                                  <h3 class="sip-cardset-1-card-title">HTML - Implement the mockup structure</h3>-->
+<!--                                  <div class="sip-cardset-1-card-content">-->
+<!--                                      <img src="assets/styles/assets/pictures/assignment/profile.jpg" alt="logo">-->
+<!--                                      <p>Finalize mock-up and start to Implement it and make the structure of your web site using-->
+<!--                                          HTML elements.-->
+<!--                                      </p>-->
+<!--                                  </div>-->
+<!--                              </div>-->
+<!--                              <div class="sip-cardset-1-card-link-wrapper">-->
+<!--                                  <a href="https://github.com/kaligu/MyProfile.git" class="sip-cardset-1-card-link" target="_blank">Source Code</a>-->
+<!--                                  <a href="https://kaligu.github.io/MyProfile/" class="sip-cardset-1-card-link" target="_blank">Output View</a>-->
+<!--                              </div>-->
+<!--                          </li>-->
+<!--                            <li class="sip-cardset-1-card">-->
+<!--                              <div>-->
+<!--                                <h3 class="sip-cardset-1-card-title">HTML - Portfolio Design Assignment</h3>-->
+<!--                                <div class="sip-cardset-1-card-content">-->
+<!--                                    <iframe class="sip-iframefigma" style="border: 1px solid rgba(0, 0, 0, 0.1);" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FBijpBCSLDyNJ1M9FaxQwxo%2FPortfolio%3Ftype%3Ddesign%26node-id%3D0%253A1%26t%3DLLu7L5cqyMaGrj14-1" allowfullscreen></iframe>-->
+<!--                                  <p>Goals of Portfolio - <br>-->
+<!--                                    Introduce myself and Education, Skills.-->
+<!--                                    About working experience and what I currently do.-->
+<!--                                    Show Contact details , Done Projects and How do contact me.-->
+<!--                                    Share my achievements and projects-->
+<!--                                  </p>-->
+<!--                                </div>-->
+<!--                              </div>-->
+<!--                              <div class="sip-cardset-1-card-link-wrapper">-->
+<!--                                <a href="https://drive.google.com/file/d/1zfSTwfKQwJLzGOCtMr8bZ05a2glJ9VnS/view?usp=sharing" class="sip-cardset-1-card-link" target="_blank">Wireframe View</a>-->
+<!--                                <a href="https://www.gloomaps.com/HPZXNvkdd6" class="sip-cardset-1-card-link" target="_blank">Sitemap View</a>-->
+<!--                                <a href="https://www.figma.com/file/BijpBCSLDyNJ1M9FaxQwxo/Portfolio?type=design&t=7pRxejOtRsDYGq7T-1" class="sip-cardset-1-card-link" target="_blank">Mockups View</a>-->
+<!--                              </div>-->
+<!--                            </li>-->
+<!--                      </ul>-->
+<!--                  </div>-->
+<!--              </div>-->
+<!--          </div>-->
+<!--      </section>-->
 
       <!-- seven page-->
       <section class="sep">
@@ -560,8 +585,8 @@
       <img src="assets/pictures/footer.gif" alt="">
   </footer>
 
-     <script src="js/jquery-3.6.4.min.js"></script>
 
+  <script src="js/jquery-3.6.4.min.js"></script>
       <script src="js/first.js"></script>
 
   </body>
