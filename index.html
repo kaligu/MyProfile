@@ -33,10 +33,14 @@
 
 
       <link href="fullLoading.css" rel="stylesheet">
+      <link rel="stylesheet" href="assets/styles/style.css">
+      <!-- snow falling css -->
+      <script src="js/snowstorm.js" rel="snow"></script>
 
 
   </head>
   <body>
+
 
 
   <div class="SplashScreen-container" id="loadingContainer">
@@ -51,10 +55,23 @@
   </div>
   <script>
       var loader = document.getElementById("loadingContainer");
+      var internalResources = document.querySelectorAll('img');
 
-      window.addEventListener("load",function (){
-          loader.style.display="none";
-      })
+      var resourcesLoaded = 0;
+      var totalResources = internalResources.length;
+
+      var handleResourceLoad = function() {
+          resourcesLoaded++;
+          if (resourcesLoaded === totalResources) {
+              loader.style.display = "none";
+          }
+      };
+
+      Array.from(internalResources).forEach(function(resource) {
+          resource.addEventListener("load", handleResourceLoad);
+          resource.addEventListener("error", handleResourceLoad); // Handle errors as well
+      });
+
   </script>
 
   <!-- mouse icon set -->
@@ -67,8 +84,6 @@
       }
   </style>
 
-
-
 <!--  <script>-->
 <!--      const loadingText = document.getElementById('loadingText');-->
 <!--      const texts = ["Loading", "Loading.", "Loading..", "Loading..."];-->
@@ -80,9 +95,6 @@
 <!--      }-->
 <!--      setInterval(changeText, 1000);-->
 <!--  </script>-->
-  <link rel="stylesheet" href="assets/styles/style.css">
-  <!-- snow falling css -->
-  <script src="js/snowstorm.js"></script>
 
   <main>
 
