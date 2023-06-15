@@ -49,3 +49,16 @@ $(document).ready(function() {
 
 
 
+function flipCard() {
+    var cardInner = document.querySelector('.secp-flip-card-inner');
+    cardInner.style.transform = 'rotateY(180deg)';
+
+    // After a delay, reset the card to its initial state
+    setTimeout(function() {
+        cardInner.style.transform = 'rotateY(0deg)';
+    }, 3500); // 3000 milliseconds = 3 seconds
+}
+
+// Automatically flip the card every 3 minutes
+setInterval(flipCard, 7500); // 180000 milliseconds = 3 minutes
+
