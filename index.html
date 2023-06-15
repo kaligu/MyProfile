@@ -8,6 +8,7 @@
       <link rel="icon" type="image/x-icon" href="assets/icons/iconavatar.png">
       <title>Kaligu</title>
 
+      <script src="js/snowstorm.js" rel="snow"></script>
       <!-- import icon web - fontawsome -->
       <script src="https://kit.fontawesome.com/8696ac4d6e.js" crossorigin="anonymous"></script>
 
@@ -35,13 +36,10 @@
       <link href="fullLoading.css" rel="stylesheet">
       <link rel="stylesheet" href="assets/styles/style.css">
       <!-- snow falling css -->
-      <script src="js/snowstorm.js" rel="snow"></script>
 
 
   </head>
   <body>
-
-
 
   <div class="SplashScreen-container" id="loadingContainer">
       <div class="SplashScreen">
@@ -53,26 +51,7 @@
           </div>
       </div>
   </div>
-  <script>
-      var loader = document.getElementById("loadingContainer");
-      var internalResources = document.querySelectorAll('img');
 
-      var resourcesLoaded = 0;
-      var totalResources = internalResources.length;
-
-      var handleResourceLoad = function() {
-          resourcesLoaded++;
-          if (resourcesLoaded === totalResources) {
-              loader.style.display = "none";
-          }
-      };
-
-      Array.from(internalResources).forEach(function(resource) {
-          resource.addEventListener("load", handleResourceLoad);
-          resource.addEventListener("error", handleResourceLoad); // Handle errors as well
-      });
-
-  </script>
 
   <!-- mouse icon set -->
   <style>
@@ -84,17 +63,7 @@
       }
   </style>
 
-<!--  <script>-->
-<!--      const loadingText = document.getElementById('loadingText');-->
-<!--      const texts = ["Loading", "Loading.", "Loading..", "Loading..."];-->
-<!--      let index = 0;-->
 
-<!--      function changeText() {-->
-<!--          loadingText.textContent = texts[index];-->
-<!--          index = (index + 1) % texts.length;-->
-<!--      }-->
-<!--      setInterval(changeText, 1000);-->
-<!--  </script>-->
 
   <main>
 
@@ -180,7 +149,6 @@
                       </div>
                   </div>
               </div>
-
           </div>
       </section>
 

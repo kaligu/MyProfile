@@ -668,3 +668,8 @@ var snowStorm = (function(window, document) {
   return this;
 
 }(window, document));
+
+
+setTimeout(function (){
+  $('#loadingContainer').fadeOut(1000);
+},3000)
