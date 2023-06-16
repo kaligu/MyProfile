@@ -1016,7 +1016,7 @@
 
     /* first page */
     .fp {
-        min-height:980px; /* minimum size of first page */
+        min-height:890px; /* minimum size of first page */
         height: 100vh; /* Set the height of the container to the full viewport height */
         width: 100%;
 
@@ -1035,7 +1035,7 @@
         width: 98%;
         border-radius: 1.5em;
 
-        margin-top: -2rem;
+        margin-top: 3.5rem;
 
         background: rgba(22, 37, 56, 0.81);
         box-shadow: 0 4px 30px rgba(59, 109, 200, 0.2);
@@ -1152,7 +1152,7 @@
     /* reorganise second page for tab view */
     /* second page */
     .secp {
-        min-height: 40em;/* minimum size of first page */
+        min-height: 51em;/* minimum size of first page */
         height: 100vh; /* Set the height of the container to the full viewport height */
         width: 100%;
 
@@ -1167,11 +1167,11 @@
         backdrop-filter: blur(80%);
     }
     .secp-container{
-        height:34em;
+        height:49em;
         width: 98%;
         border-radius: 2em;
 
-        margin-top: -1rem;
+        margin-top: 0.3rem;
 
         /* From https://css.glass */
 
@@ -1185,7 +1185,7 @@
         align-items: center;
     }
     .secp-container-box{
-        height: 31em;
+        height: 45em;
         width: 94%;
 
 
@@ -1200,7 +1200,7 @@
         justify-items: center; /* Horizontally center the grid items */
         align-items: center; /* Vertically center the grid items */
 
-        border-width: 0.7em 0 0 0;
+        border-width: 0.4em 0 0 0;
         border-style: solid;
         border-image: linear-gradient(to right, #00f3f3, darkorchid) 1;
         /*box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);*/
@@ -1211,11 +1211,11 @@
         z-index: 2;
         left: 50%;
         margin-left: -3.5em;
-        margin-top: -27em;
+        margin-top: -42em;
         color: #6e788e;
     }
     .secp-main-header > p{
-        font-size: 2.3em;
+        font-size: 2.2em;
         font-weight: 800;
     }
     .secp-img-container{
@@ -1223,13 +1223,21 @@
         margin-top: -5rem;
     }
     .secp-content{
-        grid-area: secp-content;
+        position: absolute;
+        z-index: 2;
+        left: 50%;
+        margin-left: -9em;
+        margin-top: -25em;
+        width: 65%;
         color: white;
-        margin-top: -9rem;
     }
     .secp-btn{
-        grid-area: secp-btn;
-        margin-top: -5rem;
+        position: absolute;
+        z-index: 2;
+        left: 50%;
+        margin-left: -5em;
+        margin-top: -9em;
+
         align-items: center;
         justify-content: center; /* Optional: to horizontally center the content */
     }
@@ -1271,8 +1279,8 @@
         box-shadow: 0px 0px 18px 2px rgba(15, 149, 180, 0.91);
         border: rgba(0, 157, 193, 0.91) solid 1px;
         background-color: #25252f;
-        height: 130px;
-        width: 130px;
+        height: 105px;
+        width: 105px;
         display: flex;
         flex-direction:column;
         justify-content: center;
@@ -1280,23 +1288,23 @@
     }
 
     #secp-mini-details-circle-One {
-        display: none;
         position: absolute;
         z-index: 4;
+        left: 50%;
+        margin-left: 3em;
+        margin-top:17em;
 
-        margin-top: -9rem;
-        margin-left: 4%;
         animation: moveOne 6s infinite alternate-reverse ease-out;
         transition: all 900ms;
     }
 
     #secp-mini-details-circle-Two {
-        display: none;
         position: absolute;
         z-index: 3;
+        left: 50%;
+        margin-left: 3em;
+        margin-top: -2em;
 
-        margin-top: -9rem;
-        margin-left: -17%;
         animation: moveTwo 5s infinite alternate-reverse ease-out;
         transition: all 900ms;
     }
@@ -1311,25 +1319,25 @@
 
     @keyframes moveOne {
         0% {
-            margin-top: -9rem;
-            margin-left: -23%;
+            margin-left: 3em;
+            margin-top:17em;
         }
 
         100% {
-            margin-top: -9rem;
-            margin-left: -17%;
+            margin-left: 3em;
+            margin-top: -2em;
         }
     }
 
     @keyframes moveTwo {
         0% {
-            margin-top: -9rem;
-            margin-left: 7%;
+            margin-left: 3em;
+            margin-top: -2em;
         }
 
         100% {
-            margin-top: -9rem;
-            margin-left: 3%;
+            margin-left: 3em;
+            margin-top:17em;
         }
     }
 
@@ -1337,7 +1345,7 @@
         color: white;
         font-family: "Roboto", sans-serif;
         font-weight: 600;
-        font-size: 1.5rem;
+        font-size: 1rem;
         display: block;
 
     }
@@ -1350,16 +1358,21 @@
     }
 
     .secp-flip-card {
-        display: none;
+        position: absolute;
+        z-index: 2;
+        left: 50%;
+        margin-left: -9em;
+        margin-top: -6em;
+
         perspective: 1000px; /* Creates a 3D perspective for the flip */
-        width: 249px; /* Adjust the width as needed */
-        height: 400px; /* Adjust the height as needed */
+        width: 220px; /* Adjust the width as needed */
+        height: 360px; /* Adjust the height as needed */
         background-color: #006196;
     }
 
     .secp-card-image{
-        width: 249px; /* Adjust the width as needed */
-        height: 400px; /* Adjust the height as needed */
+        width: 220px; /* Adjust the width as needed */
+        height: 360px; /* Adjust the height as needed */
     }
 
     .secp-flip-card-inner {
