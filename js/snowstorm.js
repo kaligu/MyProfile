@@ -598,6 +598,7 @@ var snowStorm = (function(window, document) {
     storm.scrollHandler();
     if (storm.followMouse) {
       storm.events.add(isIE?document:window,'mousemove',storm.mouseMove);
+      storm.events.add(isIE?document:window,'touchstart',storm.mouseMove);
     }
     storm.animationInterval = Math.max(20,storm.animationInterval);
     storm.timerInit();
@@ -650,6 +651,7 @@ var snowStorm = (function(window, document) {
     }, 20);
     // event cleanup
     storm.events.remove(isIE?document:window,'mousemove',doDelayedStart);
+    storm.events.remove(isIE?document:window,'touchstart',doDelayedStart);
   }
 
   function doStart() {
