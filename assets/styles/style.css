@@ -1,9 +1,9 @@
 *{
-    /* remove auto browser added margins and paddings */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+}
+*{
     /* background color */
     --backgroundcolor: #ffffff;
     /* navbar background color */
@@ -1037,6 +1037,7 @@
         backdrop-filter: blur(80%);
     }
     .fp-container {
+        min-height: 810px;
         height: 810px;
         width: 98%;
         border-radius: 1.5em;
@@ -1053,6 +1054,7 @@
         align-items: center;
     }
     .fp-container-box {
+        min-height: 750px;
         height: 750px;
         width: 90%;
 
@@ -1157,6 +1159,11 @@
 
     /* reorganise second page for tab view */
     /* second page */
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
     .secp {
         min-height: 51em;/* minimum size of first page */
         height: 100vh; /* Set the height of the container to the full viewport height */
@@ -1553,6 +1560,11 @@
     }
 
     /* second page */
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
     .secp {
         min-height: 40em;/* minimum size of first page */
         height: 100vh; /* Set the height of the container to the full viewport height */
@@ -1931,6 +1943,11 @@
     }
 
     /* second page */
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
     .secp {
         min-height: 43em;/* minimum size of first page */
         height: 100vh; /* Set the height of the container to the full viewport height */
