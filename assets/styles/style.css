@@ -173,7 +173,7 @@ table {
     align-items: center;
     justify-content: space-between;
     background-color: var(--navbarcolor);
-    width: 100%;
+    width: 100vw;
     height: 58px;
     opacity: 0.85;
     z-index: 400;
@@ -1101,7 +1101,7 @@ table {
     .fp {
         min-height:890px; /* minimum size of first page */
         height: 100vh; /* Set the height of the container to the full viewport height */
-        width: 100%;
+        width: 100vw;
 
         display: flex;
         flex-direction: row;
@@ -1245,7 +1245,7 @@ table {
     .secp {
         min-height: 51em;/* minimum size of first page */
         height: 100vh; /* Set the height of the container to the full viewport height */
-        width: 100%;
+        width: 100vw;
 
         display: flex;
         flex-direction: row;
