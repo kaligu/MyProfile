@@ -1,3 +1,7 @@
+*{
+    margin:0;
+    padding: 0;
+}
 .SplashScreen-container {
     position: fixed;
     top: 0;
@@ -6,12 +10,15 @@
     bottom: 0;
     margin: auto;
     z-index: 500;
+
 }
 
 .SplashScreen {
     position: absolute;
     inset: 0;
     z-index: 1;
+
+    width: 100%;
 
     background: linear-gradient(to left, #004e68, #002a31);
 
@@ -27,16 +34,49 @@
 
 .SplashScreen-img-container{
     grid-area: SplashScreen-img-container;
-    width: 500px;
-    height: 500px;
 }
 
 .SplashScreen-header-container{
     grid-area: SplashScreen-header-container;
-    color: white;
-    font-size: 30px;
+    color: #909090;
+    font-size: 20px;
 }
 .SplashScreen-img{
     width: 100%;
     height: 100%;
+}
+
+@media (min-width:320px) and (max-width:599px)  {
+    .SplashScreen-img-container{
+        width: 300px;
+        height: 400px;
+        margin-top: -4%;
+    }
+    .SplashScreen-header-container{
+        margin-top: -10%;
+    }
+}
+
+@media (min-width:599px) and (max-width:992px)  {
+    .SplashScreen-img-container{
+        margin-top: -5%;
+        width: 400px;
+        height: 500px;
+    }
+    .SplashScreen-header-container{
+        font-size: 15px;
+        margin-top: -10%;
+    }
+}
+
+@media (min-width:992px){
+    .SplashScreen-img-container{
+        margin-top: 5%;
+        width: 500px;
+        height: 500px;
+    }
+    .SplashScreen-header-container{
+        font-size: 15px;
+        margin-top: -10%;
+    }
 }

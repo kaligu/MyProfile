@@ -50,38 +50,38 @@
   </head>
   <body>
 
-  <!-- preloading screen -->
-<!--  <div class="SplashScreen-container" id="loadingContainer">-->
-<!--      <div class="SplashScreen">-->
-<!--          <div class="SplashScreen-img-container">-->
-<!--              <img class="SplashScreen-img" src="bar-loader.gif" alt="">-->
-<!--          </div>-->
-<!--          <div class="SplashScreen-header-container">-->
-<!--              <p class="SplashScreen-header" id="loadingText">Loading</p>-->
-<!--          </div>-->
-<!--      </div>-->
-<!--  </div>-->
-<!--  <script>-->
-<!--      //change loading text (without jquery)-->
-<!--      const loadingText = document.getElementById('loadingText');-->
-<!--      const texts = ["Loading", "Loading.", "Loading..", "Loading...", "Loading....", "Loading....."];-->
-<!--      let index = 0;-->
-<!--      function changeText() {-->
-<!--          loadingText.textContent = texts[index];-->
-<!--          index = (index + 1) % texts.length;-->
-<!--      }-->
-<!--      setInterval(changeText, 1000);-->
+   preloading screen
+  <div class="SplashScreen-container" id="loadingContainer">
+      <div class="SplashScreen">
+          <div class="SplashScreen-img-container">
+              <img class="SplashScreen-img" src="bar-loader.gif" alt="">
+          </div>
+          <div class="SplashScreen-header-container">
+              <p class="SplashScreen-header" id="loadingText">Loading</p>
+          </div>
+      </div>
+  </div>
+  <script>
+      //change loading text (without jquery)
+      const loadingText = document.getElementById('loadingText');
+      const texts = ["Loading", "Loading.", "Loading..", "Loading...", "Loading....", "Loading....."];
+      let index = 0;
+      function changeText() {
+          loadingText.textContent = texts[index];
+          index = (index + 1) % texts.length;
+      }
+      setInterval(changeText, 1000);
 
-<!--      //for the Loading Window (without jquery)-->
-<!--      window.addEventListener('load', function() {-->
-<!--          var loadingContainer = document.getElementById('loadingContainer');-->
-<!--          loadingContainer.style.transition = 'opacity 1.1s';-->
-<!--          loadingContainer.style.opacity = '0';-->
-<!--          setTimeout(function() {-->
-<!--              loadingContainer.style.display = 'none';-->
-<!--          }, 1100);-->
-<!--      });-->
-<!--  </script>-->
+      //for the Loading Window (without jquery)
+      window.addEventListener('load', function() {
+          var loadingContainer = document.getElementById('loadingContainer');
+          loadingContainer.style.transition = 'opacity 1.1s';
+          loadingContainer.style.opacity = '0';
+          setTimeout(function() {
+              loadingContainer.style.display = 'none';
+          }, 1100);
+      });
+  </script>
 
 
   <!-- mouse icon set -->
