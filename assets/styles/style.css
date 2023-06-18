@@ -1328,6 +1328,7 @@ table {
 
         margin-top: -28em;
         color: white;
+        line-height: 1.1;
     }
     .secp-btn{
         grid-area: secp-btn;
