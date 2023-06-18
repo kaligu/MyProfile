@@ -1315,10 +1315,13 @@ table {
     .secp-content{
         position: absolute;
         z-index: 2;
-        left: 50%;
-        margin-left: -9em;
-        margin-top: -25em;
-        width: 65%;
+        /* align to mid */
+        left: 1rem;
+        right: 1rem;
+        margin-left:1rem;
+        margin-right: 1rem;
+
+        margin-top: -28em;
         color: white;
     }
     .secp-btn{
@@ -1326,7 +1329,7 @@ table {
         z-index: 2;
         left: 50%;
         margin-left: -5em;
-        margin-top: -9em;
+        margin-top: -13em;
 
         align-items: center;
         justify-content: center; /* Optional: to horizontally center the content */
