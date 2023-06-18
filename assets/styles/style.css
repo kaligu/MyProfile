@@ -1243,7 +1243,7 @@ table {
         box-sizing: border-box;
     }
     .secp {
-        min-height: 51em;/* minimum size of first page */
+        min-height: 50em;/* minimum size of first page */
         height: 100vh; /* Set the height of the container to the full viewport height */
         width: 100vw;
 
@@ -1258,7 +1258,7 @@ table {
         backdrop-filter: blur(80%);
     }
     .secp-container{
-        height:49em;
+        height:47em;
         width: 98%;
         border-radius: 2em;
 
@@ -1467,13 +1467,13 @@ table {
 
         perspective: 1000px; /* Creates a 3D perspective for the flip */
         width: 220px; /* Adjust the width as needed */
-        height: 360px; /* Adjust the height as needed */
+        height: 315px; /* Adjust the height as needed */
         background-color: #006196;
     }
 
     .secp-card-image{
         width: 220px; /* Adjust the width as needed */
-        height: 360px; /* Adjust the height as needed */
+        height: 315px; /* Adjust the height as needed */
     }
 
     .secp-flip-card-inner {
