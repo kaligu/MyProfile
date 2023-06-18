@@ -1146,8 +1146,9 @@ table {
     }
     .fp-avatar > img{
         margin-left: 2rem;
-        width: 80%;
-        height: 99%;
+        margin-top: 1.4rem;
+        width: 74%;
+        height: 90%;
     }
     .fp-avatar {
         position: absolute;
