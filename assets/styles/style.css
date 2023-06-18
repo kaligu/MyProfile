@@ -1283,10 +1283,10 @@ table {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas:
-        "secp-main-header secp-main-header"
-        "secp-img-container secp-mini-details-circles-holder"
-        "secp-img-container secp-content"
-        "secp-img-container secp-btn";
+        "secp-main-header"
+        "secp-content"
+        "secp-btn"
+        "secp-img-container";
         justify-items: center; /* Horizontally center the grid items */
         align-items: center; /* Vertically center the grid items */
 
@@ -1299,9 +1299,11 @@ table {
     .secp-main-header{
         position: absolute;
         z-index: 2;
+
         left: 50%;
         margin-left: -3.5em;
         margin-top: -42em;
+
         color: #6e788e;
     }
     .secp-main-header > p{
@@ -1310,7 +1312,9 @@ table {
     }
     .secp-img-container{
         grid-area: secp-img-container;
-        margin-top: -5rem;
+        position: absolute;
+        z-index: 2;
+
     }
     .secp-content{
         position: absolute;
@@ -1325,11 +1329,12 @@ table {
         color: white;
     }
     .secp-btn{
+        grid-area: secp-btn;
         position: absolute;
         z-index: 2;
         left: 50%;
         margin-left: -5em;
-        margin-top: -13em;
+        margin-top: -15em;
 
         align-items: center;
         justify-content: center; /* Optional: to horizontally center the content */
@@ -1372,8 +1377,8 @@ table {
         box-shadow: 0px 0px 18px 2px rgba(15, 149, 180, 0.91);
         border: rgba(0, 157, 193, 0.91) solid 1px;
         background-color: #25252f;
-        height: 105px;
-        width: 105px;
+        height: 80px;
+        width: 80px;
         display: flex;
         flex-direction:column;
         justify-content: center;
@@ -1382,10 +1387,11 @@ table {
 
     #secp-mini-details-circle-One {
         position: absolute;
+
         z-index: 4;
         left: 50%;
-        margin-left: 3em;
-        margin-top:17em;
+        margin-left: -9rem;
+        margin-top:-27rem;
 
         animation: moveOne 6s infinite alternate-reverse ease-out;
         transition: all 900ms;
@@ -1393,10 +1399,11 @@ table {
 
     #secp-mini-details-circle-Two {
         position: absolute;
+
         z-index: 3;
         left: 50%;
-        margin-left: 3em;
-        margin-top: -2em;
+        margin-left: 4rem;
+        margin-top: -4rem;
 
         animation: moveTwo 5s infinite alternate-reverse ease-out;
         transition: all 900ms;
@@ -1412,25 +1419,25 @@ table {
 
     @keyframes moveOne {
         0% {
-            margin-left: 3em;
-            margin-top:17em;
+            margin-left: -9rem;
+            margin-top:-27rem;
         }
 
         100% {
-            margin-left: 3em;
-            margin-top: -2em;
+            margin-left: 4rem;
+            margin-top:-27rem;
         }
     }
 
     @keyframes moveTwo {
         0% {
-            margin-left: 3em;
-            margin-top: -2em;
+            margin-left: -9rem;
+            margin-top: -4rem;
         }
 
         100% {
-            margin-left: 3em;
-            margin-top:17em;
+            margin-left: 4rem;
+            margin-top: -4rem;
         }
     }
 
@@ -1438,7 +1445,7 @@ table {
         color: white;
         font-family: "Roboto", sans-serif;
         font-weight: 600;
-        font-size: 1rem;
+        font-size: 2em;
         display: block;
 
     }
@@ -1447,15 +1454,14 @@ table {
         color: white;
         font-family: "Roboto", sans-serif;
         font-weight: 300;
-        font-size: 1rem;
+        font-size: 0.62em;
     }
 
     .secp-flip-card {
-        position: absolute;
-        z-index: 2;
+        /* align to mid */
         left: 50%;
-        margin-left: -1em;
-        margin-top: -6em;
+
+        margin-top: 18rem;
 
         perspective: 1000px; /* Creates a 3D perspective for the flip */
         width: 220px; /* Adjust the width as needed */
