@@ -2202,7 +2202,8 @@
         box-sizing: border-box;
     }
     .thcp {
-        height: 120em;/* minimum size of first page */
+        min-height: 130em;
+        height: 130em;/* minimum size of first page */
         /*height: 100vh; !* Set the height of the container to the full viewport height *!*/
         width: 100%;
         display: flex;
@@ -2425,7 +2426,7 @@
 
     .thcp-cardset-1{
         grid-area: sip-cardset-1;
-        width: 60vw;
+        width: 66vw;
         margin-top: 1rem;
     }
 
