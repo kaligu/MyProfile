@@ -38,49 +38,50 @@
       <link href="https://fonts.googleapis.com/css2?family=Changa&display=swap" rel="stylesheet">
 
 
-      <!-- Copy the <script> tag into your own page(s) for the snow effect. That is all! (No CSS etc. is needed) -->
-      <script src="snowstorm.js"></script>
+<!--      &lt;!&ndash; Copy the <script> tag into your own page(s) for the snow effect. That is all! (No CSS etc. is needed) &ndash;&gt;-->
+<!--      <script src="snowstorm.js"></script>-->
 
-      <!-- for the Snowstorm homepage, allow the demo to run on iPhone and mobile devices. -->
-      <script>snowStorm.excludeMobile = false;</script>
+<!--      &lt;!&ndash; for the Snowstorm homepage, allow the demo to run on iPhone and mobile devices. &ndash;&gt;-->
+<!--      <script>snowStorm.excludeMobile = false;</script>-->
 
-      <!-- snow falling css -->
+<!--      &lt;!&ndash; snow falling css &ndash;&gt;-->
 
 
   </head>
   <body>
 
-  <div class="SplashScreen-container" id="loadingContainer">
-      <div class="SplashScreen">
-          <div class="SplashScreen-img-container">
-              <img class="SplashScreen-img" src="bar-loader.gif" alt="">
-          </div>
-          <div class="SplashScreen-header-container">
-              <p class="SplashScreen-header" id="loadingText">Loading</p>
-          </div>
-      </div>
-  </div>
-  <script>
-      //change loading text (without jquery)
-      const loadingText = document.getElementById('loadingText');
-      const texts = ["Loading", "Loading.", "Loading..", "Loading...", "Loading....", "Loading....."];
-      let index = 0;
-      function changeText() {
-          loadingText.textContent = texts[index];
-          index = (index + 1) % texts.length;
-      }
-      setInterval(changeText, 1000);
+  <!-- preloading screen -->
+<!--  <div class="SplashScreen-container" id="loadingContainer">-->
+<!--      <div class="SplashScreen">-->
+<!--          <div class="SplashScreen-img-container">-->
+<!--              <img class="SplashScreen-img" src="bar-loader.gif" alt="">-->
+<!--          </div>-->
+<!--          <div class="SplashScreen-header-container">-->
+<!--              <p class="SplashScreen-header" id="loadingText">Loading</p>-->
+<!--          </div>-->
+<!--      </div>-->
+<!--  </div>-->
+<!--  <script>-->
+<!--      //change loading text (without jquery)-->
+<!--      const loadingText = document.getElementById('loadingText');-->
+<!--      const texts = ["Loading", "Loading.", "Loading..", "Loading...", "Loading....", "Loading....."];-->
+<!--      let index = 0;-->
+<!--      function changeText() {-->
+<!--          loadingText.textContent = texts[index];-->
+<!--          index = (index + 1) % texts.length;-->
+<!--      }-->
+<!--      setInterval(changeText, 1000);-->
 
-      //for the Loading Window (without jquery)
-      window.addEventListener('load', function() {
-          var loadingContainer = document.getElementById('loadingContainer');
-          loadingContainer.style.transition = 'opacity 1.1s';
-          loadingContainer.style.opacity = '0';
-          setTimeout(function() {
-              loadingContainer.style.display = 'none';
-          }, 1100);
-      });
-  </script>
+<!--      //for the Loading Window (without jquery)-->
+<!--      window.addEventListener('load', function() {-->
+<!--          var loadingContainer = document.getElementById('loadingContainer');-->
+<!--          loadingContainer.style.transition = 'opacity 1.1s';-->
+<!--          loadingContainer.style.opacity = '0';-->
+<!--          setTimeout(function() {-->
+<!--              loadingContainer.style.display = 'none';-->
+<!--          }, 1100);-->
+<!--      });-->
+<!--  </script>-->
 
 
   <!-- mouse icon set -->
@@ -110,6 +111,7 @@
                   <li><a href="#">About</a></li>
                   <li><a href="#">Education</a></li>
                   <li><a href="#">Skills</a></li>
+                  <li><a href="#">Gallery</a></li>
                   <li><a href="#">Projects</a></li>
                   <li><a href="#">Assignments</a></li>
               </ul>
@@ -125,6 +127,7 @@
                   <li><a href="#">About</a></li>
                   <li><a href="#">Education</a></li>
                   <li><a href="#">Skills</a></li>
+                  <li><a href="#">Gallery</a></li>
                   <li><a href="#">Projects</a></li>
                   <li><a href="#">Assignments</a></li>
               </ul>
@@ -134,7 +137,7 @@
 
       <!-- first page -->
       <section class="fp" id="fp">
-          <div class="fp-container" data-aos="flip-down" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+          <div class="fp-container" >
               <div class="fp-container-box" >
                   <div class="fp-avatar">
                       <img src="assets/pictures/avatar.png" alt="owner image">
@@ -182,39 +185,38 @@
 
       <!-- second page-->
       <section class="secp">
-          <div class="secp-container" data-aos="flip-down" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
-              <div class="secp-container-box" >
-                  <div data-aos="flip-right"></div>
+          <div class="secp-container">
+              <div class="secp-container-box">
                   <div class="secp-main-header">
                       <p>About</p>
                   </div>
-                  <div class="secp-img-container">
+                  <div class="secp-img-container" data-aos="zoom-in">
                       <div class="secp-flip-card">
                           <div class="secp-flip-card-inner">
                               <div class="secp-flip-card-front">
                                   <img class="secp-card-image" src="assets/pictures/myimg1.jpeg" alt="Image">
                               </div>
                               <div class="secp-flip-card-back">
-                                  <img class="secp-card-image" src="assets/pictures/image3.jpg" alt="Image">
+                                  <img class="secp-card-image" src="assets/pictures/img.png" alt="Image">
                               </div>
                           </div>
                       </div>
                   </div>
                   <div id="secp-mini-details-circles-holder" >
-                      <div class="secp-mini-details-circles" id="secp-mini-details-circle-One">
+                      <div class="secp-mini-details-circles" id="secp-mini-details-circle-One" >
                           <span class="secp-mini-details-circle-heading1">5+</span>
                           <span class="secp-mini-details-circle-heading2">PROJECTS</span>
                       </div>
 
-                      <div class="secp-mini-details-circles" id="secp-mini-details-circle-Two">
+                      <div class="secp-mini-details-circles" id="secp-mini-details-circle-Two" >
                           <span class="secp-mini-details-circle-heading1">2+</span>
                           <span class="secp-mini-details-circle-heading2">EXPERIENCE</span>
                       </div>
                   </div>
-                  <div class="secp-content" data-aos="fade-left">
+                  <div class="secp-content" data-aos="zoom-in">
                       <p>My name is😊H. Chethiya Kaligu Jayanath.I am a 22-year-old undergraduate student pursuing a BSc (Hons) in Computer Science through the GDSE program at the Institute of Software Engineering (IJSE).🧑‍🎓 I have a deep passion for coding and logic, I aspire to become a proficient software engineer in the field.💻</p>
                   </div>
-                  <div class="secp-btn" data-aos="fade-left">
+                  <div class="secp-btn" data-aos="zoom-in">
                       <a class="secp-btn-links" href ="https://drive.google.com/file/d/1K_ddp_Ud0gUaofKtZWsHm-1TQbQrnaJa/view?usp=sharing" attributes-list download  ><i class="fa-brands fa-medium fa-2x" style="color: #00f3f3; font-size: 30px;"></i></a>
                       <a class="secp-btn-links" href ="https://drive.google.com/file/d/1K_ddp_Ud0gUaofKtZWsHm-1TQbQrnaJa/view?usp=sharing" attributes-list download  ><i class="fa-brands fa-blogger-b fa-2x" style="color: #00f3f3; font-size:30px;"></i></a>
                       <a class="secp-btn-links" href ="https://drive.google.com/file/d/1K_ddp_Ud0gUaofKtZWsHm-1TQbQrnaJa/view?usp=sharing" attributes-list download  ><i class="fa-brands fa-linkedin fa-2x" style="color: #00f3f3; font-size: 30px;"></i></a>
@@ -224,6 +226,135 @@
           </div>
       </section>
 
+      <!-- third page-->
+      <section class="thcp">
+          <div class="thcp-container">
+              <div class="thcp-container-box">
+                  <div class="thcp-main-header">
+                      <p>Qualification</p>
+                  </div>
+                  <div class="thcp-content-header-1">
+                      <h1>Expereience</h1>
+                  </div>
+                  <div class="thcp-content-1">
+                      <div class="timeline">
+                          <div class="timeline-item">
+                              <div class="timeline-date">
+                                  <div>
+                                      January 2019
+                                  </div>
+                              </div>
+                              <div class="timeline-content">
+                                  <h2>Kick-start</h2>
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad saepe nulla quibusdam ut. Beatae, facere sequi blanditiis porro suscipit tempore ipsam iste ipsa, culpa quam vero, dolorem cupiditate. Magni, numquam?</p>
+                                  <br>
+                                  <i class="fas fa-rocket fa-icon"></i>
+                              </div>
+                          </div>
+
+                          <div class="timeline-item">
+                              <div class="timeline-date">
+                                  <div>
+                                      February 2019
+                                  </div>
+                              </div>
+                              <div class="timeline-content">
+                                  <h2>Lots of learning!</h2>
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad saepe nulla quibusdam ut. Beatae, facere sequi blanditiis porro suscipit tempore ipsam iste ipsa, culpa quam vero, dolorem cupiditate. Magni, numquam?</p>
+                                  <br>
+                                  <i class="fas fa-graduation-cap fa-icon"></i>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="thcp-content-header-2">
+                      <h1>Education</h1>
+                  </div>
+                  <div class="thcp-content-2">
+                      <div class="timeline">
+                          <div class="timeline-item">
+                              <div class="timeline-date">
+                                  <div>
+                                      January 2019
+                                  </div>
+                              </div>
+                              <div class="timeline-content">
+                                  <h2>Kick-start</h2>
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad saepe nulla quibusdam ut. Beatae, facere sequi blanditiis porro suscipit tempore ipsam iste ipsa, culpa quam vero, dolorem cupiditate. Magni, numquam?</p>
+                                  <br>
+                                  <i class="fas fa-rocket fa-icon"></i>
+                              </div>
+                          </div>
+
+                          <div class="timeline-item">
+                              <div class="timeline-date">
+                                  <div>
+                                      February 2019
+                                  </div>
+                              </div>
+                              <div class="timeline-content">
+                                  <h2>Lots of learning!</h2>
+                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad saepe nulla quibusdam ut. Beatae, facere sequi blanditiis porro suscipit tempore ipsam iste ipsa, culpa quam vero, dolorem cupiditate. Magni, numquam?</p>
+                                  <br>
+                                  <i class="fas fa-graduation-cap fa-icon"></i>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="thcp-content-header-3">
+                      <h1>Certificates</h1>
+                  </div>
+                  <div class="thcp-content-3">
+                      <div class="thcp-cardset-1">
+                          <ul class="thcp-cardset-1-cards">
+                              <li class="thcp-cardset-1-card">
+                                  <div>
+                                      <h3 class="thcp-cardset-1-card-title">HTML CSS JS Assignment <br>POS Web Application</h3>
+                                      <div class="thcp-cardset-1-card-content">
+                                          <img src="ijse-it-module/ijse-assignments/assets/sspos.jpg" alt="logo" >
+                                          <p></p>
+                                      </div>
+                                  </div>
+                                  <div class="thcp-cardset-1-card-link-wrapper">
+                                      <a href="https://github.com/kaligu/IJSE-IT-Module-Assignment-Pos-Web_Application.git" class="sip-cardset-1-card-link" target="_blank">Source Code</a>
+                                      <a href="https://kaligu.github.io/IJSE-IT-Module-Assignment-Pos-Web_Application/" class="sip-cardset-1-card-link" target="_blank">Output View</a>
+                                  </div>
+                              </li>
+                              <li class="thcp-cardset-1-card">
+                                  <div>
+                                      <h3 class="thcp-cardset-1-card-title">HTML CSS JS Assignment <br>POS Web Application</h3>
+                                      <div class="thcp-cardset-1-card-content">
+                                          <img src="ijse-it-module/ijse-assignments/assets/sspos.jpg" alt="logo" >
+                                          <p></p>
+                                      </div>
+                                  </div>
+                                  <div class="thcp-cardset-1-card-link-wrapper">
+                                      <a href="https://github.com/kaligu/IJSE-IT-Module-Assignment-Pos-Web_Application.git" class="sip-cardset-1-card-link" target="_blank">Source Code</a>
+                                      <a href="https://kaligu.github.io/IJSE-IT-Module-Assignment-Pos-Web_Application/" class="sip-cardset-1-card-link" target="_blank">Output View</a>
+                                  </div>
+                              </li>
+                              <li class="thcp-cardset-1-card">
+                                  <div>
+                                      <h3 class="thcp-cardset-1-card-title">HTML CSS JS Assignment <br>POS Web Application</h3>
+                                      <div class="thcp-cardset-1-card-content">
+                                          <img src="ijse-it-module/ijse-assignments/assets/sspos.jpg" alt="logo" >
+                                          <p></p>
+                                      </div>
+                                  </div>
+                                  <div class="thcp-cardset-1-card-link-wrapper">
+                                      <a href="https://github.com/kaligu/IJSE-IT-Module-Assignment-Pos-Web_Application.git" class="sip-cardset-1-card-link" target="_blank">Source Code</a>
+                                      <a href="https://kaligu.github.io/IJSE-IT-Module-Assignment-Pos-Web_Application/" class="sip-cardset-1-card-link" target="_blank">Output View</a>
+                                  </div>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+
+
+              </div>
+          </div>
+      </section>
 
 <!--      &lt;!&ndash; third page&ndash;&gt;-->
 <!--      <section class="thp">-->

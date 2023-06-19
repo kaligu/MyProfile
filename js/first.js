@@ -75,3 +75,5 @@ function flipCard() {
 // Automatically flip the card every 3 minutes
 setInterval(flipCard, 7500); // 180000 milliseconds = 3 minutes
 
+
+
