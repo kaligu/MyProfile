@@ -38,50 +38,50 @@
       <link href="https://fonts.googleapis.com/css2?family=Changa&display=swap" rel="stylesheet">
 
 
-      <!-- Copy the <script> tag into your own page(s) for the snow effect. That is all! (No CSS etc. is needed) -->
-      <script src="snowstorm.js"></script>
+<!--      &lt;!&ndash; Copy the <script> tag into your own page(s) for the snow effect. That is all! (No CSS etc. is needed) &ndash;&gt;-->
+<!--      <script src="snowstorm.js"></script>-->
 
-      <!-- for the Snowstorm homepage, allow the demo to run on iPhone and mobile devices. -->
-      <script>snowStorm.excludeMobile = false;</script>
+<!--      &lt;!&ndash; for the Snowstorm homepage, allow the demo to run on iPhone and mobile devices. &ndash;&gt;-->
+<!--      <script>snowStorm.excludeMobile = false;</script>-->
 
-      <!-- snow falling css -->
+<!--      &lt;!&ndash; snow falling css &ndash;&gt;-->
 
 
   </head>
   <body>
 
-  <!-- preloading screen -->
-  <div class="SplashScreen-container" id="loadingContainer">
-      <div class="SplashScreen">
-          <div class="SplashScreen-img-container">
-              <img class="SplashScreen-img" src="bar-loader.gif" alt="">
-          </div>
-          <div class="SplashScreen-header-container">
-              <p class="SplashScreen-header" id="loadingText">Loading</p>
-          </div>
-      </div>
-  </div>
-  <script>
-      //change loading text (without jquery)
-      const loadingText = document.getElementById('loadingText');
-      const texts = ["Loading", "Loading.", "Loading..", "Loading...", "Loading....", "Loading....."];
-      let index = 0;
-      function changeText() {
-          loadingText.textContent = texts[index];
-          index = (index + 1) % texts.length;
-      }
-      setInterval(changeText, 1000);
+<!--  &lt;!&ndash; preloading screen &ndash;&gt;-->
+<!--  <div class="SplashScreen-container" id="loadingContainer">-->
+<!--      <div class="SplashScreen">-->
+<!--          <div class="SplashScreen-img-container">-->
+<!--              <img class="SplashScreen-img" src="bar-loader.gif" alt="">-->
+<!--          </div>-->
+<!--          <div class="SplashScreen-header-container">-->
+<!--              <p class="SplashScreen-header" id="loadingText">Loading</p>-->
+<!--          </div>-->
+<!--      </div>-->
+<!--  </div>-->
+<!--  <script>-->
+<!--      //change loading text (without jquery)-->
+<!--      const loadingText = document.getElementById('loadingText');-->
+<!--      const texts = ["Loading", "Loading.", "Loading..", "Loading...", "Loading....", "Loading....."];-->
+<!--      let index = 0;-->
+<!--      function changeText() {-->
+<!--          loadingText.textContent = texts[index];-->
+<!--          index = (index + 1) % texts.length;-->
+<!--      }-->
+<!--      setInterval(changeText, 1000);-->
 
-      //for the Loading Window (without jquery)
-      window.addEventListener('load', function() {
-          var loadingContainer = document.getElementById('loadingContainer');
-          loadingContainer.style.transition = 'opacity 1.1s';
-          loadingContainer.style.opacity = '0';
-          setTimeout(function() {
-              loadingContainer.style.display = 'none';
-          }, 1100);
-      });
-  </script>
+<!--      //for the Loading Window (without jquery)-->
+<!--      window.addEventListener('load', function() {-->
+<!--          var loadingContainer = document.getElementById('loadingContainer');-->
+<!--          loadingContainer.style.transition = 'opacity 1.1s';-->
+<!--          loadingContainer.style.opacity = '0';-->
+<!--          setTimeout(function() {-->
+<!--              loadingContainer.style.display = 'none';-->
+<!--          }, 1100);-->
+<!--      });-->
+<!--  </script>-->
 
 
   <!-- mouse icon set -->
@@ -355,6 +355,39 @@
               </div>
           </div>
       </section>
+
+
+      <!-- third page-->
+      <section class="fourp">
+          <div class="fourp-container">
+              <div class="fourp-container-box">
+                  <div class="fourp-main-header">
+                      <p>Skills</p>
+                  </div>
+                  <div class="fourp-content-container-1">
+                      <div class="fourp-content-container-box-1">
+                          <div class="fourp-content-main-header-1">
+                              <p>Software design technolgy stack</p>
+                          </div>
+                          <div class="fourp-content-mini-header-1">
+                              <p>Languages</p>
+                          </div>
+                          <div class="fourp-content-mini-content-1">
+
+                          </div>
+                          <div class="fourp-content-mini-header-2">
+                              <p>Frameworks & Tools</p>
+                          </div>
+                          <div class="fourp-content-mini-content-2">
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+
 
 <!--      &lt;!&ndash; third page&ndash;&gt;-->
 <!--      <section class="thp">-->

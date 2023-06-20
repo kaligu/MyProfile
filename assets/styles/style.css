@@ -2529,6 +2529,118 @@
     .thcp-cardset-1-card:not(:last-child) {
         margin-right: 20px;
     }
+
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .fourp {
+        min-height: 130em;
+        height: 130em;/* minimum size of first page */
+        /*height: 100vh; !* Set the height of the container to the full viewport height *!*/
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-image: url('assets/pictures/ezgif.com-gif-maker (2).gif');
+        background-size: cover;
+        background-repeat: no-repeat;
+        backdrop-filter: blur(80%);
+    }
+
+    .fourp-container {
+        height: 97%;
+        width: 70%;
+        border-radius: 2em;
+        margin-top: -1rem;
+        background: rgba(22, 37, 56, 0.81);
+        box-shadow: 0 4px 30px rgba(59, 109, 200, 0.2);
+        -webkit-backdrop-filter: blur(10.1px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fourp-container-box {
+        height: 98%;
+        width: 94%;
+    /*    display: grid;*/
+    /*    grid-template-columns: 1fr;*/
+    /*    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;*/
+    /*    grid-template-areas:*/
+    /*"thcp-main-header"*/
+    /*"thcp-content-header-1"*/
+    /*"thcp-content-1"*/
+    /*"thcp-content-header-2"*/
+    /*"thcp-content-2"*/
+    /*"thcp-content-header-3"*/
+    /*"thcp-content-3";*/
+    /*    justify-items: center;*/
+    /*    align-items: center;*/
+        border-width: 0.7em 0 0 0;
+        border-style: solid;
+        border-image: linear-gradient(to right, #00f3f3, darkorchid) 1;
+    }
+
+    .fourp-main-header {
+        grid-area: thcp-main-header;
+        color: #6e788e;
+        margin-top: 1rem;
+    }
+    .fourp-main-header > p {
+        font-size: 3em;
+        font-weight: 800;
+    }
+    .fourp-content-container-1 {
+        height: 400px;
+        width: 95%;
+        border-radius: 2em;
+        margin-top: -1rem;
+        background: rgba(22, 37, 56, 0.81);
+        box-shadow: 0 4px 30px rgba(59, 109, 200, 0.2);
+        -webkit-backdrop-filter: blur(10.1px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fourp-content-container-box-1 {
+        height: 100%;
+        width: 94%;
+        /*    display: grid;*/
+        /*    grid-template-columns: 1fr;*/
+        /*    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;*/
+        /*    grid-template-areas:*/
+        /*"thcp-main-header"*/
+        /*"thcp-content-header-1"*/
+        /*"thcp-content-1"*/
+        /*"thcp-content-header-2"*/
+        /*"thcp-content-2"*/
+        /*"thcp-content-header-3"*/
+        /*"thcp-content-3";*/
+        /*    justify-items: center;*/
+        /*    align-items: center;*/
+    }
+    .fourp-content-main-header-1{
+        font-size: 2em;
+        font-weight: 500;
+        color: rgba(15, 149, 180, 0.91);
+    }
+    .fourp-content-mini-header-1{
+        font-size: 1.7em;
+        font-weight: 500;
+        color: rgba(118, 120, 120, 0.91);
+    }
+    .fourp-content-mini-content-1{
+
+    }
+
     /*!* second page *!*/
     /*.secp {*/
     /*    min-height: 45em;!* minimum size of first page *!*/
