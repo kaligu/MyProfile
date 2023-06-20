@@ -75,6 +75,122 @@ body{
     margin-top: 10px;
 }
 
+/* first page section */
+.fp {
+    min-height:776px;
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-image: var(--backImgUrl);
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(80%);
+}
+  /*first page main container*/
+.fp-container{
+    height: 600px;
+    width: 80%;
+    border-radius: 2em;
+
+    margin-top:2rem;
+
+    background: rgba(22, 37, 56, 0.81);
+    box-shadow: 0 4px 30px rgba(59, 109, 200, 0.2);
+    -webkit-backdrop-filter: blur(10.1px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  /* first page main container content */
+.fp-container-box{
+    height: 500px;
+    width: 93%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+          "avatar sentens";
+    justify-items: center;
+    align-items: center;
+
+    border-width: 0.7em ;
+    border-style: solid;
+    border-image: linear-gradient(to right, #00f3f3, darkorchid) 1;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.fp-avatar > img{
+    margin-left: 2rem;
+    width: 80%;
+    height: 99%;
+}
+.fp-avatar {
+    height: 28em;
+    width: 20em;
+    min-width: 12em;
+
+    grid-area: avatar;
+    align-self: center;
+    justify-self: center;
+    background-color: rgba(106, 32, 144, 0.3);
+
+    border-radius: 1em;
+    z-index: 10;
+}
+.fp-avatar.flipped {
+    transition: transform 2.5s; /* Add a transition effect to the transform property */
+    transform:rotateY(360deg); /* Rotate the element 180 degrees on the Y-axis */
+}
+.fp-avatar:hover {
+    transform: scale(1.2); /* Apply a scale transformation on hover */
+}
+.fp-sentens{
+    grid-area: sentens;
+    align-self: center; /* Align the .fp-avatar item to the end of its grid area */
+    justify-self: start; /* Align the .fp-avatar item to the end horizontally */
+}
+.fp-sen_1_2{
+    margin-top: 0;
+}
+.fp-sen_1{
+    color: #c0c0c0;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.6em;
+}
+.fp-sen_2{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 400;
+    font-size: 5em;
+}
+.fp-sen_2 > p:nth-child(1){
+    color: #ffc193;
+}
+.fp-sen_2 > p:nth-child(2){
+    color:#ffffff ;
+}
+.fp-sen_3{
+    margin-top: 3.5rem;
+}
+.fp-sen_3 > p:nth-child(1){
+    font-family: 'Orbitron', sans-serif;
+    color: #d8ffff;
+    font-size: 2.5em;
+}
+.fp-sen_3 > p:nth-child(2){
+    color: #efe3ff;
+    margin-top: 0.6rem;
+    font-family: 'Changa', sans-serif;
+    font-size: 1.7em;
+}
+
 /*  main scroll bar */
 ::-webkit-scrollbar-track
 {
@@ -1911,135 +2027,7 @@ body{
         display: block;
     }
 
-    /* first page */
-    .fp {
-        min-height:776px;/* minimum size of first page */
-        height: 100vh; /* Set the height of the container to the full viewport height */
-        width: 100%;
 
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-
-        background-image: url('assets/pictures/ezgif.com-gif-maker (2).gif');
-        background-size: cover;
-        background-repeat: no-repeat;
-        backdrop-filter: blur(80%);
-    }
-    .fp-container{
-        height: 600px;
-        width: 80%;
-        border-radius: 2em;
-
-        margin-top:2rem;
-
-        background: rgba(22, 37, 56, 0.81);
-        box-shadow: 0 4px 30px rgba(59, 109, 200, 0.2);
-        -webkit-backdrop-filter: blur(10.1px);
-        border: 1px solid rgba(255, 255, 255, 0.3);
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-    }
-    .fp-container-box{
-        height: 500px;
-        width: 93%;
-
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas:
-          "avatar sentens";
-        justify-items: center; /* Horizontally center the grid items */
-        align-items: center; /* Vertically center the grid items */
-
-        border-width: 0.7em ;
-        border-style: solid;
-        border-image: linear-gradient(to right, #00f3f3, darkorchid) 1;
-        box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-    }
-
-    .fp-avatar > img{
-        margin-left: 2rem;
-        width: 80%;
-        height: 99%;
-    }
-    .fp-avatar {
-        height: 28em;
-        width: 20em;
-        min-width: 12em;
-
-        grid-area: avatar;
-        align-self: center;
-        justify-self: center;
-        background-color: rgba(106, 32, 144, 0.3);
-
-        border-radius: 1em;
-        z-index: 10;
-    }
-
-    .fp-avatar.flipped {
-        transition: transform 2.5s; /* Add a transition effect to the transform property */
-        transform:rotateY(360deg); /* Rotate the element 180 degrees on the Y-axis */
-    }
-
-    .fp-avatar:hover {
-        transform: scale(1.2); /* Apply a scale transformation on hover */
-    }
-
-    .fp-sentens{
-        grid-area: sentens;
-        align-self: center; /* Align the .fp-avatar item to the end of its grid area */
-        justify-self: start; /* Align the .fp-avatar item to the end horizontally */
-    }
-    .fp-sen_1_2{
-        margin-top: 0rem;
-    }
-    .fp-sen_1{
-        color: #c0c0c0;
-        font-family: 'Work Sans', sans-serif;
-        font-size: 1.6em;
-    }
-    .fp-sen_2{
-        font-family: 'Space Grotesk', sans-serif;
-        font-weight: 400;
-        font-size: 5em;
-    }
-    .fp-sen_2 > p:nth-child(1){
-        color: #ffc193;
-    }
-    .fp-sen_2 > p:nth-child(2){
-        color:#ffffff ;
-    }
-    /*contact linked icons*/
-    .fp-con_links {
-        width: 16.4em;
-        margin-top: 0.5rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-end;
-    }
-
-    .fp-sen_3{
-        margin-top: 3.5rem;
-    }
-
-    .fp-sen_3 > p:nth-child(1){
-        font-family: 'Orbitron', sans-serif;
-        color: #d8ffff;
-        font-size: 2.5em;
-    }
-
-    .fp-sen_3 > p:nth-child(2){
-        color: #efe3ff;
-        margin-top: 0.6rem;
-        font-family: 'Changa', sans-serif;
-        font-size: 1.7em;
-    }
 
     /* second page */
     *{
@@ -3122,7 +3110,7 @@ body{
         border-radius: 10px;
         object-fit: cover;
         transition: 2s;
-        -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, #0004);
+        -webkit-box-reflect: below linear-gradient(transparent, transparent, #0004);
     }
 
     .sip-slider span:hover img {
