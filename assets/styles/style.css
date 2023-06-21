@@ -144,7 +144,7 @@ body{
     transform:rotateY(360deg); /* Rotate the element 180 degrees on the Y-axis */
 }
 .fp-con-cnt-avtr:hover {
-    transform: scale(1.2); /* Apply a scale transformation on hover */
+    transform: scale(1); /* Apply a scale transformation on hover */
 }
   /*first page main container content - senetences*/
 .fp-con-cnt-sents{
@@ -1203,7 +1203,7 @@ body{
     .fp-con {
         min-height: 800px;
         height: 800px;
-        width: 97%;
+        width: 96%;
         border-radius: 1em;
 
         margin-top: 3.5rem;
@@ -1228,11 +1228,14 @@ body{
     .fp-con-cnt-avtr{
         position: absolute;  /* image move to second item (for change html element order)*/
         z-index: 3;
-        margin-top: 6rem;
+        margin-top: 7.2rem;
 
-        height: 26em;
+        height: 24em;
         width: 16em;
-        min-width: 12em;
+        min-width: 16em;
+    }
+    .fp-con-cnt-avtr:hover {
+        transform: scale(1.05); /* Apply a scale transformation on hover */
     }
     /*first page main container content - image*/
     .fp-con-cnt-avtr > img{
@@ -1255,7 +1258,7 @@ body{
         font-size: 3.7em;
     }
     .fp-con-cnt-sents > p:nth-child(4){
-        margin-top: 29rem;
+        margin-top: 28rem;
 
         font-size: 1.9em;
         width: 2em;
