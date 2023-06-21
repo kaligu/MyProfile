@@ -134,7 +134,8 @@ body{
     height: 28em;
     width: 20em;
     min-width: 12em;
-    background-color: rgba(106, 32, 144, 0.3);
+
+    border: rgba(142, 55, 208, 0.91) solid 4px;
 
     border-radius: 1em;
     z-index: 10;
