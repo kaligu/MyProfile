@@ -229,6 +229,8 @@ body{
     justify-content: center;
     align-items: center;
 
+    margin-top: 0;
+
     border-width: 0.7em 0 0 0;
     border-style: solid;
     border-image: linear-gradient(to right, #00f3f3, darkorchid) 1;
@@ -1557,6 +1559,188 @@ body{
         font-size: 1em;
     }
 
+    /* second page section */
+    .sp {
+        min-height: 134em;
+        height: 100vh;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    /* second page main container */
+    .sp-con{
+        height:131em;
+        width: 98%;
+        border-radius: 1em;
+
+        margin-top: 1rem;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    /*second page main container content*/
+    .sp-con-cnt{
+        height: 130em;
+        width: 94%;
+
+        border-width: 0.3em 0 0 0;
+
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* second page main container content - main header */
+    .sp-con-cnt-mh{
+        margin-top: -2rem;
+    }
+    .sp-con-cnt-mh > p{
+        font-size: 2.8em;
+        font-weight: 800;
+    }
+    /* second page main container content - first content */
+    .sp-con-cnt-fc{
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin-left: 0;
+    }
+    /* second page main container content - first content > image container */
+    .sp-con-cnt-fc-img{
+        margin-top: 10px;
+    }
+    .sp-con-cnt-fc-img-flip-card {
+        width: 270px; /* Adjust the width as needed */
+        height: 400px; /* Adjust the height as needed */
+    }
+    .sp-con-cnt-fc-img-card-image{
+        width: 270px; /* Adjust the width as needed */
+        height: 400px; /* Adjust the height as needed */
+    }
+    /* first main container content - second content > circles container */
+    #sp-con-cnt-fc-circle-con {
+        margin-top: -7rem;
+        display: flex;
+        flex-direction: row;
+    }
+    .sp-con-cnt-fc-circles {
+        height: 130px;
+        width: 130px;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+    #sp-con-cnt-fc-circle-1 {
+        position: absolute;
+        z-index: 4;
+
+        margin-top: 7.5rem;
+        margin-left: -47%;
+    }
+    #sp-con-cnt-fc-circle-2 {
+        position: absolute;
+        z-index: 3;
+
+        margin-top: 7.5rem;
+        margin-left: 6%;
+    }
+    @keyframes moveOne {
+        0% {
+            margin-top: 7.5rem;
+            margin-left: -47%;
+        }
+        100% {
+            margin-top: 7.5rem;
+            margin-left: 6%;
+        }
+    }
+    @keyframes moveTwo {
+        0% {
+            margin-top: 7.5rem;
+            margin-left: 6%;
+        }
+        100% {
+            margin-top: 7.5rem;
+            margin-left: -47%;
+        }
+    }
+    .sp-con-cnt-fc-circles-header {
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    .secp-mini-details-circle-sentens {
+        font-weight: 300;
+        font-size: 1rem;
+    }
+    /* second page main container content - first content > text container */
+    .sp-con-cnt-fc-txt-con{
+        margin-top: 260px;
+        font-size: 1.1rem;
+        margin-left: 10px;
+        height: 12rem;
+    }
+    /* second page main container content - first content > text container*/
+    .secp-btn{
+        margin-top: 10px;
+    }
+    #secp-btn-download {
+        font-weight: 300;
+        padding: 0.4rem 0.6rem;
+        font-size: 1.25rem;
+    }
+    .secp-btn-links {
+        font-size: 1.25rem;
+    }
+    /* second page main container content - second content */
+    .sp-con-cnt-sc{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:22px;
+    }
+    .sp-con-cnt-sc-h{
+        font-size: 35px;
+        margin-top: 18px;
+    }
+    .sp-con-cnt-sc-c {
+        height: 550px;
+        width: 100%;
+        border-radius: 1rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+    }
+    .sp-con-cnt-sc-c-circle {
+        width: 150px;
+        height: 150px;
+        border: 5px solid #fff;
+    }
+    .sp-con-cnt-sc-c > p,
+    .sp-con-cnt-sc-c > a > p{
+        font-size: 1em;
+        text-align: center;
+        width:98%
+    }
+    .sp-con-cnt-sc-c > a > p{
+        margin-top: 1rem;
+    }
+
 
 
     /*!* reorganise second page for tab view *!*/
@@ -1858,9 +2042,7 @@ body{
 
         font-size: 0.8em;
     }
-    .sp{
-        display: none;
-    }
+
 }
 
 
@@ -1898,6 +2080,8 @@ body{
     .fp-con-cnt{
         height: 500px;
         width: 94%;
+
+        border-width: 0.48em ;
     }
       /*first page main container content - image*/
     .fp-con-cnt-avtr > img{
@@ -1934,7 +2118,182 @@ body{
         font-size: 1.2em;
     }
 
-    /*!* second page *!*/
+    /* second page section */
+    .sp {
+        min-height: 118em;
+        height: 100vh;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    /* second page main container */
+    .sp-con{
+        height:115em;
+        width: 97%;
+        border-radius: 2em;
+
+        margin-top: 1rem;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    /*second page main container content*/
+    .sp-con-cnt{
+        height: 114em;
+        width: 94%;
+
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* second page main container content - main header */
+    .sp-con-cnt-mh{
+        margin-top: -3rem;
+    }
+    /* second page main container content - first content */
+    .sp-con-cnt-fc{
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin-left: 1em;
+    }
+    /* second page main container content - first content > image container */
+    .sp-con-cnt-fc-img{
+        margin-top: 10px;
+    }
+    .sp-con-cnt-fc-img-flip-card {
+        width: 290px; /* Adjust the width as needed */
+        height: 410px; /* Adjust the height as needed */
+    }
+    .sp-con-cnt-fc-img-card-image{
+        width: 290px; /* Adjust the width as needed */
+        height: 410px; /* Adjust the height as needed */
+    }
+    /* first main container content - second content > circles container */
+    #sp-con-cnt-fc-circle-con {
+        margin-top: -7rem;
+        display: flex;
+        flex-direction: row;
+    }
+    .sp-con-cnt-fc-circles {
+        height: 130px;
+        width: 130px;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+    #sp-con-cnt-fc-circle-1 {
+        position: absolute;
+        z-index: 4;
+
+        margin-top: 7rem;
+        margin-left: 26%;
+    }
+    #sp-con-cnt-fc-circle-2 {
+        position: absolute;
+        z-index: 3;
+
+        margin-top: 7rem;
+        margin-left: 48rem;
+    }
+    @keyframes moveOne {
+        0% {
+            margin-top: 7rem;
+            margin-left: 26%;
+        }
+        100% {
+            margin-top: 7rem;
+            margin-left: 0%;
+        }
+    }
+    @keyframes moveTwo {
+        0% {
+            margin-top: 7rem;
+            margin-left: -48%;
+        }
+        100% {
+            margin-top: 7rem;
+            margin-left: -19%;
+        }
+    }
+    .sp-con-cnt-fc-circles-header {
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    .secp-mini-details-circle-sentens {
+        font-weight: 300;
+        font-size: 1rem;
+    }
+    /* second page main container content - first content > text container */
+    .sp-con-cnt-fc-txt-con{
+        margin-top: 260px;
+        font-size: 1.3rem;
+        margin-left: 10px;
+    }
+    /* second page main container content - first content > text container*/
+    .secp-btn{
+        margin-top: 10px;
+    }
+    #secp-btn-download {
+        font-weight: 300;
+        padding: 0.4rem 0.6rem;
+        font-size: 1.5rem;
+    }
+    .secp-btn-links {
+        font-size: 1.5rem;
+    }
+    /* second page main container content - second content */
+    .sp-con-cnt-sc{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:22px;
+    }
+    .sp-con-cnt-sc-h{
+        font-size: 35px;
+        margin-top: 18px;
+    }
+    .sp-con-cnt-sc-c {
+        height: 435px;
+        width: 100%;
+        border-radius: 1rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+    }
+    .sp-con-cnt-sc-c-circle {
+        width: 150px;
+        height: 150px;
+        border: 5px solid #fff;
+    }
+    .sp-con-cnt-sc-c > p,
+    .sp-con-cnt-sc-c > a > p{
+        font-size: 1em;
+        text-align: center;
+        width:98%
+    }
+    .sp-con-cnt-sc-c > a > p{
+        margin-top: 1rem;
+    }
+
+   /*!* second page *!*/
     /*.secp {*/
     /*    min-height: 40em;!* minimum size of first page *!*/
     /*    height: 100vh; !* Set the height of the container to the full viewport height *!*/
