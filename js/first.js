@@ -63,7 +63,7 @@ $(document).ready(function() {
 
 
 function flipCard() {
-    var cardInner = document.querySelector('.secp-flip-card-inner');
+    var cardInner = document.querySelector('.sp-con-cnt-fc-img-flip-card-inner');
     cardInner.style.transform = 'rotateY(180deg)';
 
     // After a delay, reset the card to its initial state
