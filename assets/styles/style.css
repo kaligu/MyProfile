@@ -36,7 +36,6 @@ body{
     background-image: var(--backImgUrl);
     background-size: cover;
     background-repeat: no-repeat;
-    backdrop-filter: blur(80%);
     filter: brightness(110%);
 }
   /*sub div 1 */
@@ -65,12 +64,12 @@ body{
     height:40px;
 
     filter: brightness(60%);
-    opacity: 0.5;
+    opacity: 0.75;
 }
 .fmd-s2 > p{
     color: white;
     font-size: 1em;
-    opacity: 0.5;
+    opacity: 0.8;
 
     margin-left: 10px;
     margin-top: 10px;
