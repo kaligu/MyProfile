@@ -95,7 +95,6 @@ hr{
     background-image: var(--backImgUrl);
     background-size: cover;
     background-repeat: no-repeat;
-    backdrop-filter: blur(80%);
 }
   /*first page main container*/
 .fp-con{
@@ -205,7 +204,6 @@ hr{
     background-image: var(--backImgUrl);
     background-size: cover;
     background-repeat: no-repeat;
-    backdrop-filter: blur(80%);
 }
   /* second page main container */
 .sp-con{
@@ -753,7 +751,150 @@ hr{
     margin-right: 20px;
 }
 
+  /* four page section */
+.fop {
+    min-height: 130em;
+    height: 130em;/* minimum size of first page */
+    /*height: 100vh; !* Set the height of the container to the full viewport height *!*/
+    width: 100%;
 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-image: var(--backImgUrl);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fourp-container {
+    height: 1900px;
+    width: 70%;
+    border-radius: 2em;
+    margin-top: -1rem;
+    background: rgba(22, 37, 56, 0.81);
+    box-shadow: 0 4px 30px rgba(59, 109, 200, 0.2);
+    -webkit-backdrop-filter: blur(10.1px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fourp-container-box {
+    height: 98%;
+    width: 94%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    /*    display: grid;*/
+    /*    grid-template-columns: 1fr;*/
+    /*    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;*/
+    /*    grid-template-areas:*/
+    /*"thcp-main-header"*/
+    /*"thcp-content-header-1"*/
+    /*"thcp-content-1"*/
+    /*"thcp-content-header-2"*/
+    /*"thcp-content-2"*/
+    /*"thcp-content-header-3"*/
+    /*"thcp-content-3";*/
+    /*    justify-items: center;*/
+    /*    align-items: center;*/
+    border-width: 0.7em 0 0 0;
+    border-style: solid;
+    border-image: linear-gradient(to right, #00f3f3, darkorchid) 1;
+}
+
+.fourp-main-header {
+    grid-area: thcp-main-header;
+    color: #6e788e;
+    margin-top: 1rem;
+}
+.fourp-main-header > p {
+    font-size: 3em;
+    font-weight: 800;
+}
+.fourp-content-container-1 {
+    height: 410px;
+    width: 100%;
+    border-radius: 2em;
+    margin-top: -1rem;
+    background: rgba(22, 37, 56, 0.81);
+    box-shadow: 0 4px 30px rgba(59, 109, 200, 0.2);
+    -webkit-backdrop-filter: blur(10.1px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fourp-content-container-box-1 {
+    height: 100%;
+    width: 94%;
+    /*    display: grid;*/
+    /*    grid-template-columns: 1fr;*/
+    /*    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;*/
+    /*    grid-template-areas:*/
+    /*"thcp-main-header"*/
+    /*"thcp-content-header-1"*/
+    /*"thcp-content-1"*/
+    /*"thcp-content-header-2"*/
+    /*"thcp-content-2"*/
+    /*"thcp-content-header-3"*/
+    /*"thcp-content-3";*/
+    /*    justify-items: center;*/
+    /*    align-items: center;*/
+}
+.fourp-content-main-header-1{
+    font-size: 2em;
+    margin-top: 0.5rem;
+    font-weight: 500;
+    color: rgb(123, 186, 185);
+}
+.fourp-content-mini-header-1{
+    margin-top:0.5rem;
+    font-size: 1.7em;
+    font-weight: 500;
+    color: rgba(162, 198, 198, 0.91);
+}
+.fourp-content-mini-content-1{
+    margin-top:0.1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 10px; /* Adjust the value to your desired spacing */
+}
+.fourp-content-mini-content-1 > div > img{
+    width: 110px;
+    height: 110px;
+}
+.fourp-content-mini-content-1 > div > p{
+    font-size: 1em;
+    font-weight: 500;
+    color: rgba(224, 237, 240, 0.91);
+}
+.fourp-content-mini-header-2{
+    margin-top:1rem;
+    font-size: 1.7em;
+    font-weight: 500;
+    color: rgba(162, 198, 198, 0.91);
+}
+.fourp-content-mini-content-2{
+    margin-top:0.1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 10px; /* Adjust the value to your desired spacing */
+}
+.fourp-content-mini-content-2 > div > img{
+    width: 110px;
+    height: 110px;
+}
+.fourp-content-mini-content-2 > div > p{
+    font-size: 1em;
+    font-weight: 500;
+    color: rgba(224, 237, 240, 0.91);
+}
 
 /*  main scroll bar */
 ::-webkit-scrollbar-track
@@ -2372,148 +2513,7 @@ hr{
 
 
 
-    .fourp {
-        min-height: 130em;
-        height: 130em;/* minimum size of first page */
-        /*height: 100vh; !* Set the height of the container to the full viewport height *!*/
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        background-image: url('assets/pictures/ezgif.com-gif-maker (2).gif');
-        background-size: cover;
-        background-repeat: no-repeat;
-        backdrop-filter: blur(80%);
-    }
 
-    .fourp-container {
-        height: 1900px;
-        width: 70%;
-        border-radius: 2em;
-        margin-top: -1rem;
-        background: rgba(22, 37, 56, 0.81);
-        box-shadow: 0 4px 30px rgba(59, 109, 200, 0.2);
-        -webkit-backdrop-filter: blur(10.1px);
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .fourp-container-box {
-        height: 98%;
-        width: 94%;
-
-        display: flex;
-        flex-direction: column;
-        gap: 4rem;
-    /*    display: grid;*/
-    /*    grid-template-columns: 1fr;*/
-    /*    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;*/
-    /*    grid-template-areas:*/
-    /*"thcp-main-header"*/
-    /*"thcp-content-header-1"*/
-    /*"thcp-content-1"*/
-    /*"thcp-content-header-2"*/
-    /*"thcp-content-2"*/
-    /*"thcp-content-header-3"*/
-    /*"thcp-content-3";*/
-    /*    justify-items: center;*/
-    /*    align-items: center;*/
-        border-width: 0.7em 0 0 0;
-        border-style: solid;
-        border-image: linear-gradient(to right, #00f3f3, darkorchid) 1;
-    }
-
-    .fourp-main-header {
-        grid-area: thcp-main-header;
-        color: #6e788e;
-        margin-top: 1rem;
-    }
-    .fourp-main-header > p {
-        font-size: 3em;
-        font-weight: 800;
-    }
-    .fourp-content-container-1 {
-        height: 410px;
-        width: 100%;
-        border-radius: 2em;
-        margin-top: -1rem;
-        background: rgba(22, 37, 56, 0.81);
-        box-shadow: 0 4px 30px rgba(59, 109, 200, 0.2);
-        -webkit-backdrop-filter: blur(10.1px);
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .fourp-content-container-box-1 {
-        height: 100%;
-        width: 94%;
-        /*    display: grid;*/
-        /*    grid-template-columns: 1fr;*/
-        /*    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;*/
-        /*    grid-template-areas:*/
-        /*"thcp-main-header"*/
-        /*"thcp-content-header-1"*/
-        /*"thcp-content-1"*/
-        /*"thcp-content-header-2"*/
-        /*"thcp-content-2"*/
-        /*"thcp-content-header-3"*/
-        /*"thcp-content-3";*/
-        /*    justify-items: center;*/
-        /*    align-items: center;*/
-    }
-    .fourp-content-main-header-1{
-        font-size: 2em;
-        margin-top: 0.5rem;
-        font-weight: 500;
-        color: rgb(123, 186, 185);
-    }
-    .fourp-content-mini-header-1{
-        margin-top:0.5rem;
-        font-size: 1.7em;
-        font-weight: 500;
-        color: rgba(162, 198, 198, 0.91);
-    }
-    .fourp-content-mini-content-1{
-        margin-top:0.1rem;
-        display: flex;
-        flex-direction: row;
-        gap: 10px; /* Adjust the value to your desired spacing */
-    }
-    .fourp-content-mini-content-1 > div > img{
-        width: 110px;
-        height: 110px;
-    }
-    .fourp-content-mini-content-1 > div > p{
-        font-size: 1em;
-        font-weight: 500;
-        color: rgba(224, 237, 240, 0.91);
-    }
-    .fourp-content-mini-header-2{
-        margin-top:1rem;
-        font-size: 1.7em;
-        font-weight: 500;
-        color: rgba(162, 198, 198, 0.91);
-    }
-    .fourp-content-mini-content-2{
-        margin-top:0.1rem;
-        display: flex;
-        flex-direction: row;
-        gap: 10px; /* Adjust the value to your desired spacing */
-    }
-    .fourp-content-mini-content-2 > div > img{
-        width: 110px;
-        height: 110px;
-    }
-    .fourp-content-mini-content-2 > div > p{
-        font-size: 1em;
-        font-weight: 500;
-        color: rgba(224, 237, 240, 0.91);
-    }
     /* five page */
     .fip {
         min-height: 65em;/* minimum size of first page */
