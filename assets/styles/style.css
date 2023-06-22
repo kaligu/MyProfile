@@ -479,7 +479,8 @@ hr{
 }
 /* third page section */
 .tp {
-    height: 187em;
+    min-height: 191em;
+    height: 191em;
     width: 100%;
 
     display: flex;
@@ -487,15 +488,14 @@ hr{
     justify-content: center;
     align-items: center;
 
-    background-color: grey;
-    /*background-image: var(--backImgUrl);*/
-    /*background-size: cover;*/
-    /*background-repeat: no-repeat;*/
+    background-image: var(--backImgUrl);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
   /* third page main container content */
 .tp-con {
     height: 98%;
-    width: 80%;
+    width: 85%;
     border-radius: 2em;
 
     margin-top: -1rem;
@@ -657,30 +657,6 @@ hr{
 .timeline-content > p {
     color: #bdbdbd;
 }
-/*@media (max-width: 767px) {*/
-/*    .timeline > .timeline-item {*/
-/*        flex-direction: column;*/
-/*        border-left: 2px solid #e0e0e0;*/
-/*    }*/
-
-/*    .timeline > .timeline-item > div {*/
-/*        border-width: 0px !important;*/
-/*        text-align: left !important;*/
-/*        order: unset !important;*/
-/*    }*/
-
-/*    .timeline > .timeline-item > div::after {*/
-/*        left: 0% !important;*/
-/*    }*/
-
-/*    .timeline > .timeline-item:nth-child(odd) > .timeline-content > h2 {*/
-/*        text-align: left !important;*/
-/*    }*/
-
-/*    .timeline > .timeline-item:nth-child(even) > .timeline-content > h2 {*/
-/*        text-align: left !important;*/
-/*    }*/
-/*}*/
   /* cardset */
 .thcp-cardset-1{
     grid-area: sip-cardset-1;
@@ -1763,13 +1739,6 @@ hr{
 
 /* Mobile devices */
 @media (min-width:320px) and (max-width:599px)  {
-    *{
-        margin: 0;
-        padding:0;
-    }
-    .tp{
-        display: none;
-    }
     /* nav bar */
     .mobile-navbar{
         display: block;
@@ -2040,274 +2009,49 @@ hr{
         margin-top: 1rem;
     }
 
+    /* third page section */
+    .tp {
+        min-height: 247em;
+        height: 247em;
+    }
+      /* third page main container content */
+    .tp-con {
+        width: 98%;
+    }
+      /* timeline */
+    .timeline > .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+        border-left: 4px solid #e0e0e0;
+        margin-left: 4em;
+    }
+    .timeline > .timeline-item > div {
+        border-width: 0 !important;
+        text-align: left !important;
+        order: unset !important;
+    }
+    .timeline > .timeline-item > div::after {
+        left:0 !important;
+    }
+    .timeline > .timeline-item:nth-child(odd) > .timeline-content > h2 {
+        text-align: left !important;
+    }
 
-
-    /*!* reorganise second page for tab view *!*/
-    /*!* second page *!*/
-    /**{*/
-    /*    margin: 0;*/
-    /*    padding: 0;*/
-    /*    box-sizing: border-box;*/
-    /*}*/
-    /*.secp {*/
-    /*    min-height: 50em;!* minimum size of first page *!*/
-    /*    height: 100vh; !* Set the height of the container to the full viewport height *!*/
-    /*    width: 100vw;*/
-
-    /*    display: flex;*/
-    /*    flex-direction: row;*/
-    /*    justify-content: center;*/
-    /*    align-items: center;*/
-
-    /*    background-image: url('assets/pictures/ezgif.com-gif-maker (2).gif');*/
-    /*    background-size: cover;*/
-    /*    background-repeat: no-repeat;*/
-    /*    backdrop-filter: blur(80%);*/
-    /*}*/
-    /*.secp-container{*/
-    /*    height:47em;*/
-    /*    width: 98%;*/
-    /*    border-radius: 2em;*/
-
-    /*    margin-top: 0.3rem;*/
-
-    /*    !* From https://css.glass *!*/
-
-    /*    background: rgba(22, 37, 56, 0.81);*/
-    /*    box-shadow: 0 4px 30px rgba(59, 109, 200, 0.2);*/
-    /*    -webkit-backdrop-filter: blur(10.1px);*/
-    /*    border: 1px solid rgba(255, 255, 255, 0.3);*/
-
-    /*    display: flex;*/
-    /*    justify-content: center;*/
-    /*    align-items: center;*/
-    /*}*/
-    /*.secp-container-box{*/
-    /*    height: 45em;*/
-    /*    width: 94%;*/
-
-
-    /*    display: grid;*/
-    /*    grid-template-columns: 1fr 1fr;*/
-    /*    grid-template-rows: 1fr 1fr 1fr;*/
-    /*    grid-template-areas:*/
-    /*    "secp-main-header"*/
-    /*    "secp-content"*/
-    /*    "secp-btn"*/
-    /*    "secp-img-container";*/
-    /*    justify-items: center; !* Horizontally center the grid items *!*/
-    /*    align-items: center; !* Vertically center the grid items *!*/
-
-    /*    border-width: 0.4em 0 0 0;*/
-    /*    border-style: solid;*/
-    /*    border-image: linear-gradient(to right, #00f3f3, darkorchid) 1;*/
-    /*    !*box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);*!*/
-    /*}*/
-
-    /*.secp-main-header{*/
-    /*    position: absolute;*/
-    /*    z-index: 2;*/
-
-    /*    left: 50%;*/
-    /*    margin-left: -3.5em;*/
-    /*    margin-top: -42em;*/
-
-    /*    color: #6e788e;*/
-    /*}*/
-    /*.secp-main-header > p{*/
-    /*    font-size: 2.2em;*/
-    /*    font-weight: 800;*/
-    /*}*/
-    /*.secp-img-container{*/
-    /*    grid-area: secp-img-container;*/
-    /*    position: absolute;*/
-    /*    z-index: 2;*/
-
-    /*}*/
-    /*.secp-content{*/
-    /*    position: absolute;*/
-    /*    z-index: 2;*/
-    /*    !* align to mid *!*/
-    /*    left: 1rem;*/
-    /*    right: 1rem;*/
-    /*    margin-left:1rem;*/
-    /*    margin-right: 1rem;*/
-
-    /*    margin-top: -28em;*/
-    /*    color: white;*/
-    /*    line-height: 1.1;*/
-    /*}*/
-    /*.secp-btn{*/
-    /*    grid-area: secp-btn;*/
-    /*    position: absolute;*/
-    /*    z-index: 2;*/
-    /*    left: 50%;*/
-    /*    margin-left: -5em;*/
-    /*    margin-top: -15em;*/
-
-    /*    align-items: center;*/
-    /*    justify-content: center; !* Optional: to horizontally center the content *!*/
-    /*}*/
-
-    /*#secp-btn-download {*/
-    /*    text-decoration: none;*/
-    /*    color: white;*/
-    /*    font-family: "Roboto", sans-serif;*/
-    /*    font-weight: 300;*/
-    /*    background: transparent;*/
-    /*    padding: 0.4rem 0.6rem;*/
-    /*    font-size: 1.1rem;*/
-    /*    border-radius: 10px;*/
-    /*    border: #00c8ff solid 2px;*/
-    /*    transition: all 500ms;*/
-    /*}*/
-    /*.secp-btn-links {*/
-    /*    display: none;*/
-    /*}*/
-
-    /*#secp-btn-download:hover,*/
-    /*#secp-btn-download:focus {*/
-    /*    background-color: #00c8ff;*/
-    /*    transition: all 500ms;*/
-    /*}*/
-
-    /*#secp-mini-details-circles-holder {*/
-    /*    grid-area: secp-mini-details-circles-holder;*/
-    /*    margin-top: -1rem;*/
-    /*    display: flex;*/
-    /*    flex-direction: row;*/
-    /*}*/
-
-
-    /*.secp-mini-details-circles {*/
-    /*    display: none;*/
-    /*    text-align: center;*/
-    /*    border-radius: 50%;*/
-    /*    box-shadow: 0px 0px 18px 2px rgba(15, 149, 180, 0.91);*/
-    /*    border: rgba(0, 157, 193, 0.91) solid 1px;*/
-    /*    background-color: #25252f;*/
-    /*    height: 80px;*/
-    /*    width: 80px;*/
-    /*    display: flex;*/
-    /*    flex-direction:column;*/
-    /*    justify-content: center;*/
-    /*    align-items: center;*/
-    /*}*/
-
-    /*#secp-mini-details-circle-One {*/
-    /*    position: absolute;*/
-
-    /*    z-index: 4;*/
-    /*    left: 50%;*/
-    /*    margin-left: -9rem;*/
-    /*    margin-top:-27rem;*/
-
-    /*    animation: moveOne 6s infinite alternate-reverse ease-out;*/
-    /*    transition: all 900ms;*/
-    /*}*/
-
-    /*#secp-mini-details-circle-Two {*/
-    /*    position: absolute;*/
-
-    /*    z-index: 3;*/
-    /*    left: 50%;*/
-    /*    margin-left: 4rem;*/
-    /*    margin-top: -4rem;*/
-
-    /*    animation: moveTwo 5s infinite alternate-reverse ease-out;*/
-    /*    transition: all 900ms;*/
-    /*}*/
-
-    /*#secp-mini-details-circle-One:hover,*/
-    /*#secp-mini-details-circle-One:focus,*/
-    /*#secp-mini-details-circle-Two:hover,*/
-    /*#secp-mini-details-circle-Two:focus{*/
-    /*    transform: rotateZ(360deg);*/
-    /*    transition: all 900ms;*/
-    /*}*/
-
-    /*@keyframes moveOne {*/
-    /*    0% {*/
-    /*        margin-left: -9rem;*/
-    /*        margin-top:-27rem;*/
-    /*    }*/
-
-    /*    100% {*/
-    /*        margin-left: 4rem;*/
-    /*        margin-top:-27rem;*/
-    /*    }*/
-    /*}*/
-
-    /*@keyframes moveTwo {*/
-    /*    0% {*/
-    /*        margin-left: -9rem;*/
-    /*        margin-top: -4rem;*/
-    /*    }*/
-
-    /*    100% {*/
-    /*        margin-left: 4rem;*/
-    /*        margin-top: -4rem;*/
-    /*    }*/
-    /*}*/
-
-    /*.secp-mini-details-circle-heading1 {*/
-    /*    color: white;*/
-    /*    font-family: "Roboto", sans-serif;*/
-    /*    font-weight: 600;*/
-    /*    font-size: 2em;*/
-    /*    display: block;*/
-
-    /*}*/
-
-    /*.secp-mini-details-circle-heading2 {*/
-    /*    color: white;*/
-    /*    font-family: "Roboto", sans-serif;*/
-    /*    font-weight: 300;*/
-    /*    font-size: 0.62em;*/
-    /*}*/
-
-    /*.secp-flip-card {*/
-    /*    !* align to mid *!*/
-    /*    left: 50%;*/
-
-    /*    margin-top: 18rem;*/
-
-    /*    perspective: 1000px; !* Creates a 3D perspective for the flip *!*/
-    /*    width: 220px; !* Adjust the width as needed *!*/
-    /*    height: 315px; !* Adjust the height as needed *!*/
-    /*    background-color: #006196;*/
-    /*}*/
-
-    /*.secp-card-image{*/
-    /*    width: 220px; !* Adjust the width as needed *!*/
-    /*    height: 315px; !* Adjust the height as needed *!*/
-    /*}*/
-
-    /*.secp-flip-card-inner {*/
-    /*    position: relative;*/
-    /*    width: 100%;*/
-    /*    height: 100%;*/
-    /*    transform-style: preserve-3d; !* Enables 3D transformations *!*/
-    /*    transition: transform 1.6s;*/
-    /*}*/
-
-    /*.secp-flip-card:hover .secp-flip-card-inner {*/
-    /*    transform: rotateY(180deg); !* Flips the card on hover *!*/
-    /*}*/
-
-    /*.secp-flip-card-front,*/
-    /*.secp-flip-card-back {*/
-    /*    position: absolute;*/
-    /*    width: 100%;*/
-    /*    height: 100%;*/
-    /*    background-color: blue;*/
-    /*    backface-visibility: hidden; !* Hides the back face of the card *!*/
-    /*}*/
-
-    /*.secp-flip-card-back {*/
-    /*    transform: rotateY(180deg); !* Initially hides the back side of the card *!*/
-    /*    !* Add styles for the back side here *!*/
-    /*}*/
+    .timeline > .timeline-item:nth-child(even) > .timeline-content > h2 {
+        text-align: left !important;
+    }
+      /* cardset */
+    .thcp-cardset-1-card {
+        min-width: 360px;
+        width: 360px;
+    }
+    .thcp-cardset-1-card-content > img{
+        width: 20em;
+        height: 15em;
+    }
+    .thcp-cardset-1-cards::-webkit-scrollbar {
+        height: 10px;
+    }
 
     /*footer main div*/
     .fmd {
@@ -2342,14 +2086,11 @@ hr{
         font-size: 0.8em;
     }
 
+
 }
 
 
 @media (min-width:599px) and (max-width:992px)  {
-    *{
-        margin: 0;
-        padding:0;
-    }
     /* nav bar */
     .mobile-navbar{
         display: none;
@@ -2592,236 +2333,15 @@ hr{
         margin-top: 1rem;
     }
 
-   /*!* second page *!*/
-    /*.secp {*/
-    /*    min-height: 40em;!* minimum size of first page *!*/
-    /*    height: 100vh; !* Set the height of the container to the full viewport height *!*/
-    /*    width: 100vw;*/
-
-    /*    display: flex;*/
-    /*    flex-direction: row;*/
-    /*    justify-content: center;*/
-    /*    align-items: center;*/
-
-    /*    background-image: url('assets/pictures/ezgif.com-gif-maker (2).gif');*/
-    /*    background-size: cover;*/
-    /*    background-repeat: no-repeat;*/
-    /*    backdrop-filter: blur(80%);*/
-    /*}*/
-    /*.secp-container{*/
-    /*    height:34em;*/
-    /*    width: 98%;*/
-    /*    border-radius: 2em;*/
-
-    /*    margin-top: -1rem;*/
-
-    /*    !* From https://css.glass *!*/
-
-    /*    background: rgba(22, 37, 56, 0.81);*/
-    /*    box-shadow: 0 4px 30px rgba(59, 109, 200, 0.2);*/
-    /*    -webkit-backdrop-filter: blur(10.1px);*/
-    /*    border: 1px solid rgba(255, 255, 255, 0.3);*/
-
-    /*    display: flex;*/
-    /*    justify-content: center;*/
-    /*    align-items: center;*/
-    /*}*/
-    /*.secp-container-box{*/
-    /*    height: 31em;*/
-    /*    width: 94%;*/
-
-
-    /*    display: grid;*/
-    /*    grid-template-columns: 1fr 1fr;*/
-    /*    grid-template-rows: 1fr 1fr 1fr;*/
-    /*    grid-template-areas:*/
-    /*    "secp-main-header secp-main-header"*/
-    /*    "secp-img-container secp-mini-details-circles-holder"*/
-    /*    "secp-img-container secp-content"*/
-    /*    "secp-img-container secp-btn";*/
-    /*    justify-items: center; !* Horizontally center the grid items *!*/
-    /*    align-items: center; !* Vertically center the grid items *!*/
-
-    /*    border-width: 0.7em 0 0 0;*/
-    /*    border-style: solid;*/
-    /*    border-image: linear-gradient(to right, #00f3f3, darkorchid) 1;*/
-    /*    !*box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);*!*/
-    /*}*/
-
-    /*.secp-main-header{*/
-    /*    grid-area: secp-main-header;*/
-    /*    color: #6e788e;*/
-    /*    margin-top: -5rem;*/
-    /*}*/
-    /*.secp-main-header > p{*/
-    /*    font-size: 2.5em;*/
-    /*    font-weight: 800;*/
-    /*}*/
-    /*.secp-img-container{*/
-    /*    grid-area: secp-img-container;*/
-    /*    margin-top: -5rem;*/
-    /*}*/
-    /*.secp-content{*/
-    /*    grid-area: secp-content;*/
-    /*    color: white;*/
-    /*    margin-top: -9rem;*/
-    /*}*/
-    /*.secp-btn{*/
-    /*    grid-area: secp-btn;*/
-    /*    margin-top: -5rem;*/
-    /*    align-items: center;*/
-    /*    justify-content: center; !* Optional: to horizontally center the content *!*/
-    /*}*/
-
-    /*#secp-btn-download {*/
-    /*    text-decoration: none;*/
-    /*    color: white;*/
-    /*    font-family: "Roboto", sans-serif;*/
-    /*    font-weight: 300;*/
-    /*    background: transparent;*/
-    /*    padding: 0.4rem 0.6rem;*/
-    /*    font-size: 1.1rem;*/
-    /*    border-radius: 10px;*/
-    /*    border: #00c8ff solid 2px;*/
-    /*    transition: all 500ms;*/
-    /*}*/
-    /*.secp-btn-links {*/
-    /*    display: none;*/
-    /*}*/
-
-    /*#secp-btn-download:hover,*/
-    /*#secp-btn-download:focus {*/
-    /*    background-color: #00c8ff;*/
-    /*    transition: all 500ms;*/
-    /*}*/
-
-    /*#secp-mini-details-circles-holder {*/
-    /*    grid-area: secp-mini-details-circles-holder;*/
-    /*    margin-top: -1rem;*/
-    /*    display: flex;*/
-    /*    flex-direction: row;*/
-    /*}*/
-
-
-    /*.secp-mini-details-circles {*/
-    /*    text-align: center;*/
-    /*    border-radius: 50%;*/
-    /*    box-shadow: 0px 0px 18px 2px rgba(15, 149, 180, 0.91);*/
-    /*    border: rgba(0, 157, 193, 0.91) solid 1px;*/
-    /*    background-color: #25252f;*/
-    /*    height: 130px;*/
-    /*    width: 130px;*/
-    /*    display: flex;*/
-    /*    flex-direction:column;*/
-    /*    justify-content: center;*/
-    /*    align-items: center;*/
-    /*}*/
-
-    /*#secp-mini-details-circle-One {*/
-    /*    position: absolute;*/
-    /*    z-index: 4;*/
-
-    /*    margin-top: -9rem;*/
-    /*    margin-left: 4%;*/
-    /*    animation: moveOne 6s infinite alternate-reverse ease-out;*/
-    /*    transition: all 900ms;*/
-    /*}*/
-
-    /*#secp-mini-details-circle-Two {*/
-    /*    position: absolute;*/
-    /*    z-index: 3;*/
-
-    /*    margin-top: -9rem;*/
-    /*    margin-left: -17%;*/
-    /*    animation: moveTwo 5s infinite alternate-reverse ease-out;*/
-    /*    transition: all 900ms;*/
-    /*}*/
-
-    /*#secp-mini-details-circle-One:hover,*/
-    /*#secp-mini-details-circle-One:focus,*/
-    /*#secp-mini-details-circle-Two:hover,*/
-    /*#secp-mini-details-circle-Two:focus{*/
-    /*    transform: rotateZ(360deg);*/
-    /*    transition: all 900ms;*/
-    /*}*/
-
-    /*@keyframes moveOne {*/
-    /*    0% {*/
-    /*        margin-top: -9rem;*/
-    /*        margin-left: -23%;*/
-    /*    }*/
-
-    /*    100% {*/
-    /*        margin-top: -9rem;*/
-    /*        margin-left: -17%;*/
-    /*    }*/
-    /*}*/
-
-    /*@keyframes moveTwo {*/
-    /*    0% {*/
-    /*        margin-top: -9rem;*/
-    /*        margin-left: 7%;*/
-    /*    }*/
-
-    /*    100% {*/
-    /*        margin-top: -9rem;*/
-    /*        margin-left: 3%;*/
-    /*    }*/
-    /*}*/
-
-    /*.secp-mini-details-circle-heading1 {*/
-    /*    color: white;*/
-    /*    font-family: "Roboto", sans-serif;*/
-    /*    font-weight: 600;*/
-    /*    font-size: 2rem;*/
-    /*    display: block;*/
-
-    /*}*/
-
-    /*.secp-mini-details-circle-heading2 {*/
-    /*    color: white;*/
-    /*    font-family: "Roboto", sans-serif;*/
-    /*    font-weight: 300;*/
-    /*    font-size: 1rem;*/
-    /*}*/
-
-    /*.secp-flip-card {*/
-    /*    perspective: 1000px; !* Creates a 3D perspective for the flip *!*/
-    /*    width: 249px; !* Adjust the width as needed *!*/
-    /*    height: 400px; !* Adjust the height as needed *!*/
-    /*    background-color: #006196;*/
-    /*}*/
-
-    /*.secp-card-image{*/
-    /*    width: 249px; !* Adjust the width as needed *!*/
-    /*    height: 400px; !* Adjust the height as needed *!*/
-    /*}*/
-
-    /*.secp-flip-card-inner {*/
-    /*    position: relative;*/
-    /*    width: 100%;*/
-    /*    height: 100%;*/
-    /*    transform-style: preserve-3d; !* Enables 3D transformations *!*/
-    /*    transition: transform 1.6s;*/
-    /*}*/
-
-    /*.secp-flip-card:hover .secp-flip-card-inner {*/
-    /*    transform: rotateY(180deg); !* Flips the card on hover *!*/
-    /*}*/
-
-    /*.secp-flip-card-front,*/
-    /*.secp-flip-card-back {*/
-    /*    position: absolute;*/
-    /*    width: 100%;*/
-    /*    height: 100%;*/
-    /*    background-color: blue;*/
-    /*    backface-visibility: hidden; !* Hides the back face of the card *!*/
-    /*}*/
-
-    /*.secp-flip-card-back {*/
-    /*    transform: rotateY(180deg); !* Initially hides the back side of the card *!*/
-    /*    !* Add styles for the back side here *!*/
-    /*}*/
+    /* third page section */
+    .tp {
+        min-height: 196em;
+        height: 196em;
+    }
+      /* third page main container content */
+    .tp-con {
+        width: 97%;
+    }
 }
 
 
