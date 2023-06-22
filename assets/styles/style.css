@@ -879,13 +879,11 @@ hr{
     backdrop-filter: blur(80%);
 }
 .fip-con{
-    height: 97%;
+    height: 910px;
     width: 80%;
     border-radius: 2em;
 
     margin-top: 0;
-
-
 
     /* From https://css.glass */
 
@@ -899,19 +897,14 @@ hr{
     align-items: center;
 }
 .fip-con-cnt{
-    height: 941px;
+    height: 870px;
     width: 94%;
 
 
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-              "fip-main-header"
-              "fip-rotate-cardset-1"
-              "fip-cardset-1";
-    justify-items: center; /* Horizontally center the grid items */
-    align-items: center; /* Vertically center the grid items */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     border-width: 0.7em 0 0 0;
     border-style: solid;
@@ -921,14 +914,13 @@ hr{
 .fip-con-cnt-mh{
     grid-area: fip-main-header;
     color: #777676;
-    margin-top: 1rem;
+    margin-top: -2rem;
 }
 .fip-con-cnt-mh > p{
     font-size: 3em;
     font-weight: 800;
 }
 .fip-header-1{
-    grid-area: fip-header-1;
     justify-self: start;
     align-self: start;
     color: #9a9999;
@@ -940,21 +932,19 @@ hr{
 }
 .fip-cardset-1{
     grid-area: fip-cardset-1;
-    width: 70vw;
-    margin-top: 3rem;
+    width: 100%;
+    margin-top: 2rem;
 }
-
 .fip-cardset-1-cards {
     display: flex;
     list-style: none;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
 }
-
 .fip-cardset-1-card {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 450px;
     height:100%;
     padding: 20px;
     background: var(--white);
@@ -1020,11 +1010,6 @@ hr{
     background: var(--thumb);
 }
 
-.fip-cardset-1-card-iframe{
-    width: 30em;
-    height: 25em;
-}
-
 .fip-cardset-1-card:not(:last-child) {
     margin-right: 20px;
     margin-bottom: 20px;
@@ -1032,7 +1017,7 @@ hr{
 
 /*===========ROTATE ANIMATION=======*/
 .fip-rotate-cardset-1 {
-    grid-area: fip-rotate-cardset-1;
+  margin-top: 20px;
 }
 
 #animationContainer {
@@ -1050,8 +1035,8 @@ hr{
 
 .slider {
     position: relative;
-    width: 150px;
-    height: 100px;
+    width:200px;
+    height: 150px;
     transform-style: preserve-3d;
     animation: rotate 30s linear infinite;
 }
@@ -2093,6 +2078,21 @@ hr{
         display: none;
     }
 
+    /* five page section */
+    .fip {
+        min-height: 50em;
+        height: 50em;
+    }
+    /* third page main container content */
+    .fip-con {
+        width: 98%;
+        height: 826px;
+    }
+    .fip-con-cnt{
+        border-width: 0.3em 0 0 0;
+        height: 776px;
+    }
+
     /*footer main div*/
     .fmd {
         width: 100%;
@@ -2408,6 +2408,19 @@ hr{
     .fop-con-cnt-mcard-cnt-cnt-item-img{
         width: 90px;
         height: 90px;
+    }
+
+    /* first page section */
+    .fip {
+        min-height:65em;
+        height: 65em;
+        width: 100%;
+    }
+    /*first page main container*/
+    .fip-con{
+        height: 910px;
+        width: 97%;
+
     }
 
 }
