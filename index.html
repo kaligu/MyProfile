@@ -38,50 +38,50 @@
       <link href="https://fonts.googleapis.com/css2?family=Changa&display=swap" rel="stylesheet">
 
 
-<!--      &lt;!&ndash; Copy the <script> tag into your own page(s) for the snow effect. That is all! (No CSS etc. is needed) &ndash;&gt;-->
-<!--      <script src="snowstorm.js"></script>-->
+      <!-- Copy the <script> tag into your own page(s) for the snow effect. That is all! (No CSS etc. is needed) -->
+      <script src="snowstorm.js"></script>
 
-<!--      &lt;!&ndash; for the Snowstorm homepage, allow the demo to run on iPhone and mobile devices. &ndash;&gt;-->
-<!--      <script>snowStorm.excludeMobile = false;</script>-->
+      <!-- for the Snowstorm homepage, allow the demo to run on iPhone and mobile devices. -->
+      <script>snowStorm.excludeMobile = false;</script>
 
-<!--      &lt;!&ndash; snow falling css &ndash;&gt;-->
+      <!-- snow falling css -->
 
 
   </head>
   <body>
 
-<!--  &lt;!&ndash; preloading screen &ndash;&gt;-->
-<!--  <div class="SplashScreen-container" id="loadingContainer">-->
-<!--      <div class="SplashScreen">-->
-<!--          <div class="SplashScreen-img-container">-->
-<!--              <img class="SplashScreen-img" src="bar-loader.gif" alt="">-->
-<!--          </div>-->
-<!--          <div class="SplashScreen-header-container">-->
-<!--              <p class="SplashScreen-header" id="loadingText">Loading</p>-->
-<!--          </div>-->
-<!--      </div>-->
-<!--  </div>-->
-<!--  <script>-->
-<!--      //change loading text (without jquery)-->
-<!--      const loadingText = document.getElementById('loadingText');-->
-<!--      const texts = ["Loading", "Loading.", "Loading..", "Loading...", "Loading....", "Loading....."];-->
-<!--      let index = 0;-->
-<!--      function changeText() {-->
-<!--          loadingText.textContent = texts[index];-->
-<!--          index = (index + 1) % texts.length;-->
-<!--      }-->
-<!--      setInterval(changeText, 1000);-->
+  <!-- preloading screen -->
+  <div class="SplashScreen-container" id="loadingContainer">
+      <div class="SplashScreen">
+          <div class="SplashScreen-img-container">
+              <img class="SplashScreen-img" src="bar-loader.gif" alt="">
+          </div>
+          <div class="SplashScreen-header-container">
+              <p class="SplashScreen-header" id="loadingText">Loading</p>
+          </div>
+      </div>
+  </div>
+  <script>
+      //change loading text (without jquery)
+      const loadingText = document.getElementById('loadingText');
+      const texts = ["Loading", "Loading.", "Loading..", "Loading...", "Loading....", "Loading....."];
+      let index = 0;
+      function changeText() {
+          loadingText.textContent = texts[index];
+          index = (index + 1) % texts.length;
+      }
+      setInterval(changeText, 1000);
 
-<!--      //for the Loading Window (without jquery)-->
-<!--      window.addEventListener('load', function() {-->
-<!--          var loadingContainer = document.getElementById('loadingContainer');-->
-<!--          loadingContainer.style.transition = 'opacity 1.1s';-->
-<!--          loadingContainer.style.opacity = '0';-->
-<!--          setTimeout(function() {-->
-<!--              loadingContainer.style.display = 'none';-->
-<!--          }, 1100);-->
-<!--      });-->
-<!--  </script>-->
+      //for the Loading Window (without jquery)
+      window.addEventListener('load', function() {
+          var loadingContainer = document.getElementById('loadingContainer');
+          loadingContainer.style.transition = 'opacity 1.1s';
+          loadingContainer.style.opacity = '0';
+          setTimeout(function() {
+              loadingContainer.style.display = 'none';
+          }, 1100);
+      });
+  </script>
 
 
   <!-- mouse icon set -->
@@ -789,7 +789,7 @@
                       <p>Projects</p>
                   </div>
                   <!-- five page main container content - animated container-->
-                  <section id="animationContainer" class="fip-rotate-cardset-1 " data-aos="fade-right">
+                  <section id="animationContainer" class="fip-rotate-cardset-1 ">
                       <div class="slider">
                           <span style="--i:1; width: 100%; height: 100%"><img src="assets/project/shops.jpg" alt="shop project"></span>
                           <span style="--i:2; width: 100%; height: 100%"><img src="assets/project/sevons.jpg" alt="sevon project"></span>
@@ -798,7 +798,7 @@
                           <span style="--i:5; width: 100%; height: 100%"><img src="ijse-it-module/ijse-assignments/assets/posss.jpg" alt="webpos project"></span>
                       </div>
                   </section>
-                  <div class="fip-cardset-1" data-aos="fade-left">
+                  <div class="fip-cardset-1">
                       <div class="thcp-cardset-1">
                           <ul class="thcp-cardset-1-cards">
 
@@ -856,7 +856,7 @@
                           </ul>
                       </div>
                   </div>
-              </div>
+<!--              </div>-->
           </div>
       </section>
 
@@ -871,7 +871,7 @@
                       <p>Assignments</p>
                   </div>
                   <!-- five page main container content - animated container-->
-                  <section id="animationContainer" class="fip-rotate-cardset-1" data-aos="fade-left">
+                  <section id="animationContainer" class="fip-rotate-cardset-1">
                       <div class="slider">
                           <span style="--i:1; width: 100%; height: 100%"><img src="assets/project/shop.gif" alt="shop project"></span>
                           <span style="--i:2; width: 100%; height: 100%"><img src="assets/project/sevonproject.gif" alt="sevon project"></span>
@@ -880,7 +880,7 @@
                           <span style="--i:5; width: 100%; height: 100%"><img src="ijse-it-module/ijse-assignments/assets/posss.jpg" alt="webpos project"></span>
                       </div>
                   </section>
-                  <div class="fip-cardset-1" data-aos="fade-right">
+                  <div class="fip-cardset-1">
                       <div class="thcp-cardset-1">
                           <ul class="thcp-cardset-1-cards">
 
@@ -1074,9 +1074,9 @@
           </div>
       </section>
 
-<!--      <div class="popup-caller" >-->
-<!--          <i class="fa-solid fa-envelope" id="optQuestion"></i>-->
-<!--      </div>-->
+      <div class="popup-caller" >
+          <i class="fa-solid fa-envelope" id="optQuestion"></i>
+      </div>
 
   </main>
 

@@ -1367,7 +1367,7 @@ input[type=submit]:hover {
     border-radius: 100px;
     position:fixed;
     z-index: 6000;
-    bottom: 5vh;
+    bottom: 2%;
     right: 1%;
     animation: flip 5s infinite;
 }
@@ -1384,7 +1384,7 @@ input[type=submit]:hover {
     }
 }
 .popup-caller > i{
-    margin-left:12px;
+    margin-left:12.5px;
     margin-top: 14px
 }
 
@@ -2124,9 +2124,6 @@ input[type=submit]:hover {
         height: 80px;
     }
 
-    .popup-caller{
-    display: none;
-     }
 }
 
 
