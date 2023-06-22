@@ -6,7 +6,8 @@
 
     /* Background image resource url */
     --backImgUrl:url('assets/pictures/ezgif.com-gif-maker (2).gif');
-    --testimonialbackImgUrl:url("../pictures/testimonialbackimg1.png");
+    --testimonialbackImgUrl:url('../pictures/abstract-flowing-neon-wave-background-fotor-2023062210473.jpg');
+    --skillcardimg:url('../pictures/abstract-flowing-neon-wave-background-fotor-2023062210473.jpg');
 
     /* background colors */
     --bbckcolor: #000000;/*default background colour to body */
@@ -821,8 +822,10 @@ hr{
     width: 100%;
     border-radius: 2em;
     margin-top: -1rem;
-    background: rgba(22, 37, 56, 0.81);
-    box-shadow: 0 4px 30px rgba(59, 109, 200, 0.2);
+    background-image: var(--skillcardimg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 4px 30px rgba(221, 225, 245, 0.2);
     -webkit-backdrop-filter: blur(10.1px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     display: flex;
