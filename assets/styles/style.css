@@ -1360,13 +1360,13 @@ input[type=submit]:hover {
     gap: 15px;
 }
 .popup-caller{
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     font-size: 50px;
     background-color: #00c5d2;
     border-radius: 100px;
     position:fixed;
-    z-index: 6000;
+    z-index: 100;
     bottom: 2%;
     right: 1%;
     animation: flip 5s infinite;
@@ -1384,8 +1384,10 @@ input[type=submit]:hover {
     }
 }
 .popup-caller > i{
-    margin-left:12.5px;
-    margin-top: 14px
+    margin-left:12px;
+    margin-top: 13px;
+
+    font-size: 45px;
 }
 
 
