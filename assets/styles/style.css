@@ -1359,6 +1359,34 @@ input[type=submit]:hover {
     flex-direction: column;
     gap: 15px;
 }
+.popup-caller{
+    width: 80px;
+    height: 80px;
+    font-size: 50px;
+    background-color: #00c5d2;
+    border-radius: 100px;
+    position:fixed;
+    z-index: 6000;
+    bottom: 5vh;
+    right: 1%;
+    animation: flip 5s infinite;
+}
+
+@keyframes flip {
+    0% {
+        transform: perspective(800px) rotateY(0);
+    }
+    50% {
+        transform: perspective(800px) rotateY(180deg);
+    }
+    100% {
+        transform: perspective(800px) rotateY(360deg);
+    }
+}
+.popup-caller > i{
+    margin-left:12px;
+    margin-top: 14px
+}
 
 
 /* Mobile devices */
@@ -1725,8 +1753,8 @@ input[type=submit]:hover {
 
     /* five page section */
     .fip {
-        min-height: 50em;
-        height: 50em;
+        min-height: 55em;
+        height: 55em;
     }
     /* third page main container content */
     .fip-con {
@@ -2090,6 +2118,15 @@ input[type=submit]:hover {
     .lastp-container{
         width: 97%;
     }
+
+    .popup-caller {
+        width: 80px;
+        height: 80px;
+    }
+
+    .popup-caller{
+    display: none;
+     }
 }
 
 
