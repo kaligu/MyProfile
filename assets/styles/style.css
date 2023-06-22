@@ -764,10 +764,9 @@ hr{
     justify-content: center;
     align-items: center;
 
-    background-color: grey;
-    /*background-image: var(--backImgUrl);*/
-    /*background-size: cover;*/
-    /*background-repeat: no-repeat;*/
+    background-image: var(--backImgUrl);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
   /* four page main container */
 .fop-con {
@@ -839,15 +838,11 @@ hr{
     margin-top:1rem;
 
     display: flex;
-    grid-template-areas:'1 2 3 4 5';
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 
-    gap: 15px; /* Adjust the value to your desired spacing */
-}
-.c1{
-    grid-area: 1;
-}
-.c2{
-    grid-area: 2;
+    gap: 20px; /* Adjust the value to your desired spacing */
 }
  /*four page main container content - main content card content - content - item*/
 .fop-con-cnt-mcard-cnt-cnt-item{
@@ -2135,6 +2130,9 @@ hr{
     .tp-con {
         width: 98%;
     }
+    .tp-con-cnt{
+        border-width: 0.3em 0 0 0;
+    }
       /* timeline */
     .timeline > .timeline-item {
         flex-direction: column;
@@ -2175,6 +2173,41 @@ hr{
         min-height: 425px;
     }
 
+    /* four page section */
+    .fop {
+        min-height: 82em;
+        height: 82em;/* minimum size of first page */
+    }
+      /* four page main container */
+    .fop-con {
+        width: 98%;
+        height: 1250px;
+    }
+    .fop-con-cnt{
+        margin-top: 2rem;
+        border-width: 0.3em 0 0 0;
+    }
+    /* four page main container content - main content card */
+    .fop-con-cnt-mcard {
+        height: 145px;
+    }
+      /* four page main container content - main content card content - main header*/
+    .fop-con-cnt-mcard-cnt-mh {
+        font-size: 1.3em;
+    }
+      /*four page main container content - main content card content - content - item*/
+    .fop-con-cnt-mcard-cnt-cnt-item-img{
+        width: 50px;
+        height: 50px;
+    }
+    /*four page main container content - main content card content - sub content 1*/
+    .fop-con-cnt-mcard-cnt-cnt{
+        gap: 5px; /* Adjust the value to your desired spacing */
+    }
+    .fop-con-cnt-mcard-cnt-cnt-item-p{
+        display: none;
+    }
+
     /*footer main div*/
     .fmd {
         width: 100%;
@@ -2205,8 +2238,9 @@ hr{
         margin-left: 0px;
         margin-top: 10px;
 
-        font-size: 0.8em;
+        font-size: 0.7em;
     }
+
 
 
 }
@@ -2469,6 +2503,28 @@ hr{
         height: 545px;
         min-height: 545px;
     }
+
+    /* four page section */
+    /* four page main container */
+    .fop-con {
+        width: 97%;
+        height: 1650px;
+    }
+    /* four page section */
+    .fop {
+        min-height: 110em;
+        height: 110em;/* minimum size of first page */
+    }
+    /* four page main container content - main content card content - main header*/
+    .fop-con-cnt-mcard-cnt-mh {
+        font-size: 1.6em;
+    }
+    /*four page main container content - main content card content - content - item*/
+    .fop-con-cnt-mcard-cnt-cnt-item-img{
+        width: 90px;
+        height: 90px;
+    }
+
 }
 
 
