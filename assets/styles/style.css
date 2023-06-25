@@ -705,7 +705,7 @@ hr{
 .thcp-cardset-1-card .thcp-cardset-1-card-link-wrapper {
     margin-top: -9px;
 }
-.thcp-cardset-1-card .sip-cardset-1-card-link{
+.thcp-cardset-1-card .thcp-cardset-1-card-link{
     display: inline-block;
     text-decoration: none;
     color: #acacac;
@@ -716,7 +716,7 @@ hr{
     transition: background 0.2s;
     margin-top: 5px;
 }
-.thcp-cardset-1-card:hover .sip-cardset-1-card-link {
+.thcp-cardset-1-card:hover .thcp-cardset-1-card-link {
     background: var(--darkred);
 }
 .thcp-cardset-1-cards::-webkit-scrollbar {
@@ -732,11 +732,11 @@ hr{
 .thcp-cardset-1-cards::-webkit-scrollbar-track {
     background: var(--thumb);
 }
-.sip-cardset-1-card-content-iframe{
+.thcp-cardset-1-card-content-iframe{
     width: 25em;
     height: 20em;
 }
-.sip-iframefigma{
+.thcp-iframefigma{
     width: 25em;
     height: 10em;
 }
