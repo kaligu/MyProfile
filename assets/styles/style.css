@@ -15,7 +15,7 @@
     --backgroundcolor: #ffffff;
     /* navbar background color */
     --navbarcolor: #304250;
-    --navbarmenumobile: rgba(82, 45, 45, 0.6);
+    --navbarmenumobile: rgba(41, 41, 41, 0.95);
     --navbarbordercolor: #484747;
 
     --red: #00507e;
@@ -1126,7 +1126,7 @@ hr{
     width: 100vw;
     height: 4em;
     opacity: 0.85;
-    z-index: 400;
+    z-index: 1000;
 }
 .tab-navbar > .nav-container > .logo{
     width: 135px;
@@ -1176,6 +1176,10 @@ hr{
     color: white;
     font-size: 1.2em;
 }
+.tab-navbar > .nav-container > .links > li > a:hover {
+    color: #00eae3;
+    font-size: 1.2em;
+}
 .tab-navbar > .nav-container > button {
     margin-right: 32px;
     font-size: 1.2em;
@@ -1209,7 +1213,7 @@ hr{
     width: 100vw;
     height: 58px;
     opacity: 0.85;
-    z-index: 400;
+    z-index: 1000;
 }
 .mobile-navbar > .nav-container > .logo{
     display: flex;
@@ -1248,9 +1252,16 @@ hr{
 }
 .mobile-navbar > .menu > .links > li{
     color: white;
+    margin-top: 9px;
+}
+.mobile-navbar > .menu > .links > li > a{
+    color: #ffffff;
+}
+.mobile-navbar > .menu > button{
+    margin-top: 9px;
 }
 
-/* last page */
+    /* last page */
 .lastp {
     min-height: 67em;/* minimum size of first page */
     height: 67em; /* Set the height of the container to the full viewport height */
@@ -1404,7 +1415,7 @@ input[type=submit]:hover {
 
 
 /* Mobile devices */
-@media (min-width:320px) and (max-width:599px)  {
+@media (min-width:320px) and (max-width:657px)  {
     /* nav bar */
     .mobile-navbar{
         display: block;
@@ -1843,7 +1854,7 @@ input[type=submit]:hover {
 }
 
 
-@media (min-width:599px) and (max-width:992px)  {
+@media (min-width:657px) and (max-width:992px)  {
     /* nav bar */
     .mobile-navbar{
         display: none;

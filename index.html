@@ -50,38 +50,38 @@
   </head>
   <body>
 
-  <!-- preloading screen -->
-  <div class="SplashScreen-container" id="loadingContainer">
-      <div class="SplashScreen">
-          <div class="SplashScreen-img-container">
-              <img class="SplashScreen-img" src="bar-loader.gif" alt="">
-          </div>
-          <div class="SplashScreen-header-container">
-              <p class="SplashScreen-header" id="loadingText">Loading</p>
-          </div>
-      </div>
-  </div>
-  <script>
-      //change loading text (without jquery)
-      const loadingText = document.getElementById('loadingText');
-      const texts = ["Loading", "Loading.", "Loading..", "Loading...", "Loading....", "Loading....."];
-      let index = 0;
-      function changeText() {
-          loadingText.textContent = texts[index];
-          index = (index + 1) % texts.length;
-      }
-      setInterval(changeText, 1000);
+<!--  &lt;!&ndash; preloading screen &ndash;&gt;-->
+<!--  <div class="SplashScreen-container" id="loadingContainer">-->
+<!--      <div class="SplashScreen">-->
+<!--          <div class="SplashScreen-img-container">-->
+<!--              <img class="SplashScreen-img" src="bar-loader.gif" alt="">-->
+<!--          </div>-->
+<!--          <div class="SplashScreen-header-container">-->
+<!--              <p class="SplashScreen-header" id="loadingText">Loading</p>-->
+<!--          </div>-->
+<!--      </div>-->
+<!--  </div>-->
+<!--  <script>-->
+<!--      //change loading text (without jquery)-->
+<!--      const loadingText = document.getElementById('loadingText');-->
+<!--      const texts = ["Loading", "Loading.", "Loading..", "Loading...", "Loading....", "Loading....."];-->
+<!--      let index = 0;-->
+<!--      function changeText() {-->
+<!--          loadingText.textContent = texts[index];-->
+<!--          index = (index + 1) % texts.length;-->
+<!--      }-->
+<!--      setInterval(changeText, 1000);-->
 
-      //for the Loading Window (without jquery)
-      window.addEventListener('load', function() {
-          var loadingContainer = document.getElementById('loadingContainer');
-          loadingContainer.style.transition = 'opacity 1.1s';
-          loadingContainer.style.opacity = '0';
-          setTimeout(function() {
-              loadingContainer.style.display = 'none';
-          }, 1100);
-      });
-  </script>
+<!--      //for the Loading Window (without jquery)-->
+<!--      window.addEventListener('load', function() {-->
+<!--          var loadingContainer = document.getElementById('loadingContainer');-->
+<!--          loadingContainer.style.transition = 'opacity 1.1s';-->
+<!--          loadingContainer.style.opacity = '0';-->
+<!--          setTimeout(function() {-->
+<!--              loadingContainer.style.display = 'none';-->
+<!--          }, 1100);-->
+<!--      });-->
+<!--  </script>-->
 
 
   <!-- mouse icon set -->
@@ -107,15 +107,14 @@
           </div>
           <div class="menu">
               <ul class="links">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Education</a></li>
-                  <li><a href="#">Skills</a></li>
-                  <li><a href="#">Gallery</a></li>
-                  <li><a href="#">Projects</a></li>
-                  <li><a href="#">Assignments</a></li>
+                  <li><a href="#fp">Home</a></li>
+                  <li><a href="#sp">About</a></li>
+                  <li><a href="#tp">Education</a></li>
+                  <li><a href="#fop">Skills</a></li>
+                  <li><a href="#fip1">Projects</a></li>
+                  <li><a href="#fip2">Assignments</a></li>
               </ul>
-              <button type="button">Contact Me</button>
+              <button type="button" onclick="showPage()">Contact me</button>
           </div>
       </div>
       <!-- tab view -->
@@ -123,17 +122,22 @@
           <div class="nav-container">
               <div class="logo"><img src="assets/icons/logo.jpg" alt="logo"></div>
               <ul class="links">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Education</a></li>
-                  <li><a href="#">Skills</a></li>
-                  <li><a href="#">Gallery</a></li>
-                  <li><a href="#">Projects</a></li>
-                  <li><a href="#">Assignments</a></li>
+                  <li><a href="#fp">Home</a></li>
+                  <li><a href="#sp">About</a></li>
+                  <li><a href="#tp">Education</a></li>
+                  <li><a href="#fop">Skills</a></li>
+                  <li><a href="#fip1">Projects</a></li>
+                  <li><a href="#fip2">Assignments</a></li>
               </ul>
-              <button type="button">Contact me</button>
+              <button type="button" onclick="showPage()">Contact me</button>
           </div>
       </div>
+
+      <script>
+          function showPage() {
+              window.location.href = "#lastp";
+          }
+      </script>
 
       <!-- first page section-->
       <section class="fp" id="fp">
@@ -158,7 +162,7 @@
       </section>
 
       <!-- second page section-->
-      <section class="sp">
+      <section class="sp" id="sp">
           <!-- second page main container -->
           <div class="sp-con">
               <!-- second page main container content-->
@@ -201,10 +205,10 @@
                   </div>
                   <!-- second page main container content - first content > btn container -->
                   <div class="secp-btn" data-aos="zoom-in">
-                      <a class="secp-btn-links" href ="https://medium.com/@chethiyakaligu2"   ><i class="fa-brands fa-medium fa-2x" style="color: #00f3f3; font-size: 30px;"></i></a>
+                      <a class="secp-btn-links" href ="https://medium.com/@chethiyakaligu2" target="_blank"  ><i class="fa-brands fa-medium fa-2x" style="color: #00f3f3; font-size: 30px;"></i></a>
 <!--                      <a class="secp-btn-links" href ="https://drive.google.com/file/d/1K_ddp_Ud0gUaofKtZWsHm-1TQbQrnaJa/view?usp=sharing" attributes-list download  ><i class="fa-brands fa-blogger-b fa-2x" style="color: #00f3f3; font-size:30px;"></i></a>-->
-                      <a class="secp-btn-links" href ="https://www.linkedin.com/in/kaligu/"   ><i class="fa-brands fa-linkedin fa-2x" style="color: #00f3f3; font-size: 30px;"></i></a>
-                      <a id="secp-btn-download" href =""   >DOWNLOAD CV</a>
+                      <a class="secp-btn-links" href ="https://www.linkedin.com/in/kaligu/" target="_blank"  ><i class="fa-brands fa-linkedin fa-2x" style="color: #00f3f3; font-size: 30px; "></i></a>
+                      <a id="secp-btn-download" href ="" target="_blank"  >DOWNLOAD CV</a>
                   </div>
                   <!-- second page main container content - second content-->
                   <div class="sp-con-cnt-sc">
@@ -237,7 +241,7 @@
       </section>
 
       <!-- third page section-->
-      <section class="tp">
+      <section class="tp" id="tp">
           <!-- third page main container -->
           <div class="tp-con">
               <!-- third page main container content-->
@@ -489,7 +493,7 @@
       </section>
 
       <!-- four page section-->
-      <section class="fop">
+      <section class="fop" id="fop">
           <!-- four page main container -->
           <div class="fop-con">
               <!-- four page main container content-->
@@ -762,24 +766,8 @@
           </div>
       </section>
 
-<!--      &lt;!&ndash; third page&ndash;&gt;-->
-<!--      <section class="thp">-->
-<!--          <div class="thp-container">-->
-<!--              <div class="thp-container-box">-->
-<!--              </div>-->
-<!--          </div>-->
-<!--      </section>-->
-
-<!--      &lt;!&ndash; fourth page&ndash;&gt;-->
-<!--      <section class="fop">-->
-<!--          <div class="fop-container">-->
-<!--              <div class="fop-container-box">-->
-<!--              </div>-->
-<!--          </div>-->
-<!--      </section>-->
-
       <!-- five page section-->
-      <section class="fip">
+      <section class="fip" id="fip1">
           <!-- five page main container -->
           <div class="fip-con">
               <!-- five page main container content-->
@@ -861,7 +849,7 @@
       </section>
 
       <!-- six page section-->
-      <section class="fip">
+      <section class="fip" id="fip2">
           <!-- five page main container -->
           <div class="fip-con">
               <!-- five page main container content-->
@@ -1135,7 +1123,7 @@
       </section>
 
       <!-- last page-->
-      <section class="lastp">
+      <section class="lastp" id="lastp">
           <div class="lastp-container">
               <div class="lastp-container-box">
                   <div class="lastp-main-header">
@@ -1190,6 +1178,16 @@
       <div class="popup-caller" >
           <i class="fa-solid fa-envelope" id="optQuestion"></i>
       </div>
+      <script>
+          // Get the envelope icon element
+          var envelopeIcon = document.getElementById("optQuestion");
+
+          // Attach a click event listener to the envelope icon
+          envelopeIcon.addEventListener("click", function() {
+              // Redirect to the page for sending an email
+              window.location.href = "mailto:chethiyalkaligu2@gmail.com";
+          });
+      </script>
 
   </main>
 
