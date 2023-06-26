@@ -1032,6 +1032,18 @@ hr{
     position: relative;
     /*top: 150px;*/
 }
+#animationContainer2 {
+    /*background: linear-gradient(to right, red, blue);*/
+    /*height: 70vh;*/
+    /*height: 532px;*/
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    /*top: 150px;*/
+}
 
 .slider {
     position: relative;
@@ -1337,14 +1349,14 @@ input[type=submit]:hover {
 .lastp-contact_map_And_address{
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 20%;
     align-items: center;
     justify-content: center;
 }
 .lastp-contact_form_And_links{
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 15%;
     align-items: center;
     justify-content: center;
 }
@@ -1778,11 +1790,22 @@ input[type=submit]:hover {
     }
     .lastp-container-box{
         border-width: 0.3em 0 0 0;
+
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
     }
     .address{
         display: none;
     }
-
+    .contact-map{!important;
+        width: 100%;
+        height: 300px;
+    }
+    .contact-map > iframe { !important;
+        width: 100%;
+        height: 100%;
+    }
 
     /*footer main div*/
     .fmd {
@@ -2124,6 +2147,24 @@ input[type=submit]:hover {
     .popup-caller {
         width: 80px;
         height: 80px;
+    }
+    .lastp-container-box{
+        border-width: 0.3em 0 0 0;
+
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .address{
+        display: none;
+    }
+    .contact-map{!important;
+        width: 100%;
+        height: 300px;
+    }
+    .contact-map > iframe { !important;
+        width: 100%;
+        height: 100%;
     }
 
 }
