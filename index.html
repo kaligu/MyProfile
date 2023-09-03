@@ -72,15 +72,22 @@
       }
       setInterval(changeText, 1000);
 
-      //for the Loading Window (without jquery)
-      window.addEventListener('load', function() {
+      // Replace this with the time you want to wait before hiding the loading window in milliseconds
+      var loadingDelay = 3000; // 3 seconds in this example
+
+      // Wrap your code in a function to be called when the timer expires
+      function hideLoadingWindow() {
           var loadingContainer = document.getElementById('loadingContainer');
           loadingContainer.style.transition = 'opacity 1.1s';
           loadingContainer.style.opacity = '0';
           setTimeout(function() {
               loadingContainer.style.display = 'none';
           }, 1100);
-      });
+      }
+
+      // Set the timer to call the hideLoadingWindow function after the specified delay
+      setTimeout(hideLoadingWindow, loadingDelay);
+
   </script>
 
 
