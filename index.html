@@ -1261,7 +1261,25 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
       AOS.init();
+
+      document.getElementById("contactForm").onsubmit = function() {
+        var name = document.getElementById("name").value;
+        var subject = document.getElementById("subject").value;
+        
+        // Construct the email body
+        var body = "Name: " + name + "\n" +
+                   "Message: " + subject;
+        
+        // Send email (This is just a placeholder, you need to implement your email sending logic here)
+        // Replace 'your-email@example.com' with your actual email address
+        var mailtoLink = "mailto:your-email@example.com" + "?subject=" + encodeURIComponent("New Contact Form Submission") + "&body=" + encodeURIComponent(body);
+        window.location.href = mailtoLink;
+        
+        // Prevent form from submitting normally
+        return false;
+    };
   </script>
+    
   </body>
 
 </html>
